@@ -1,0 +1,115 @@
+name: Desplegar
+
+# Despliegue a Cloudflare. Requiere configurar en el repositorio:
+#
+#   Secrets:
+#     CLOUDFLARE_API_TOKEN   token con permisos Workers Scripts:Edit, D1:Edit, R2:Edit, Pages:Edit
+#     CLOUDFLARE_ACCOUNT_ID  ID de la cuenta de Cloudflare
+#
+#   Variables (Settings > Variables):
+#     D1_DATABASE_ID     ID que devuelve `npx wrangler d1 create ojo-comas-db`
+#     TURNSTILE_SITEKEY  sitekey REAL del widget de Turnstile
+#     PAGES_DOMINIO      dominio de Pages, p.ej. ojo-comas.pages.dev
+#
+# Los secretos del Worker (TURNSTILE_SECRET, ADMIN_TOKEN, IP_SALT) NO se gestionan aqui:
+# se cargan una sola vez con `npx wrangler secret put <NOMBRE> --env produccion`.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'worker/**'
+      - 'frontend/**'
+      - 'data/**'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: despliegue-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  WRANGLER_SEND_METRICS: 'false'
+
+jobs:
+  api:
+    name: Worker ojo-comas-api
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: produccion
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: worker/package-lock.json
+
+      - run: npm ci --prefix worker
+
+      - name: Sustituir los marcadores de posicion por los valores reales
+        working-directory: worker
+        run: |
+          test -n "${{ vars.D1_DATABASE_ID }}" || { echo "Falta la variable D1_DATABASE_ID"; exit 1; }
+          test -n "${{ vars.TURNSTILE_SITEKEY }}" || { echo "Falta la variable TURNSTILE_SITEKEY"; exit 1; }
+          test -n "${{ vars.PAGES_DOMINIO }}" || { echo "Falta la variable PAGES_DOMINIO"; exit 1; }
+          sed -i "s|00000000-0000-0000-0000-000000000000|${{ vars.D1_DATABASE_ID }}|" wrangler.jsonc
+          sed -i "s|REEMPLAZAR-CON-EL-ID-DE-TU-D1|${{ vars.D1_DATABASE_ID }}|" wrangler.jsonc
+          sed -i "s|REEMPLAZAR-CON-TU-SITEKEY-REAL|${{ vars.TURNSTILE_SITEKEY }}|" wrangler.jsonc
+          sed -i "s|REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES|${{ vars.PAGES_DOMINIO }}|g" wrangler.jsonc
+          echo "--- marcadores restantes (deberia estar vacio) ---"
+          grep -n 'REEMPLAZAR\|00000000-0000-0000' wrangler.jsonc || echo "ninguno"
+
+      - name: Regenerar los tipos de bindings
+        working-directory: worker
+        run: npx wrangler types
+
+      - name: Comprobar tipos
+        working-directory: worker
+        run: npx tsc --noEmit
+
+      - name: Aplicar migraciones en D1 remoto
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler d1 migrations apply ojo-comas-db --remote --env produccion
+
+      - name: Desplegar el Worker
+        working-directory: worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy --env produccion
+
+  paginas:
+    name: Cloudflare Pages (frontend)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment: produccion
+    needs: api
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Comprobar la sintaxis del frontend antes de publicar
+        run: node --check frontend/app.js
+
+      - name: Publicar en Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy frontend --project-name=ojo-comas --branch=main
+
+      - name: Recordatorio del paso manual
+        run: |
+          echo "Recuerda que el widget de Turnstile debe tener registrado el dominio ${{ vars.PAGES_DOMINIO }}"
+          echo "y que el Worker de produccion necesita los secretos TURNSTILE_SECRET, ADMIN_TOKEN e IP_SALT."

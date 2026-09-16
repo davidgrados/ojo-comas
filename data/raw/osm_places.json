@@ -1,0 +1,3433 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-09-16T22:47:49Z",
+  "timestamp_areas_base": "2026-09-16T05:04:09Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "node",
+   "id": 1253455644,
+   "lat": -11.9384089,
+   "lon": -77.0561735,
+   "tags": {
+    "name": "El Retablo 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 3780174732,
+   "lat": -11.9573015,
+   "lon": -77.049757,
+   "tags": {
+    "capital": "8",
+    "ele": "121",
+    "name": "Comas",
+    "official_name": "La Libertad",
+    "place": "suburb",
+    "population": "520450",
+    "population:date": "2017",
+    "source:population": "INEI"
+   }
+  },
+  {
+   "type": "node",
+   "id": 3998391142,
+   "lat": -11.9550507,
+   "lon": -77.0560635,
+   "tags": {
+    "name": "El Parral",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 3998391143,
+   "lat": -11.9616216,
+   "lon": -77.0608207,
+   "tags": {
+    "name": "San Eulogio",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459809,
+   "lat": -11.9120109,
+   "lon": -77.0106411,
+   "tags": {
+    "name": "Asentamiento Humano 28 de Julio",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459810,
+   "lat": -11.9105307,
+   "lon": -77.0123255,
+   "tags": {
+    "name": "Asentamiento Humano 4ª Zona (Ampliaión)",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459812,
+   "lat": -11.9176796,
+   "lon": -77.0232904,
+   "tags": {
+    "name": "Buenos Aires 3",
+    "official_name": "Asentamiento Humano Buenos Aires 3",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459814,
+   "lat": -11.9154964,
+   "lon": -77.0228096,
+   "tags": {
+    "name": "Comite 6",
+    "official_name": "Asentamiento Humano Comite 6",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459815,
+   "lat": -11.9172282,
+   "lon": -77.0253825,
+   "tags": {
+    "name": "Asentamiento Humano Comite 65",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459816,
+   "lat": -11.9153281,
+   "lon": -77.0183077,
+   "tags": {
+    "name": "Cristo Rey",
+    "official_name": "Asentamiento Humano Cristo Rey",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459817,
+   "lat": -11.9155696,
+   "lon": -77.0119795,
+   "tags": {
+    "name": "Asentamiento Humano de Diciembre",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459818,
+   "lat": -11.9166265,
+   "lon": -77.0224869,
+   "tags": {
+    "name": "Mayo",
+    "official_name": "Asentamiento Humano de Mayo",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459824,
+   "lat": -11.9082905,
+   "lon": -77.0141355,
+   "tags": {
+    "name": "Horacio Zevallos Gámez",
+    "official_name": "Asentamiento Humano Horacio Zevallos Gámez",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459825,
+   "lat": -11.915811,
+   "lon": -77.0148683,
+   "tags": {
+    "name": "Húsares de Junín",
+    "official_name": "Asentamiento Humano Húsares de Junín",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459830,
+   "lat": -11.9102787,
+   "lon": -77.0100296,
+   "tags": {
+    "name": "Asentamiento Humano Las Casuarinas (Ampliación)",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459831,
+   "lat": -11.9096174,
+   "lon": -77.0110059,
+   "tags": {
+    "name": "Las Casuarinas de Collique",
+    "official_name": "Asentamiento Humano Las Casuarinas de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459834,
+   "lat": -11.9070242,
+   "lon": -77.013839,
+   "tags": {
+    "name": "Las Rocas de Jesús",
+    "official_name": "Asentamiento Humano Las Rocas de Jesús",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459836,
+   "lat": -11.9081314,
+   "lon": -77.0111499,
+   "tags": {
+    "name": "Lomas de Collique",
+    "official_name": "Asentamiento Humano Lomas de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459838,
+   "lat": -11.9098157,
+   "lon": -77.005386,
+   "tags": {
+    "name": "Los Claveles",
+    "official_name": "Asentamiento Humano los Claveles",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459840,
+   "lat": -11.9173647,
+   "lon": -77.0241702,
+   "tags": {
+    "name": "Los Sauces",
+    "official_name": "Asentamiento Humano Los Sauces",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459842,
+   "lat": -11.9182499,
+   "lon": -77.0098472,
+   "tags": {
+    "name": "Nueva Generación",
+    "official_name": "Asentamiento Humano Nueva Generación",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459843,
+   "lat": -11.9076962,
+   "lon": -77.0168102,
+   "tags": {
+    "name": "Nueva Generación 2000",
+    "official_name": "Asentamiento Humano Nueva Generación 2000",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459846,
+   "lat": -11.9128541,
+   "lon": -77.0037646,
+   "tags": {
+    "name": "Santa Rosa de Collique",
+    "official_name": "Asentamiento Humano Santa Rosa de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459847,
+   "lat": -11.9116644,
+   "lon": -77.014128,
+   "tags": {
+    "name": "Asentamiento Humano Señor de los Milagros",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459848,
+   "lat": -11.9169484,
+   "lon": -77.0142911,
+   "tags": {
+    "name": "Villa de Jesús",
+    "official_name": "Asentamiento Humano Villa de Jesús",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459849,
+   "lat": -11.9128507,
+   "lon": -77.0140636,
+   "tags": {
+    "name": "Asentamiento Humano Villa La Disciplina",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459850,
+   "lat": -11.9068031,
+   "lon": -77.0105796,
+   "tags": {
+    "name": "Villa La Paz",
+    "official_name": "Asentamiento Humano Villa La Paz",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4331459854,
+   "lat": -11.9148704,
+   "lon": -77.0220936,
+   "tags": {
+    "name": "Villasol",
+    "official_name": "Asentamiento Humano Villasol",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4396386161,
+   "lat": -11.9433453,
+   "lon": -77.0631265,
+   "tags": {
+    "name": "Santa Luzmila",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4427993392,
+   "lat": -11.9330167,
+   "lon": -77.0519937,
+   "tags": {
+    "name": "San Augstín 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 4428343353,
+   "lat": -11.9359516,
+   "lon": -77.0583314,
+   "tags": {
+    "name": "El Retablo 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9380540239,
+   "lat": -11.9239991,
+   "lon": -77.0385119,
+   "tags": {
+    "name": "Año Nuevo",
+    "place": "quarter"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9642007321,
+   "lat": -11.9379602,
+   "lon": -77.0431832,
+   "tags": {
+    "name": "El Carmen",
+    "place": "quarter"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9642007322,
+   "lat": -11.9356597,
+   "lon": -77.0461248,
+   "tags": {
+    "name": "La Pascana",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9642022736,
+   "lat": -11.9142019,
+   "lon": -77.025279,
+   "tags": {
+    "name": "Collique",
+    "place": "quarter"
+   }
+  },
+  {
+   "type": "node",
+   "id": 9811925993,
+   "lat": -11.9366833,
+   "lon": -77.0671337,
+   "tags": {
+    "name": "Alameda Algarrobos",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 10208539738,
+   "lat": -11.9054421,
+   "lon": -77.0455485,
+   "tags": {
+    "name": "Asociación de Vivienda Villa Santa Cruz",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943454,
+   "lat": -11.9620179,
+   "lon": -77.0529586,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943455,
+   "lat": -11.9617924,
+   "lon": -77.0526548,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943456,
+   "lat": -11.961931,
+   "lon": -77.0526207,
+   "tags": {
+    "name": "K",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943457,
+   "lat": -11.9621828,
+   "lon": -77.0525796,
+   "tags": {
+    "name": "O",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943458,
+   "lat": -11.9624929,
+   "lon": -77.0528997,
+   "tags": {
+    "name": "Ñ",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943459,
+   "lat": -11.9623614,
+   "lon": -77.0532819,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943460,
+   "lat": -11.9622057,
+   "lon": -77.0534776,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943461,
+   "lat": -11.9620705,
+   "lon": -77.0536471,
+   "tags": {
+    "name": "G1",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943462,
+   "lat": -11.9621802,
+   "lon": -77.0541298,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943463,
+   "lat": -11.9628565,
+   "lon": -77.0543802,
+   "tags": {
+    "name": "X1",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943464,
+   "lat": -11.9629678,
+   "lon": -77.0540628,
+   "tags": {
+    "name": "Z1",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943465,
+   "lat": -11.9630299,
+   "lon": -77.0538205,
+   "tags": {
+    "name": "Z",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943466,
+   "lat": -11.9630033,
+   "lon": -77.053539,
+   "tags": {
+    "name": "J",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943467,
+   "lat": -11.963258,
+   "lon": -77.0534028,
+   "tags": {
+    "name": "M",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087943468,
+   "lat": -11.9629288,
+   "lon": -77.0531573,
+   "tags": {
+    "name": "N",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087993869,
+   "lat": -11.9629928,
+   "lon": -77.052923,
+   "tags": {
+    "name": "L",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087993870,
+   "lat": -11.9637133,
+   "lon": -77.0546647,
+   "tags": {
+    "name": "X",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087993871,
+   "lat": -11.9640278,
+   "lon": -77.054187,
+   "tags": {
+    "name": "Y",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087993872,
+   "lat": -11.9615324,
+   "lon": -77.053823,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12087993873,
+   "lat": -11.9613874,
+   "lon": -77.0529447,
+   "tags": {
+    "name": "F2",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088178810,
+   "lat": -11.9534949,
+   "lon": -77.052392,
+   "tags": {
+    "name": "Huaquillay 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088193085,
+   "lat": -11.9390879,
+   "lon": -77.0518086,
+   "tags": {
+    "name": "Huaquillay 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088193086,
+   "lat": -11.9346852,
+   "lon": -77.0618777,
+   "tags": {
+    "name": "El Retablo 3",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088193087,
+   "lat": -11.9301481,
+   "lon": -77.0565962,
+   "tags": {
+    "name": "El Retablo 4",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088193088,
+   "lat": -11.9298552,
+   "lon": -77.049078,
+   "tags": {
+    "name": "San Augstín 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213509,
+   "lat": -11.9711893,
+   "lon": -77.0591105,
+   "tags": {
+    "name": "Urbanización Carabayllo 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213510,
+   "lat": -11.9651682,
+   "lon": -77.0598558,
+   "tags": {
+    "name": "Urbanización Carabayllo 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213511,
+   "lat": -11.9631853,
+   "lon": -77.0588551,
+   "tags": {
+    "name": "Villa Hiper",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213512,
+   "lat": -11.9584283,
+   "lon": -77.0594068,
+   "tags": {
+    "name": "Santa Isolina 3",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213513,
+   "lat": -11.9567242,
+   "lon": -77.059037,
+   "tags": {
+    "name": "Santa Isolina 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213514,
+   "lat": -11.9577455,
+   "lon": -77.061941,
+   "tags": {
+    "name": "Santa Isolina 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213515,
+   "lat": -11.9538235,
+   "lon": -77.0617137,
+   "tags": {
+    "name": "Las Vegas",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213516,
+   "lat": -11.9543279,
+   "lon": -77.0579581,
+   "tags": {
+    "name": "La Hacienda",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213517,
+   "lat": -11.9474721,
+   "lon": -77.0530521,
+   "tags": {
+    "name": "Viñedos de Carabayllo",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213518,
+   "lat": -11.9410626,
+   "lon": -77.0492429,
+   "tags": {
+    "name": "Repartición",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213519,
+   "lat": -11.9423936,
+   "lon": -77.0420054,
+   "tags": {
+    "name": "Señor de los Milagros",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213520,
+   "lat": -11.9486884,
+   "lon": -77.0311858,
+   "tags": {
+    "name": "Señor de los Milagros 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12088213521,
+   "lat": -11.9397721,
+   "lon": -77.0269939,
+   "tags": {
+    "name": "El Misti",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652751,
+   "lat": -11.962064,
+   "lon": -77.0495226,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652752,
+   "lat": -11.9619874,
+   "lon": -77.0499853,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652753,
+   "lat": -11.962353,
+   "lon": -77.0494479,
+   "tags": {
+    "name": "J",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652754,
+   "lat": -11.962353,
+   "lon": -77.0490422,
+   "tags": {
+    "name": "I",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652755,
+   "lat": -11.9625306,
+   "lon": -77.0490742,
+   "tags": {
+    "name": "M",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652756,
+   "lat": -11.9621824,
+   "lon": -77.0490315,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652757,
+   "lat": -11.9622677,
+   "lon": -77.0486151,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652758,
+   "lat": -11.9624278,
+   "lon": -77.0486419,
+   "tags": {
+    "name": "H",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652759,
+   "lat": -11.9626399,
+   "lon": -77.0486811,
+   "tags": {
+    "name": "Q",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652760,
+   "lat": -11.9627219,
+   "lon": -77.0491248,
+   "tags": {
+    "name": "Ñ",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652761,
+   "lat": -11.9626222,
+   "lon": -77.0495326,
+   "tags": {
+    "name": "O",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652762,
+   "lat": -11.9625798,
+   "lon": -77.0498725,
+   "tags": {
+    "name": "p",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652763,
+   "lat": -11.9623773,
+   "lon": -77.0498076,
+   "tags": {
+    "name": "N",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652764,
+   "lat": -11.9622051,
+   "lon": -77.0497705,
+   "tags": {
+    "name": "K",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652765,
+   "lat": -11.9622353,
+   "lon": -77.0501382,
+   "tags": {
+    "name": "L",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652766,
+   "lat": -11.9625254,
+   "lon": -77.0502463,
+   "tags": {
+    "name": "R",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652767,
+   "lat": -11.962063,
+   "lon": -77.0488869,
+   "tags": {
+    "name": "C",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089652768,
+   "lat": -11.9621386,
+   "lon": -77.0484482,
+   "tags": {
+    "name": "B",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675469,
+   "lat": -11.96193,
+   "lon": -77.0487046,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675470,
+   "lat": -11.9620385,
+   "lon": -77.0505704,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675471,
+   "lat": -11.9617446,
+   "lon": -77.050447,
+   "tags": {
+    "name": "B",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675472,
+   "lat": -11.9615924,
+   "lon": -77.0502324,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675473,
+   "lat": -11.9618784,
+   "lon": -77.0502378,
+   "tags": {
+    "name": "C",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675474,
+   "lat": -11.9621434,
+   "lon": -77.050388,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675475,
+   "lat": -11.9619571,
+   "lon": -77.0506884,
+   "tags": {
+    "name": "I",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675476,
+   "lat": -11.9620516,
+   "lon": -77.0512624,
+   "tags": {
+    "name": "H",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675477,
+   "lat": -11.9613728,
+   "lon": -77.0508364,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675478,
+   "lat": -11.9615103,
+   "lon": -77.0512907,
+   "tags": {
+    "name": "B",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675479,
+   "lat": -11.961775,
+   "lon": -77.0512374,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675480,
+   "lat": -11.9617108,
+   "lon": -77.0509709,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675481,
+   "lat": -11.9616226,
+   "lon": -77.0507959,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675482,
+   "lat": -11.9615864,
+   "lon": -77.0505951,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675483,
+   "lat": -11.9617526,
+   "lon": -77.0517954,
+   "tags": {
+    "name": "C",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675484,
+   "lat": -11.962079,
+   "lon": -77.0519359,
+   "tags": {
+    "name": "P",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675485,
+   "lat": -11.9622574,
+   "lon": -77.051902,
+   "tags": {
+    "name": "Q",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675486,
+   "lat": -11.9617746,
+   "lon": -77.0522521,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675487,
+   "lat": -11.9625716,
+   "lon": -77.0527367,
+   "tags": {
+    "name": "Nueva Florida",
+    "official_name": "Asentamiento Humano Nueva Florida",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675488,
+   "lat": -11.9620284,
+   "lon": -77.0511481,
+   "tags": {
+    "name": "Vista Alegre",
+    "official_name": "Asentamiento Humano Vista Alegre",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675489,
+   "lat": -11.962628,
+   "lon": -77.0494882,
+   "tags": {
+    "name": "La Libertad Parte Alta",
+    "official_name": "Asentamiento Humano La Libertad Parte Alta",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675495,
+   "lat": -11.9634237,
+   "lon": -77.0447367,
+   "tags": {
+    "name": "Virgen de Guadalupe",
+    "official_name": "Asentamiento Humano Virgen de Guadalupe",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675496,
+   "lat": -11.9633268,
+   "lon": -77.0433165,
+   "tags": {
+    "name": "San Martín de Porres",
+    "official_name": "Asentamiento Humano San Martín de Porres",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675497,
+   "lat": -11.9621678,
+   "lon": -77.0406029,
+   "tags": {
+    "name": "Inca Huasi",
+    "official_name": "Asentamiento Humano Inca Huasi",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675498,
+   "lat": -11.9628827,
+   "lon": -77.0375503,
+   "tags": {
+    "name": "Nuevo Carmen Alto",
+    "official_name": "Asentamiento Humano nuevo Carmen",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675499,
+   "lat": -11.9614885,
+   "lon": -77.0380244,
+   "tags": {
+    "name": "Virgen del Carmen",
+    "official_name": "Asentamiento Humano Virgen del Carmen",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675500,
+   "lat": -11.9611187,
+   "lon": -77.0372381,
+   "tags": {
+    "name": "Vista Alegre del Carmen",
+    "official_name": "Asentamiento Humano Vista Alegre del Carmen",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675501,
+   "lat": -11.9602785,
+   "lon": -77.0369978,
+   "tags": {
+    "name": "Santiago Apostol",
+    "official_name": "Asentamiento Humano Santiago Apostol",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675502,
+   "lat": -11.9594181,
+   "lon": -77.036334,
+   "tags": {
+    "name": "San Gabriel",
+    "official_name": "Asentamiento Humano San Gabriel",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675507,
+   "lat": -11.9590979,
+   "lon": -77.0341168,
+   "tags": {
+    "name": "Manco Inca Huaral",
+    "official_name": "Asentamiento Humano Manco Inca Huaral",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675508,
+   "lat": -11.9602676,
+   "lon": -77.0330491,
+   "tags": {
+    "name": "Los Angeles",
+    "official_name": "Asentamiento Humano",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675509,
+   "lat": -11.9565328,
+   "lon": -77.031577,
+   "tags": {
+    "name": "La Juventud",
+    "official_name": "Asentamiento Humano La Juventud",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675510,
+   "lat": -11.9556554,
+   "lon": -77.0353586,
+   "tags": {
+    "name": "El Madrigal",
+    "official_name": "Asentamiento Humano El Madrigal",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675511,
+   "lat": -11.9555761,
+   "lon": -77.0339979,
+   "tags": {
+    "name": "El Madrigal 2",
+    "official_name": "Asentamiento Humano El Madrigal 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675512,
+   "lat": -11.9544192,
+   "lon": -77.0348321,
+   "tags": {
+    "name": "Miguel Saldaña",
+    "official_name": "Asentamiento Humano Miguel Saldaña",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675513,
+   "lat": -11.9549818,
+   "lon": -77.0362496,
+   "tags": {
+    "name": "Cerro San Francisco",
+    "official_name": "Asentamiento Humano Cerro San Francisco",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675514,
+   "lat": -11.9537918,
+   "lon": -77.0371603,
+   "tags": {
+    "name": "Monte Calvario",
+    "official_name": "Asentamiento Humano monte Calvario",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675515,
+   "lat": -11.9541747,
+   "lon": -77.0390323,
+   "tags": {
+    "name": "Las Casuarinas",
+    "official_name": "Asentamiento Humano Las Casuarinas",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675516,
+   "lat": -11.9532284,
+   "lon": -77.0397094,
+   "tags": {
+    "name": "Soledad Alta",
+    "official_name": "Asentamiento Humano Soledad Alta",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675517,
+   "lat": -11.9524819,
+   "lon": -77.0409238,
+   "tags": {
+    "name": "Bellavista",
+    "official_name": "Asentamiento Humano Bellavista",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675518,
+   "lat": -11.9527507,
+   "lon": -77.0418073,
+   "tags": {
+    "name": "Nueva Esperanza",
+    "official_name": "Asentamiento Humano Nueva Esperanza",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675519,
+   "lat": -11.9524446,
+   "lon": -77.0423226,
+   "tags": {
+    "name": "9 de Octubre",
+    "official_name": "Asentamiento Humano 9 de Octubre",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675520,
+   "lat": -11.9517739,
+   "lon": -77.0413058,
+   "tags": {
+    "name": "22 de Enero",
+    "official_name": "Asentamiento Humano",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675521,
+   "lat": -11.9508872,
+   "lon": -77.0413656,
+   "tags": {
+    "name": "Cerro Azul",
+    "official_name": "Asentamiento Humano Cerro Azul",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675522,
+   "lat": -11.9527957,
+   "lon": -77.0450921,
+   "tags": {
+    "name": "Cerro Sinai",
+    "official_name": "Asentamiento Humano Cerro Sinai",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675523,
+   "lat": -11.9521852,
+   "lon": -77.0459403,
+   "tags": {
+    "name": "Cerro Peruano La Libertad",
+    "official_name": "Asentamiento Humano Cerro Peruano La Libertad",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675524,
+   "lat": -11.9509601,
+   "lon": -77.0465332,
+   "tags": {
+    "name": "Nuevo Amanecer",
+    "official_name": "Asentamiento Humano Nuevo Amanecer",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675525,
+   "lat": -11.9496594,
+   "lon": -77.0455998,
+   "tags": {
+    "name": "Alto Santa Rosa",
+    "official_name": "Asentamiento Humano Alto Santa Rosa",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675526,
+   "lat": -11.9456511,
+   "lon": -77.0470306,
+   "tags": {
+    "name": "Uchumayo",
+    "official_name": "Asentamiento Humano Uchumayo",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675527,
+   "lat": -11.9444693,
+   "lon": -77.0436922,
+   "tags": {
+    "name": "Villa Melchorita",
+    "official_name": "Asentamiento Humano Villa Melchorita",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675528,
+   "lat": -11.9430008,
+   "lon": -77.0431319,
+   "tags": {
+    "name": "Virgen de las Nieves",
+    "official_name": "Asentamiento Humano Virgen de las Nieves",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675529,
+   "lat": -11.9445193,
+   "lon": -77.0428065,
+   "tags": {
+    "name": "Pasamayo Señor de los Milagros",
+    "official_name": "Asentamiento Humano Pasamayo Señor de los Milagros",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675530,
+   "lat": -11.9458007,
+   "lon": -77.039551,
+   "tags": {
+    "name": "Los Ángeles",
+    "official_name": "Asentamiento Humano Los Ángeles",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675531,
+   "lat": -11.9454217,
+   "lon": -77.0286085,
+   "tags": {
+    "name": "Carmen Alto Señor de los Milagros 2",
+    "official_name": "Asentamiento Humano Carmen Alto Señor de los Milagros 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675532,
+   "lat": -11.940243,
+   "lon": -77.035305,
+   "tags": {
+    "name": "Proyecto Integral 200",
+    "official_name": "Asentamiento Humano",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675533,
+   "lat": -11.936552,
+   "lon": -77.0353665,
+   "tags": {
+    "name": "Vista Alegre",
+    "official_name": "Asentamiento Humano Vista Alegre",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675534,
+   "lat": -11.9353851,
+   "lon": -77.0389689,
+   "tags": {
+    "name": "Almirante Miguel Grau",
+    "official_name": "Asentamiento Humano Proyecto Integral Miguel Grau",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675535,
+   "lat": -11.9343463,
+   "lon": -77.0393557,
+   "tags": {
+    "name": "Nuevo San José",
+    "official_name": "Asentamiento Humano Nuevo San José",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675536,
+   "lat": -11.933086,
+   "lon": -77.0405475,
+   "tags": {
+    "name": "Dios es Amor",
+    "official_name": "Asentamiento Humano Dios es Amor",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675537,
+   "lat": -11.9331743,
+   "lon": -77.042165,
+   "tags": {
+    "name": "Dios Amor",
+    "official_name": "Asentamiento Humano Dios Amor",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675538,
+   "lat": -11.9326236,
+   "lon": -77.0428013,
+   "tags": {
+    "name": "Marginal Carmen Bajo",
+    "official_name": "Asentamiento Humano Carmen Bajo",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675539,
+   "lat": -11.9267898,
+   "lon": -77.0368731,
+   "tags": {
+    "name": "Año Nuevo Zona A",
+    "official_name": "Asentamiento Humano Año Nuevo Zona A",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675540,
+   "lat": -11.9279051,
+   "lon": -77.0411726,
+   "tags": {
+    "name": "Año Nuevo Zona B",
+    "official_name": "Asentamiento Humano",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675541,
+   "lat": -11.9243474,
+   "lon": -77.0419957,
+   "tags": {
+    "name": "Villa Oropeza",
+    "official_name": "Urbanización Villa Oropeza",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675542,
+   "lat": -11.9232141,
+   "lon": -77.041081,
+   "tags": {
+    "name": "Villa Collique",
+    "official_name": "Urbanización Villa Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675543,
+   "lat": -11.9208103,
+   "lon": -77.0384978,
+   "tags": {
+    "name": "Año Nuevo Zona C",
+    "official_name": "Asentamiento Humano Año Nuevo Zona C",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675544,
+   "lat": -11.9152621,
+   "lon": -77.0349165,
+   "tags": {
+    "name": "Collique Zona 1",
+    "official_name": "Asentamiento Humano Collique 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675545,
+   "lat": -11.915714,
+   "lon": -77.0308166,
+   "tags": {
+    "name": "Collique Zona 2",
+    "official_name": "Asentamiento Humano Collique Zona 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675546,
+   "lat": -11.9199522,
+   "lon": -77.0263347,
+   "tags": {
+    "name": "Milagro de Jesús",
+    "official_name": "Asentamiento Humano Milagro de Jesús",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675547,
+   "lat": -11.9234549,
+   "lon": -77.0222533,
+   "tags": {
+    "name": "Nueva Esperanza",
+    "official_name": "Pueblo Joven Nueva Esperanza",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675548,
+   "lat": -11.9264064,
+   "lon": -77.0221907,
+   "tags": {
+    "name": "12 de Agosto",
+    "official_name": "Asentamiento Humano 12 de Agosto",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675549,
+   "lat": -11.9253398,
+   "lon": -77.0233879,
+   "tags": {
+    "name": "Santa Rosa",
+    "official_name": "Asentamiento Humano Santa Rosa",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675550,
+   "lat": -11.9234535,
+   "lon": -77.0244176,
+   "tags": {
+    "name": "Vista Alegre de Collique",
+    "official_name": "Asentamiento Humano Vista Alegre de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675551,
+   "lat": -11.9242676,
+   "lon": -77.0238611,
+   "tags": {
+    "name": "Buenos Aires",
+    "official_name": "Asentamiento Humano Buenos Aires",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675552,
+   "lat": -11.9257909,
+   "lon": -77.0191175,
+   "tags": {
+    "name": "Nuevo Amanecer",
+    "official_name": "Asentamiento Humano Nuevo Amanecer",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675553,
+   "lat": -11.924832,
+   "lon": -77.0176874,
+   "tags": {
+    "name": "1 de Julio",
+    "official_name": "Asentamiento Humano 1 de Julio",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675554,
+   "lat": -11.9221661,
+   "lon": -77.0199715,
+   "tags": {
+    "name": "Las Lomas",
+    "official_name": "Asentamiento Humano Las Lomas",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675555,
+   "lat": -11.9217211,
+   "lon": -77.0209366,
+   "tags": {
+    "name": "las Brisas",
+    "official_name": "Asentamiento Humano Las Brisas",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675556,
+   "lat": -11.9142413,
+   "lon": -77.025484,
+   "tags": {
+    "name": "Collique Zona 3",
+    "official_name": "Asentamiento Humano Colique Zona 3",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675557,
+   "lat": -11.9119415,
+   "lon": -77.0179046,
+   "tags": {
+    "name": "Collique Zona 4",
+    "official_name": "Asentamiento Humano Collique Zona 4",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675558,
+   "lat": -11.9122926,
+   "lon": -77.0087838,
+   "tags": {
+    "name": "Collique Zona 5",
+    "official_name": "Asentamiento Humano Collique Zona 5",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675559,
+   "lat": -11.9166458,
+   "lon": -77.0174557,
+   "tags": {
+    "name": "Nuevo Porvenir",
+    "official_name": "Asentamiento Humano Nuevo Porvenir",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675560,
+   "lat": -11.9168127,
+   "lon": -77.0074204,
+   "tags": {
+    "name": "Las Primaveras",
+    "official_name": "Asentamiento Humano Las Primaveras",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675561,
+   "lat": -11.9131457,
+   "lon": -77.0055327,
+   "tags": {
+    "name": "Villa de Collique",
+    "official_name": "Asentamiento Humano Villa de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675562,
+   "lat": -11.9135658,
+   "lon": -77.0051115,
+   "tags": {
+    "name": "El Mirador de Collique",
+    "official_name": "Asentamiento Humano El Mirador de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675563,
+   "lat": -11.9120264,
+   "lon": -77.002791,
+   "tags": {
+    "name": "Lomas de Santa Rosa",
+    "official_name": "Asentamiento Humano Lomas de Santa Rosa",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675564,
+   "lat": -11.9127318,
+   "lon": -77.0024031,
+   "tags": {
+    "name": "Virgen de las Mercedes",
+    "official_name": "Asentamiento Humano Virgen de las Mercedes",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675565,
+   "lat": -11.9118069,
+   "lon": -77.0006291,
+   "tags": {
+    "name": "Villa Hermosa",
+    "official_name": "Asentamiento Humano Villa Hermosa",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675566,
+   "lat": -11.9122797,
+   "lon": -76.9971723,
+   "tags": {
+    "name": "Señor Cautivo de Ayabaca",
+    "official_name": "Asentamiento Humano Señor Cautivo de Ayabaca",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675567,
+   "lat": -11.914177,
+   "lon": -77.0013076,
+   "tags": {
+    "name": "César Vallejo",
+    "official_name": "Asentamiento Humano César Vallejo",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675568,
+   "lat": -11.9131755,
+   "lon": -77.0010568,
+   "tags": {
+    "name": "Luis Castañeda Lossio",
+    "official_name": "Asentamiento Humano luis Castañeda Lossio",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675569,
+   "lat": -11.9073005,
+   "lon": -77.0057266,
+   "tags": {
+    "name": "Las Gardenias",
+    "official_name": "Asentamiento Humano Las Gardenias",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675570,
+   "lat": -11.9094297,
+   "lon": -77.0080988,
+   "tags": {
+    "name": "Villa Florida",
+    "official_name": "Asentamiento Humano Villa Florida",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675571,
+   "lat": -11.9086431,
+   "lon": -77.0090109,
+   "tags": {
+    "name": "Las Rocas de Collique",
+    "official_name": "Asentamiento Humano Las Rocas de Collique",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675576,
+   "lat": -11.9071993,
+   "lon": -77.0200561,
+   "tags": {
+    "name": "Nueva Unión",
+    "official_name": "Asentamiento Humano Nueva Unión",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675577,
+   "lat": -11.9113289,
+   "lon": -77.0304781,
+   "tags": {
+    "name": "Belén",
+    "official_name": "Asentamiento Humano Belén",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675580,
+   "lat": -11.9092329,
+   "lon": -77.0317377,
+   "tags": {
+    "name": "La Primavera",
+    "official_name": "Asentamiento Humano la Primavera",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675581,
+   "lat": -11.9097106,
+   "lon": -77.0338609,
+   "tags": {
+    "name": "Federico Villareal",
+    "official_name": "Asentamiento Humano Federico Villareal",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675582,
+   "lat": -11.9068393,
+   "lon": -77.0353235,
+   "tags": {
+    "name": "San Felipe 1",
+    "official_name": "Urbanización San Felipe 1",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675583,
+   "lat": -11.9025345,
+   "lon": -77.0395339,
+   "tags": {
+    "name": "San Felipe 2",
+    "official_name": "Urbanización San Felipe 2",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675584,
+   "lat": -11.8975808,
+   "lon": -77.0408878,
+   "tags": {
+    "name": "San Felipe 3",
+    "official_name": "Urbanización San Felipe 3",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675585,
+   "lat": -11.8962605,
+   "lon": -77.0433227,
+   "tags": {
+    "name": "Los Geranios",
+    "official_name": "Pueblo Joven Los Geranios",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675586,
+   "lat": -11.8977927,
+   "lon": -77.0432141,
+   "tags": {
+    "name": "2 de Agosto",
+    "official_name": "Asentamiento Humano 2 de Agosto",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12089675587,
+   "lat": -11.8986148,
+   "lon": -77.0413983,
+   "tags": {
+    "name": "Los Rosales de San Felipe",
+    "official_name": "Asentamiento Humano los Rosales de San Felipe",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688235,
+   "lat": -11.9098669,
+   "lon": -77.0313651,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688236,
+   "lat": -11.9096793,
+   "lon": -77.0315539,
+   "tags": {
+    "name": "I",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688237,
+   "lat": -11.9100463,
+   "lon": -77.0312645,
+   "tags": {
+    "name": "H",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688238,
+   "lat": -11.9097764,
+   "lon": -77.031184,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688239,
+   "lat": -11.9096301,
+   "lon": -77.0310251,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688242,
+   "lat": -11.9092754,
+   "lon": -77.031672,
+   "tags": {
+    "name": "G",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688243,
+   "lat": -11.9092124,
+   "lon": -77.0314289,
+   "tags": {
+    "name": "F",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688244,
+   "lat": -11.9093787,
+   "lon": -77.0311019,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442688245,
+   "lat": -11.9094798,
+   "lon": -77.0313184,
+   "tags": {
+    "name": "D",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442717313,
+   "lat": -11.9082303,
+   "lon": -77.0318263,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442717314,
+   "lat": -11.9085489,
+   "lon": -77.0314967,
+   "tags": {
+    "name": "B",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442717315,
+   "lat": -11.9091049,
+   "lon": -77.0311842,
+   "tags": {
+    "name": "E",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 12442717317,
+   "lat": -11.9084619,
+   "lon": -77.0317427,
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13027251114,
+   "lat": -11.9504769,
+   "lon": -77.0677439,
+   "tags": {
+    "name": "Urbanización Santa Luisa",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13027251115,
+   "lat": -11.9434934,
+   "lon": -77.0678838,
+   "tags": {
+    "name": "Urbanización Infantas",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 13027251116,
+   "lat": -11.9265852,
+   "lon": -77.0718654,
+   "tags": {
+    "name": "Urbanización Pro Industrial",
+    "place": "neighbourhood"
+   }
+  },
+  {
+   "type": "node",
+   "id": 14084732529,
+   "lat": -11.9501668,
+   "lon": -77.0692053,
+   "tags": {
+    "name": "Infantas",
+    "place": "quarter"
+   }
+  },
+  {
+   "type": "way",
+   "id": 628465305,
+   "center": {
+    "lat": -11.9257524,
+    "lon": -77.0591137
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Condominio Sol del Retablo Bloque F"
+   }
+  },
+  {
+   "type": "way",
+   "id": 628465331,
+   "center": {
+    "lat": -11.9275585,
+    "lon": -77.0601525
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Condomino Sol Del Retablo Bloque G"
+   }
+  },
+  {
+   "type": "way",
+   "id": 629724001,
+   "center": {
+    "lat": -11.9266903,
+    "lon": -77.0573439
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Los Girasoles"
+   }
+  },
+  {
+   "type": "way",
+   "id": 649815777,
+   "center": {
+    "lat": -11.9051045,
+    "lon": -77.045253
+   },
+   "tags": {
+    "name": "A",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 649815778,
+   "center": {
+    "lat": -11.9058125,
+    "lon": -77.0458404
+   },
+   "tags": {
+    "name": "C",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 649815779,
+   "center": {
+    "lat": -11.9054366,
+    "lon": -77.0460006
+   },
+   "tags": {
+    "name": "B",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 803446822,
+   "center": {
+    "lat": -11.9738313,
+    "lon": -77.0588632
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146805,
+   "center": {
+    "lat": -11.921726,
+    "lon": -77.0555222
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146806,
+   "center": {
+    "lat": -11.9226198,
+    "lon": -77.0552479
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146807,
+   "center": {
+    "lat": -11.9230479,
+    "lon": -77.0556709
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146808,
+   "center": {
+    "lat": -11.9235993,
+    "lon": -77.0561688
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146809,
+   "center": {
+    "lat": -11.9240711,
+    "lon": -77.0563977
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146811,
+   "center": {
+    "lat": -11.9244411,
+    "lon": -77.0566996
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146812,
+   "center": {
+    "lat": -11.9249178,
+    "lon": -77.0567695
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146814,
+   "center": {
+    "lat": -11.9252553,
+    "lon": -77.0570408
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146815,
+   "center": {
+    "lat": -11.9255348,
+    "lon": -77.0558757
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146816,
+   "center": {
+    "lat": -11.9235712,
+    "lon": -77.0553694
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146817,
+   "center": {
+    "lat": -11.9238579,
+    "lon": -77.0547657
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146818,
+   "center": {
+    "lat": -11.9256474,
+    "lon": -77.055034
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146819,
+   "center": {
+    "lat": -11.9266129,
+    "lon": -77.0555227
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146820,
+   "center": {
+    "lat": -11.9270895,
+    "lon": -77.0560004
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146821,
+   "center": {
+    "lat": -11.9275098,
+    "lon": -77.0557143
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146822,
+   "center": {
+    "lat": -11.9281424,
+    "lon": -77.0563536
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146824,
+   "center": {
+    "lat": -11.9218631,
+    "lon": -77.059804
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146825,
+   "center": {
+    "lat": -11.9217441,
+    "lon": -77.0590354
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146826,
+   "center": {
+    "lat": -11.9211833,
+    "lon": -77.0590553
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146827,
+   "center": {
+    "lat": -11.9207929,
+    "lon": -77.0585454
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146828,
+   "center": {
+    "lat": -11.9197514,
+    "lon": -77.0579526
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146829,
+   "center": {
+    "lat": -11.920008,
+    "lon": -77.0587307
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146830,
+   "center": {
+    "lat": -11.919047,
+    "lon": -77.057879
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146831,
+   "center": {
+    "lat": -11.918581,
+    "lon": -77.0576081
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146832,
+   "center": {
+    "lat": -11.9177808,
+    "lon": -77.0568551
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146833,
+   "center": {
+    "lat": -11.9175306,
+    "lon": -77.0573419
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146834,
+   "center": {
+    "lat": -11.9167675,
+    "lon": -77.0565701
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146835,
+   "center": {
+    "lat": -11.916227,
+    "lon": -77.0579812
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146836,
+   "center": {
+    "lat": -11.9171249,
+    "lon": -77.0590957
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146837,
+   "center": {
+    "lat": -11.9171267,
+    "lon": -77.0581323
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146838,
+   "center": {
+    "lat": -11.9176223,
+    "lon": -77.0588154
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146839,
+   "center": {
+    "lat": -11.9187108,
+    "lon": -77.0594441
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146840,
+   "center": {
+    "lat": -11.918967,
+    "lon": -77.0589451
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146841,
+   "center": {
+    "lat": -11.9197999,
+    "lon": -77.0595061
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146842,
+   "center": {
+    "lat": -11.9201472,
+    "lon": -77.059888
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146843,
+   "center": {
+    "lat": -11.9205728,
+    "lon": -77.0601596
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146844,
+   "center": {
+    "lat": -11.9210154,
+    "lon": -77.0603989
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146845,
+   "center": {
+    "lat": -11.9207062,
+    "lon": -77.0611736
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146846,
+   "center": {
+    "lat": -11.9211177,
+    "lon": -77.0613597
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146847,
+   "center": {
+    "lat": -11.9197814,
+    "lon": -77.0605823
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146848,
+   "center": {
+    "lat": -11.9215215,
+    "lon": -77.0605319
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146849,
+   "center": {
+    "lat": -11.9217761,
+    "lon": -77.0610188
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146850,
+   "center": {
+    "lat": -11.9222546,
+    "lon": -77.0611689
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146851,
+   "center": {
+    "lat": -11.9225649,
+    "lon": -77.0616232
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146852,
+   "center": {
+    "lat": -11.9237968,
+    "lon": -77.0616117
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146853,
+   "center": {
+    "lat": -11.9239804,
+    "lon": -77.0624049
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146854,
+   "center": {
+    "lat": -11.9244177,
+    "lon": -77.0626451
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146855,
+   "center": {
+    "lat": -11.9249713,
+    "lon": -77.0626947
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146856,
+   "center": {
+    "lat": -11.9255377,
+    "lon": -77.0630117
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146857,
+   "center": {
+    "lat": -11.9264724,
+    "lon": -77.0631231
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146858,
+   "center": {
+    "lat": -11.9263057,
+    "lon": -77.0637119
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146860,
+   "center": {
+    "lat": -11.9256559,
+    "lon": -77.064037
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146861,
+   "center": {
+    "lat": -11.9275902,
+    "lon": -77.0637539
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146862,
+   "center": {
+    "lat": -11.9272716,
+    "lon": -77.0642529
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146863,
+   "center": {
+    "lat": -11.9272365,
+    "lon": -77.0648873
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146864,
+   "center": {
+    "lat": -11.9212532,
+    "lon": -77.054758
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146865,
+   "center": {
+    "lat": -11.920905,
+    "lon": -77.0543483
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146866,
+   "center": {
+    "lat": -11.9200564,
+    "lon": -77.0546841
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146867,
+   "center": {
+    "lat": -11.9198394,
+    "lon": -77.0540463
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146868,
+   "center": {
+    "lat": -11.9200353,
+    "lon": -77.0536719
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146869,
+   "center": {
+    "lat": -11.9204016,
+    "lon": -77.0541141
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146870,
+   "center": {
+    "lat": -11.9194029,
+    "lon": -77.0536793
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146872,
+   "center": {
+    "lat": -11.9189157,
+    "lon": -77.0535805
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146873,
+   "center": {
+    "lat": -11.9185056,
+    "lon": -77.0533541
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146874,
+   "center": {
+    "lat": -11.917529,
+    "lon": -77.0532695
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146875,
+   "center": {
+    "lat": -11.9170481,
+    "lon": -77.0520617
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146876,
+   "center": {
+    "lat": -11.9167949,
+    "lon": -77.0525115
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146877,
+   "center": {
+    "lat": -11.9165296,
+    "lon": -77.0530015
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146878,
+   "center": {
+    "lat": -11.9162598,
+    "lon": -77.0534897
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146879,
+   "center": {
+    "lat": -11.9154713,
+    "lon": -77.0537903
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146880,
+   "center": {
+    "lat": -11.9161653,
+    "lon": -77.0556994
+   },
+   "tags": {
+    "name": "Q1",
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146883,
+   "center": {
+    "lat": -11.9146913,
+    "lon": -77.0557657
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146884,
+   "center": {
+    "lat": -11.9153771,
+    "lon": -77.0549893
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146885,
+   "center": {
+    "lat": -11.9149536,
+    "lon": -77.0547459
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146886,
+   "center": {
+    "lat": -11.9145331,
+    "lon": -77.0545147
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146887,
+   "center": {
+    "lat": -11.9157637,
+    "lon": -77.0522603
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146888,
+   "center": {
+    "lat": -11.9140546,
+    "lon": -77.0561978
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146889,
+   "center": {
+    "lat": -11.9137743,
+    "lon": -77.0566323
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146890,
+   "center": {
+    "lat": -11.9137773,
+    "lon": -77.0572084
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146891,
+   "center": {
+    "lat": -11.9150986,
+    "lon": -77.0572291
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146895,
+   "center": {
+    "lat": -11.924458,
+    "lon": -77.0633568
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 804146896,
+   "center": {
+    "lat": -11.9236116,
+    "lon": -77.0628828
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 876090127,
+   "center": {
+    "lat": -11.944681,
+    "lon": -77.0279881
+   },
+   "tags": {
+    "place": "city_block"
+   }
+  },
+  {
+   "type": "way",
+   "id": 925010250,
+   "center": {
+    "lat": -11.9332278,
+    "lon": -77.0609974
+   },
+   "tags": {
+    "addr:city": "Lima",
+    "addr:housenumber": "1303",
+    "addr:neighbourhood": "Urbanización Retablo",
+    "addr:state": "Lima",
+    "addr:street": "Avenida Victor Andres Belaunde Oeste",
+    "landuse": "residential",
+    "name": "Magnolias Club Residencial",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1363031354,
+   "center": {
+    "lat": -11.9311682,
+    "lon": -77.0602851
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Villa Jacarandá",
+    "operator": "Viva Negocio Inmobiliario S.A.C.",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1363235017,
+   "center": {
+    "lat": -11.9320016,
+    "lon": -77.059608
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Villa Los Molles",
+    "operator": "Viva Negocio Inmobiliario S.A.C.",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1363235022,
+   "center": {
+    "lat": -11.9308968,
+    "lon": -77.0588197
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Acacias Villa Residencial",
+    "operator": "Viva Negocio Inmobiliario S.A.C.",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1363711117,
+   "center": {
+    "lat": -11.9334592,
+    "lon": -77.0645933
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Condominio Alameda Buganvillas",
+    "operator": "Lider Grupo Constructor",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1363711137,
+   "center": {
+    "lat": -11.9349483,
+    "lon": -77.0653851
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Condominio Alameda Cipreses",
+    "operator": "Lider Grupo Constructor",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1364141094,
+   "center": {
+    "lat": -11.9348868,
+    "lon": -77.0645914
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Mambo Unno",
+    "operator": "Lider Grupo Constructor",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1364141111,
+   "center": {
+    "lat": -11.9341778,
+    "lon": -77.0642098
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Mambo Doss",
+    "operator": "Lider Grupo Constructor",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1364141131,
+   "center": {
+    "lat": -11.9334834,
+    "lon": -77.0634709
+   },
+   "tags": {
+    "landuse": "residential",
+    "name": "Mambo Tress",
+    "operator": "Lider Grupo Constructor",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1394072805,
+   "center": {
+    "lat": -11.9316737,
+    "lon": -77.0640621
+   },
+   "tags": {
+    "addr:street": "Calle Los Geranios",
+    "landuse": "residential",
+    "name": "Conjunto Residencial Los Geranios",
+    "operator": "Viva Negocio Inmobiliario S.A.C.",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1394072819,
+   "center": {
+    "lat": -11.932764,
+    "lon": -77.0627802
+   },
+   "tags": {
+    "addr:street": "Avenida A",
+    "landuse": "residential",
+    "name": "Cerezos Club Residencial",
+    "operator": "Viva Negocio Inmobiliario S.A.C.",
+    "residential": "apartments"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1394436064,
+   "center": {
+    "lat": -11.929053,
+    "lon": -77.0716068
+   },
+   "tags": {
+    "addr:street": "Avenida Alfredo Mendiola",
+    "landuse": "residential",
+    "name": "Condomino Privado Feliciti",
+    "operator": "Arquimia Inmobiliaria",
+    "residential": "apartments",
+    "website": "https://arquimia.pe/proyecto/feliciti/"
+   }
+  }
+ ]
+}

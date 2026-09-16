@@ -1,0 +1,22 @@
+# Dependencias y artefactos de build
+node_modules/
+dist/
+.wrangler/
+__pycache__/
+*.pyc
+
+# Secretos: NUNCA se versionan
+.dev.vars
+.dev.vars.*
+.env
+.env.*
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# Salidas reproducibles del pipeline (se regeneran con tools/*.py)
+data/preview_zonas.png
+data/comas_zonas.pretty.geojson

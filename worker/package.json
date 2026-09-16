@@ -1,0 +1,26 @@
+{
+  "name": "ojo-comas-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API del prototipo Ojo Comas: reporte ciudadano del distrito de Comas (Lima, Peru).",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:dry": "wrangler deploy --dry-run --outdir dist",
+    "types": "wrangler types",
+    "typecheck": "tsc --noEmit",
+    "db:migrate:local": "wrangler d1 migrations apply ojo-comas-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply ojo-comas-db --remote",
+    "db:seed:local": "wrangler d1 execute ojo-comas-db --local --file=./seed.sql",
+    "db:seed:remote": "wrangler d1 execute ojo-comas-db --remote --file=./seed.sql",
+    "smoke": "node ./scripts/smoke.mjs"
+  },
+  "dependencies": {
+    "hono": "^4.6.14"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "wrangler": "^4.42.0"
+  }
+}

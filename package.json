@@ -1,0 +1,35 @@
+{
+  "name": "ojo-comas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Prototipo de demostracion de reporte ciudadano para el distrito de Comas (Lima, Peru). Datos ficticios.",
+  "license": "MIT",
+  "scripts": {
+    "cartografia": "python tools/build_zonas.py",
+    "cartografia:preview": "python tools/preview_map.py",
+    "cartografia:verificar": "python tools/verify_zonas.py",
+    "hitos:verificar": "python tools/check_hitos_oficiales.py",
+    "zona:verificar": "node tools/verificar_deteccion_zona.mjs",
+    "datos:ficticios": "python tools/build_seed.py",
+    "osm:descargar": "python tools/fetch_osm_extra.py && python tools/fetch_vecinos.py",
+    "construir": "npm run cartografia && npm run hitos:verificar && npm run datos:ficticios",
+    "worker:instalar": "npm --prefix worker install",
+    "worker:tipos": "npm --prefix worker run types",
+    "worker:tipos:verificar": "npm --prefix worker run typecheck",
+    "worker:dev": "npm --prefix worker run dev",
+    "worker:db:local": "npm --prefix worker run db:migrate:local && npm --prefix worker run db:seed:local",
+    "worker:prueba": "npm --prefix worker run smoke -- --base http://127.0.0.1:8787",
+    "frontend:servir": "npx wrangler pages dev frontend --port 8788",
+    "frontend:verificar": "node tools/verificar_frontend.mjs --base http://127.0.0.1:8787 --html http://127.0.0.1:8788",
+    "verificar": "npm run cartografia:verificar && npm run hitos:verificar && npm run zona:verificar && node --check frontend/app.js && node --check frontend/config.js && npm run worker:tipos:verificar",
+    "verificar:todo": "npm run verificar && npm run worker:prueba && npm run frontend:verificar"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@turf/boolean-point-in-polygon": "^7.4.0",
+    "jsdom": "^30.0.1",
+    "leaflet": "^1.9.4"
+  }
+}

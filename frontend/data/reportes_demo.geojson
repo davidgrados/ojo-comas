@@ -1,0 +1,655 @@
+{
+ "type": "FeatureCollection",
+ "name": "reportes_demo",
+ "metadata": {
+  "advertencia": "Datos FICTICIOS del prototipo Ojo Comas. No describen problemas reales.",
+  "generado_por": "tools/build_seed.py",
+  "total": 28
+ },
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.056866,
+     -11.96676
+    ]
+   },
+   "properties": {
+    "id": 1,
+    "categoria": "basura",
+    "descripcion": "Punto critico de residuos en Escuela Nacional de Folclor José María Arguedas. Necesita limpieza y un contenedor.",
+    "zona": "01",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Escuela Nacional de Folclor José María Arguedas",
+    "confirmaciones": 10,
+    "creado_en": "hace-27-dias",
+    "actualizado_en": "hace-25-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.052856,
+     -11.96813
+    ]
+   },
+   "properties": {
+    "id": 2,
+    "categoria": "alumbrado",
+    "descripcion": "Luminaria apagada en Vista Alegre. La calle queda muy oscura de noche.",
+    "zona": "01",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Vista Alegre",
+    "confirmaciones": 7,
+    "creado_en": "hace-12-dias",
+    "actualizado_en": "hace-10-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.044044,
+     -11.947354
+    ]
+   },
+   "properties": {
+    "id": 3,
+    "categoria": "alumbrado",
+    "descripcion": "Tres luminarias apagadas en Manco Inca Huaral. Zona muy transitada de noche.",
+    "zona": "02",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Manco Inca Huaral",
+    "confirmaciones": 0,
+    "creado_en": "hace-13-dias",
+    "actualizado_en": "hace-11-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.039517,
+     -11.947964
+    ]
+   },
+   "properties": {
+    "id": 4,
+    "categoria": "otro",
+    "descripcion": "Parque con juegos rotos en Municipalidad de Comas. Los ninos no pueden usarlo.",
+    "zona": "02",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Municipalidad de Comas",
+    "confirmaciones": 6,
+    "creado_en": "hace-17-dias",
+    "actualizado_en": "hace-15-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.011674,
+     -11.927486
+    ]
+   },
+   "properties": {
+    "id": 5,
+    "categoria": "otro",
+    "descripcion": "Alcantarilla sin tapa en 1 de Julio. Peligroso para los peatones.",
+    "zona": "03",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "1 de Julio",
+    "confirmaciones": 1,
+    "creado_en": "hace-45-dias",
+    "actualizado_en": "hace-43-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.01829,
+     -11.929518
+    ]
+   },
+   "properties": {
+    "id": 6,
+    "categoria": "bache",
+    "descripcion": "Bache profundo en 12 de Agosto, se llena de agua cuando llueve.",
+    "zona": "03",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "12 de Agosto",
+    "confirmaciones": 7,
+    "creado_en": "hace-38-dias",
+    "actualizado_en": "hace-36-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.045531,
+     -11.930627
+    ]
+   },
+   "properties": {
+    "id": 7,
+    "categoria": "bache",
+    "descripcion": "Pista deteriorada en Huaca Sinchi Roca. Hay riesgo para motos y bicicletas.",
+    "zona": "04",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Huaca Sinchi Roca",
+    "confirmaciones": 1,
+    "creado_en": "hace-43-dias",
+    "actualizado_en": "hace-41-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.042293,
+     -11.932275
+    ]
+   },
+   "properties": {
+    "id": 8,
+    "categoria": "basura",
+    "descripcion": "Acumulacion de basura en Comisaría PNP La Pascana. Los vecinos piden recojo urgente.",
+    "zona": "04",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Comisaría PNP La Pascana",
+    "confirmaciones": 6,
+    "creado_en": "hace-23-dias",
+    "actualizado_en": "hace-21-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.022377,
+     -11.913189
+    ]
+   },
+   "properties": {
+    "id": 9,
+    "categoria": "basura",
+    "descripcion": "Punto critico de residuos en Las Rocas de Jesús. Necesita limpieza y un contenedor.",
+    "zona": "05",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Las Rocas de Jesús",
+    "confirmaciones": 7,
+    "creado_en": "hace-13-dias",
+    "actualizado_en": "hace-11-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.020388,
+     -11.917044
+    ]
+   },
+   "properties": {
+    "id": 10,
+    "categoria": "alumbrado",
+    "descripcion": "Tres luminarias apagadas en Las Rocas de Jesús. Zona muy transitada de noche.",
+    "zona": "05",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Las Rocas de Jesús",
+    "confirmaciones": 2,
+    "creado_en": "hace-27-dias",
+    "actualizado_en": "hace-25-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.063004,
+     -11.950032
+    ]
+   },
+   "properties": {
+    "id": 11,
+    "categoria": "alumbrado",
+    "descripcion": "Luminaria apagada en Hospital Marino Molina Scippa. La calle queda muy oscura de noche.",
+    "zona": "06",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Hospital Marino Molina Scippa",
+    "confirmaciones": 7,
+    "creado_en": "hace-36-dias",
+    "actualizado_en": "hace-34-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.056766,
+     -11.950589
+    ]
+   },
+   "properties": {
+    "id": 12,
+    "categoria": "otro",
+    "descripcion": "Alcantarilla sin tapa en Las Vegas. Peligroso para los peatones.",
+    "zona": "06",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Las Vegas",
+    "confirmaciones": 10,
+    "creado_en": "hace-40-dias",
+    "actualizado_en": "hace-38-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.060515,
+     -11.929125
+    ]
+   },
+   "properties": {
+    "id": 13,
+    "categoria": "otro",
+    "descripcion": "Parque con juegos rotos en Mercado El Álamo. Los ninos no pueden usarlo.",
+    "zona": "07",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Mercado El Álamo",
+    "confirmaciones": 2,
+    "creado_en": "hace-37-dias",
+    "actualizado_en": "hace-35-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.065174,
+     -11.933757
+    ]
+   },
+   "properties": {
+    "id": 14,
+    "categoria": "bache",
+    "descripcion": "Pavimento agrietado en Magnolias Club Residencial. Ya lleva semanas asi.",
+    "zona": "07",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Magnolias Club Residencial",
+    "confirmaciones": 8,
+    "creado_en": "hace-31-dias",
+    "actualizado_en": "hace-29-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.04428,
+     -11.900767
+    ]
+   },
+   "properties": {
+    "id": 15,
+    "categoria": "bache",
+    "descripcion": "Hueco grande en la pista de Asociación de Vivienda Villa Santa Cruz. Los vehiculos tienen que esquivarlo.",
+    "zona": "08",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Asociación de Vivienda Villa Santa Cruz",
+    "confirmaciones": 0,
+    "creado_en": "hace-11-dias",
+    "actualizado_en": "hace-9-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.041758,
+     -11.897745
+    ]
+   },
+   "properties": {
+    "id": 16,
+    "categoria": "basura",
+    "descripcion": "Contenedor desbordado en Belén. Hay malos olores y moscas.",
+    "zona": "08",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Belén",
+    "confirmaciones": 7,
+    "creado_en": "hace-16-dias",
+    "actualizado_en": "hace-14-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.042067,
+     -11.915658
+    ]
+   },
+   "properties": {
+    "id": 17,
+    "categoria": "basura",
+    "descripcion": "Acumulacion de basura en Año Nuevo Zona C. Los vecinos piden recojo urgente.",
+    "zona": "09",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Año Nuevo Zona C",
+    "confirmaciones": 2,
+    "creado_en": "hace-7-dias",
+    "actualizado_en": "hace-5-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.03857,
+     -11.920371
+    ]
+   },
+   "properties": {
+    "id": 18,
+    "categoria": "alumbrado",
+    "descripcion": "Luminaria apagada en Bioanalizate. La calle queda muy oscura de noche.",
+    "zona": "09",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Bioanalizate",
+    "confirmaciones": 12,
+    "creado_en": "hace-22-dias",
+    "actualizado_en": "hace-20-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.033845,
+     -11.938697
+    ]
+   },
+   "properties": {
+    "id": 19,
+    "categoria": "alumbrado",
+    "descripcion": "Luz intermitente en Carmen Medio. Se prende y apaga toda la noche.",
+    "zona": "10",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Carmen Medio",
+    "confirmaciones": 1,
+    "creado_en": "hace-1-dias",
+    "actualizado_en": "hace-0-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.031475,
+     -11.938569
+    ]
+   },
+   "properties": {
+    "id": 20,
+    "categoria": "otro",
+    "descripcion": "Parque con juegos rotos en Institución Educativa Dalton El Carmen. Los ninos no pueden usarlo.",
+    "zona": "10",
+    "estado": "resuelto",
+    "foto_url": null,
+    "direccion": "Institución Educativa Dalton El Carmen",
+    "confirmaciones": 4,
+    "creado_en": "hace-40-dias",
+    "actualizado_en": "hace-38-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.026392,
+     -11.948777
+    ]
+   },
+   "properties": {
+    "id": 21,
+    "categoria": "otro",
+    "descripcion": "Pista sin pintar y sin senalizacion en Institución Educativa Maria De Jesus.",
+    "zona": "11",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Institución Educativa Maria De Jesus",
+    "confirmaciones": 3,
+    "creado_en": "hace-40-dias",
+    "actualizado_en": "hace-38-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.023066,
+     -11.950376
+    ]
+   },
+   "properties": {
+    "id": 22,
+    "categoria": "bache",
+    "descripcion": "Bache profundo en Parroquia Señor de los Milagros, se llena de agua cuando llueve.",
+    "zona": "11",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Parroquia Señor de los Milagros",
+    "confirmaciones": 11,
+    "creado_en": "hace-27-dias",
+    "actualizado_en": "hace-25-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.001748,
+     -11.908727
+    ]
+   },
+   "properties": {
+    "id": 23,
+    "categoria": "bache",
+    "descripcion": "Pavimento agrietado en Los Claveles. Ya lleva semanas asi.",
+    "zona": "12",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Los Claveles",
+    "confirmaciones": 4,
+    "creado_en": "hace-8-dias",
+    "actualizado_en": "hace-6-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.001444,
+     -11.904921
+    ]
+   },
+   "properties": {
+    "id": 24,
+    "categoria": "basura",
+    "descripcion": "Basura acumulada en la esquina de Cementerio de Collique desde hace varios dias.",
+    "zona": "12",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Cementerio de Collique",
+    "confirmaciones": 6,
+    "creado_en": "hace-31-dias",
+    "actualizado_en": "hace-29-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.02311,
+     -11.938211
+    ]
+   },
+   "properties": {
+    "id": 25,
+    "categoria": "basura",
+    "descripcion": "Acumulacion de basura en Mártires del 19 de julio. Los vecinos piden recojo urgente.",
+    "zona": "13",
+    "estado": "pendiente",
+    "foto_url": null,
+    "direccion": "Mártires del 19 de julio",
+    "confirmaciones": 1,
+    "creado_en": "hace-28-dias",
+    "actualizado_en": "hace-26-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.023755,
+     -11.937328
+    ]
+   },
+   "properties": {
+    "id": 26,
+    "categoria": "alumbrado",
+    "descripcion": "Poste sin luz en Carmen Alto Señor de los Milagros 2. Inseguridad para quienes vuelven tarde.",
+    "zona": "13",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Carmen Alto Señor de los Milagros 2",
+    "confirmaciones": 12,
+    "creado_en": "hace-27-dias",
+    "actualizado_en": "hace-25-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.056337,
+     -11.909811
+    ]
+   },
+   "properties": {
+    "id": 27,
+    "categoria": "alumbrado",
+    "descripcion": "Poste sin luz en Boticas Popular. Inseguridad para quienes vuelven tarde.",
+    "zona": "14",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Boticas Popular",
+    "confirmaciones": 11,
+    "creado_en": "hace-7-dias",
+    "actualizado_en": "hace-5-dias",
+    "ficticio": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -77.056749,
+     -11.906266
+    ]
+   },
+   "properties": {
+    "id": 28,
+    "categoria": "otro",
+    "descripcion": "Alcantarilla sin tapa en Condominio Sol del Retablo Bloque F. Peligroso para los peatones.",
+    "zona": "14",
+    "estado": "en_proceso",
+    "foto_url": null,
+    "direccion": "Condominio Sol del Retablo Bloque F",
+    "confirmaciones": 11,
+    "creado_en": "hace-24-dias",
+    "actualizado_en": "hace-22-dias",
+    "ficticio": true
+   }
+  }
+ ]
+}

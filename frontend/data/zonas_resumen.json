@@ -1,0 +1,196 @@
+{
+ "distrito": "Comas",
+ "provincia": "Lima",
+ "departamento": "Lima",
+ "pais": "Peru",
+ "centro_mapa": [
+  -11.92912,
+  -77.03883
+ ],
+ "zoom_inicial": 13,
+ "area_km2": 48.97,
+ "zonas": [
+  {
+   "zona": "01",
+   "nombre": "Zona 01",
+   "color": "#1D4E89",
+   "area_ha_oficial": 200.6,
+   "ubicacion_oficial": "margen Sur del distrito",
+   "referencia": "Av. Tupac Amaru; comercio zonal, pirotecnias y lubricentros",
+   "centro": [
+    -11.967548,
+    -77.055068
+   ],
+   "n_barrios_reales": 9
+  },
+  {
+   "zona": "02",
+   "nombre": "Zona 02",
+   "color": "#2A9D8F",
+   "area_ha_oficial": 343.83,
+   "ubicacion_oficial": "margen Sur del distrito",
+   "referencia": "Zona sur-oeste; limite real con Los Olivos e Independencia",
+   "centro": [
+    -11.950483,
+    -77.042645
+   ],
+   "n_barrios_reales": 14
+  },
+  {
+   "zona": "03",
+   "nombre": "Zona 03",
+   "color": "#6A4C93",
+   "area_ha_oficial": 320.69,
+   "ubicacion_oficial": "parte Central Este del distrito",
+   "referencia": "Zona central este, hacia el limite con San Juan de Lurigancho",
+   "centro": [
+    -11.930308,
+    -77.015165
+   ],
+   "n_barrios_reales": 4
+  },
+  {
+   "zona": "04",
+   "nombre": "Zona 04",
+   "color": "#E76F51",
+   "area_ha_oficial": 303.42,
+   "ubicacion_oficial": "parte central del distrito",
+   "referencia": "Parque Zonal Sinchi Roca; Av. Tupac Amaru",
+   "centro": [
+    -11.9334,
+    -77.042155
+   ],
+   "n_barrios_reales": 13
+  },
+  {
+   "zona": "05",
+   "nombre": "Zona 05",
+   "color": "#457B9D",
+   "area_ha_oficial": 203.38,
+   "ubicacion_oficial": "parte Norte del distrito",
+   "referencia": "Zona norte, entre Carabayllo y San Juan de Lurigancho",
+   "centro": [
+    -11.916237,
+    -77.021461
+   ],
+   "n_barrios_reales": 14
+  },
+  {
+   "zona": "06",
+   "nombre": "Zona 06",
+   "color": "#8AB17D",
+   "area_ha_oficial": 279.08,
+   "ubicacion_oficial": "parte Sur-Oeste del distrito",
+   "referencia": "Av. Universitaria y Av. 22 de Agosto; Hospital del Seguro Social, Compania de Bomberos y comisaria",
+   "centro": [
+    -11.948481,
+    -77.060178
+   ],
+   "n_barrios_reales": 10
+  },
+  {
+   "zona": "07",
+   "nombre": "Zona 07",
+   "color": "#B08968",
+   "area_ha_oficial": 294.71,
+   "ubicacion_oficial": "parte Norte-oeste del distrito",
+   "referencia": "Av. Universitaria y Av. Retablo; areas verdes y restos arqueologicos",
+   "centro": [
+    -11.93222,
+    -77.062072
+   ],
+   "n_barrios_reales": 14
+  },
+  {
+   "zona": "08",
+   "nombre": "Zona 08",
+   "color": "#5E60CE",
+   "area_ha_oficial": 242.91,
+   "ubicacion_oficial": "extremo Norte del distrito",
+   "referencia": "Av. Universitaria, Av. San Carlos, Av. San Felipe; afloramiento de aguas subterraneas",
+   "centro": [
+    -11.900547,
+    -77.043533
+   ],
+   "n_barrios_reales": 11
+  },
+  {
+   "zona": "09",
+   "nombre": "Zona 09",
+   "color": "#0096C7",
+   "area_ha_oficial": 203.6,
+   "ubicacion_oficial": "parte Norte-oeste del distrito",
+   "referencia": "Av. Universitaria; plantas recicladoras y puntos criticos de residuos solidos",
+   "centro": [
+    -11.917605,
+    -77.038675
+   ],
+   "n_barrios_reales": 3
+  },
+  {
+   "zona": "10",
+   "nombre": "Zona 10",
+   "color": "#9D4DDA",
+   "area_ha_oficial": 125.3,
+   "ubicacion_oficial": "parte central del distrito",
+   "referencia": "Av. Universitaria y Av. Micaela Bastidas; areas verdes y comercio ambulatorio",
+   "centro": [
+    -11.935746,
+    -77.032366
+   ],
+   "n_barrios_reales": 3
+  },
+  {
+   "zona": "11",
+   "nombre": "Zona 11",
+   "color": "#F4A261",
+   "area_ha_oficial": 134.56,
+   "ubicacion_oficial": "parte Central Sur del distrito",
+   "referencia": "Av. Universitaria, Av. Carabayllo, Av. Honduras, Av. Mexico",
+   "centro": [
+    -11.951725,
+    -77.026267
+   ],
+   "n_barrios_reales": 2
+  },
+  {
+   "zona": "12",
+   "nombre": "Zona 12",
+   "color": "#3A86FF",
+   "area_ha_oficial": 320.35,
+   "ubicacion_oficial": "parte Nor-este del distrito",
+   "referencia": "Av. Revolucion; Collique (sectores VII y VIII); cementerio municipal; laderas de 30-40 grados",
+   "centro": [
+    -11.906179,
+    -77.000779
+   ],
+   "n_barrios_reales": 14
+  },
+  {
+   "zona": "13",
+   "nombre": "Zona 13",
+   "color": "#2D6A4F",
+   "area_ha_oficial": 140.7,
+   "ubicacion_oficial": "parte central-sur del distrito",
+   "referencia": "Av. Tupac Amaru, Av. Micaela Bastidas y Belaunde; densidad mas alta del distrito (294.7 hab/ha)",
+   "centro": [
+    -11.937384,
+    -77.024469
+   ],
+   "n_barrios_reales": 2
+  },
+  {
+   "zona": "14",
+   "nombre": "Zona 14",
+   "color": "#7F5539",
+   "area_ha_oficial": 553.29,
+   "ubicacion_oficial": "parte Nor-Oeste del distrito",
+   "referencia": "Zona agricola y ganadera junto al rio Chillon; suelo aluvial casi plano",
+   "centro": [
+    -11.908918,
+    -77.056776
+   ],
+   "n_barrios_reales": 1
+  }
+ ]
+}

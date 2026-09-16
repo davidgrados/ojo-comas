@@ -1,0 +1,141 @@
+name: CI
+
+# Integracion continua SIN credenciales de Cloudflare: todo corre contra el runtime local
+# (`wrangler dev` con D1 y R2 simulados en disco). El unico servicio externo que se toca es el
+# siteverify real de Cloudflare Turnstile, con las claves de PRUEBA oficiales.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  WRANGLER_SEND_METRICS: 'false'
+  CI: 'true'
+
+jobs:
+  verificar:
+    name: Cartografia, datos y Worker
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: worker/package-lock.json
+
+      - name: Instalar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instalar dependencias de cartografia
+        run: python -m pip install --upgrade pip shapely
+
+      - name: Generar la cartografia de las 14 zonas (a partir del dato crudo de OSM)
+        run: python tools/build_zonas.py
+
+      - name: Verificar la topologia de las zonas
+        run: python tools/verify_zonas.py
+
+      - name: Instalar dependencias de verificacion del frontend
+        run: npm ci --no-audit --no-fund
+
+      - name: Verificar que el navegador y el servidor calculan la MISMA zona
+        run: node tools/verificar_deteccion_zona.mjs
+
+      - name: Verificar que los hitos citados por la Municipalidad caen en su zonal
+        run: python tools/check_hitos_oficiales.py
+
+      - name: Generar los datos ficticios y las fotos simuladas
+        run: python tools/build_seed.py
+
+      - name: Comprobar que las salidas generadas coinciden con lo versionado
+        continue-on-error: true
+        run: |
+          echo "Si esto muestra diferencias, los archivos generados estan desactualizados."
+          echo "Ejecuta 'npm run construir' y vuelve a commitear."
+          git --no-pager diff --stat -- data frontend/data worker/src/zonas.json worker/seed.sql
+
+      - name: Instalar dependencias del Worker
+        run: npm ci --prefix worker
+
+      - name: Comprobar tipos del Worker
+        run: npm --prefix worker run typecheck
+
+      - name: Comprobar la sintaxis del frontend
+        run: node --check frontend/app.js
+
+      - name: Aplicar migraciones D1 (local)
+        run: npm --prefix worker run db:migrate:local
+
+      - name: Sembrar datos ficticios en D1 (local)
+        run: npm --prefix worker run db:seed:local
+
+      - name: Subir las fotos simuladas a R2 (local)
+        working-directory: worker
+        run: |
+          for f in ../frontend/fotos/*.svg; do
+            npx wrangler r2 object put "ojo-comas-fotos/demo/$(basename "$f")" \
+              --file="$f" --content-type="image/svg+xml" --local
+          done
+
+      - name: Arrancar el Worker en local
+        working-directory: worker
+        run: |
+          npx wrangler dev --port 8787 --ip 127.0.0.1 > /tmp/wrangler-dev.log 2>&1 &
+          echo "esperando a que el Worker responda..."
+          for i in $(seq 1 60); do
+            if curl -fsS http://127.0.0.1:8787/api/health > /dev/null; then
+              echo "Worker listo tras ${i} intentos"
+              curl -fsS http://127.0.0.1:8787/api/health
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "El Worker no arranco. Log:"
+          tail -n 80 /tmp/wrangler-dev.log
+          exit 1
+
+      - name: Prueba de humo end-to-end (API + D1 + R2 + Turnstile)
+        working-directory: worker
+        run: |
+          ADMIN=$(grep '^ADMIN_TOKEN=' .dev.vars | cut -d= -f2)
+          node scripts/smoke.mjs --base http://127.0.0.1:8787 --admin-token "$ADMIN"
+
+      - name: Prueba de que Turnstile bloquea de verdad
+        working-directory: worker
+        run: |
+          npx wrangler dev --port 8790 --ip 127.0.0.1 \
+            --var TURNSTILE_SECRET:2x0000000000000000000000000000000AA > /tmp/wrangler-bloqueo.log 2>&1 &
+          for i in $(seq 1 60); do
+            curl -fsS http://127.0.0.1:8790/api/health > /dev/null && break
+            sleep 2
+          done
+          node scripts/smoke.mjs --base http://127.0.0.1:8790 --modo bloqueo
+
+      - name: Arrancar el frontend con el runtime de Pages
+        run: |
+          npx wrangler pages dev frontend --port 8788 --ip 127.0.0.1 > /tmp/pages-dev.log 2>&1 &
+          for i in $(seq 1 60); do
+            curl -fsS http://127.0.0.1:8788/ > /dev/null && { echo "Pages listo"; exit 0; }
+            sleep 2
+          done
+          echo "Pages no arranco. Log:"; tail -n 80 /tmp/pages-dev.log; exit 1
+
+      - name: Verificar el frontend arrancando de verdad en un DOM (jsdom + Leaflet real)
+        run: node tools/verificar_frontend.mjs --base http://127.0.0.1:8787 --html http://127.0.0.1:8788
+
+      - name: Publicar los registros del Worker si algo falla
+        if: failure()
+        run: tail -n 200 /tmp/wrangler-dev.log /tmp/wrangler-bloqueo.log /tmp/pages-dev.log || true

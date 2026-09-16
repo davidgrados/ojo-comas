@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ojo Comas · Tu voz construye el distrito</title>
+<meta name="description" content="Prototipo ciudadano para reportar baches, basura y problemas de alumbrado en el distrito de Comas (Lima, Perú). Datos ficticios, demostración no oficial.">
+<meta name="theme-color" content="#C8102E">
+<meta name="color-scheme" content="light">
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Tipografía Inter (Google Fonts) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- CDN: Leaflet -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="preconnect" href="https://unpkg.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<!-- Tailwind Play CDN (apoyo opcional: TODO el layout crítico vive en styles.css) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- Hoja de estilos propia (obligatoria) -->
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<a class="saltar-contenido" href="#contenido">Saltar al contenido principal</a>
+
+<!-- 1) BANNER LEGAL FIJO Y NO INTRUSIVO -->
+<div class="banner-legal" id="bannerLegal" role="note">
+  <p class="banner-legal__texto">⚠️ PROTOTIPO DE DEMOSTRACIÓN - Datos 100% ficticios. No representa oficialmente a la Municipalidad Distrital de Comas. Cumple con la Ley N° 29733 de Protección de Datos Personales. <button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></p>
+</div>
+
+<!-- 2) HERO -->
+<header class="hero" id="inicio">
+  <div class="contenedor">
+    <p class="hero__sello">Prototipo vecinal · Comas, Lima</p>
+    <h1 class="hero__titulo">Ojo Comas: Tu voz construye el distrito</h1>
+    <p class="hero__subtitulo">Reporta problemas en tu calle con una foto. Sin registros. Sin filas.</p>
+    <div class="hero__acciones">
+      <button type="button" class="btn btn--primario btn--grande" id="btnHeroReportar">➕ Reportar un problema</button>
+      <a class="btn btn--fantasma btn--grande" href="#seccionMapa">🗺️ Ver el mapa de reportes</a>
+    </div>
+    <ul class="hero__datos" aria-label="Resumen rápido de la plataforma">
+      <li><strong>14</strong> zonas del distrito</li>
+      <li><strong>4</strong> categorías de reporte</li>
+      <li><strong>0</strong> datos personales obligatorios</li>
+    </ul>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- Aviso de modo degradado (API caída) -->
+  <div class="contenedor">
+    <p class="aviso oculto" id="avisoDemo" role="status" aria-live="polite"></p>
+    <p class="aviso aviso--info oculto" id="avisoEntorno" role="status" aria-live="polite"></p>
+  </div>
+
+  <!-- 3) FILTROS DE ZONA + DETALLE -->
+  <section class="seccion" id="seccionZonas" aria-labelledby="tituloZonas">
+    <div class="contenedor">
+      <h2 class="seccion__titulo" id="tituloZonas">Filtra por zona</h2>
+      <p class="seccion__ayuda">Toca una zona para resaltar solo sus reportes y ver sus barrios reales.</p>
+
+      <div class="chips-scroll" id="chipsZonas" role="group" aria-label="Filtrar reportes por zona del distrito">
+        <!-- Los chips se generan en app.js (Todas + Zona 01..Zona 14) -->
+        <button type="button" class="chip chip--todas es-activo" data-zona="" aria-pressed="true">Todas</button>
+      </div>
+
+      <div class="detalle-zona" id="detalleZona" aria-live="polite">
+        <p class="detalle-zona__vacio">
+          Aún no elegiste una zona. Selecciona <strong>Todas</strong> para ver el distrito completo o toca una
+          zona del listado para conocer su área oficial, sus barrios reales y sus hitos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) MAPA -->
+  <section class="seccion" id="seccionMapa" aria-labelledby="tituloMapa">
+    <div class="contenedor">
+      <h2 class="seccion__titulo" id="tituloMapa">Mapa de reportes</h2>
+      <p class="seccion__ayuda" id="ayudaMapa">
+        Toca el mapa en el lugar exacto del problema y aparecerá el botón <strong>➕ Reportar aquí</strong>.
+      </p>
+
+      <div class="mapa-envoltorio">
+        <div id="map" class="mapa" role="application" aria-label="Mapa interactivo de reportes del distrito de Comas"></div>
+        <div id="mapaSinLeaflet" class="mapa-mensaje oculto" role="alert">
+          No se pudo cargar la librería del mapa (Leaflet). Revisa tu conexión: el resto de la aplicación sigue funcionando.
+        </div>
+
+        <button type="button" class="btn-reportar-aqui oculto" id="btnReportarAqui" aria-describedby="coordsFlotante">
+          <span class="btn-reportar-aqui__mas" aria-hidden="true">➕</span>
+          <span class="btn-reportar-aqui__texto">Reportar aquí</span>
+          <span class="btn-reportar-aqui__coords" id="coordsFlotante"></span>
+        </button>
+        <button type="button" class="btn-quitar-punto oculto" id="btnQuitarPunto" aria-label="Quitar el marcador del mapa" title="Quitar el marcador">✕</button>
+      </div>
+
+      <div class="filtros-estado" id="filtrosEstado" role="group" aria-label="Mostrar u ocultar reportes por estado">
+        <span class="filtros-estado__titulo">Estado:</span>
+        <button type="button" class="pill-estado es-activo" data-estado="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="pill-estado" data-estado="pendiente" aria-pressed="true">
+          <span class="punto punto--pendiente" aria-hidden="true"></span>Pendientes
+        </button>
+        <button type="button" class="pill-estado" data-estado="en_proceso" aria-pressed="true">
+          <span class="punto punto--proceso" aria-hidden="true"></span>En proceso
+        </button>
+        <button type="button" class="pill-estado" data-estado="resuelto" aria-pressed="true">
+          <span class="punto punto--resuelto" aria-hidden="true"></span>Resueltos
+        </button>
+      </div>
+
+      <p class="nota-mapa">
+        Base cartográfica: <strong>© OpenStreetMap contributors (ODbL)</strong>. Los límites de las zonales son
+        aproximados e ilustrativos; consulta el detalle de cada zona para ver su nota de precisión.
+      </p>
+    </div>
+  </section>
+
+  <!-- 6) FEED DE REPORTES -->
+  <section class="seccion" id="seccionFeed" aria-labelledby="tituloFeed">
+    <div class="contenedor">
+      <div class="seccion__cabecera">
+        <div>
+          <h2 class="seccion__titulo" id="tituloFeed">Reportes recientes</h2>
+          <p class="seccion__ayuda" id="feedResumen">Cargando reportes…</p>
+        </div>
+        <button type="button" class="btn btn--suave btn--chico" id="btnRefrescarFeed">🔄 Actualizar</button>
+      </div>
+
+      <div class="feed" id="feed" aria-live="polite" aria-busy="true">
+        <!-- Las tarjetas se generan en app.js -->
+      </div>
+
+      <div class="feed__pie">
+        <button type="button" class="btn btn--primario btn--bloque oculto" id="btnCargarMas">Cargar más reportes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) PANEL DE TRANSPARENCIA -->
+  <section class="seccion seccion--transparencia" id="seccionTransparencia" aria-labelledby="tituloTransparencia">
+    <div class="contenedor">
+      <h2 class="seccion__titulo" id="tituloTransparencia">Panel de transparencia</h2>
+      <p class="seccion__ayuda">
+        Datos ficticios de demostración. Cuando la API no responde, las cifras se calculan en tu propio dispositivo.
+      </p>
+
+      <dl class="contadores" id="contadores">
+        <div class="contador contador--total">
+          <dt>Total</dt>
+          <dd id="contTotal">0</dd>
+        </div>
+        <div class="contador contador--pendiente">
+          <dt>Pendientes</dt>
+          <dd id="contPendiente">0</dd>
+        </div>
+        <div class="contador contador--proceso">
+          <dt>En proceso</dt>
+          <dd id="contProceso">0</dd>
+        </div>
+        <div class="contador contador--resuelto">
+          <dt>Resueltos</dt>
+          <dd id="contResuelto">0</dd>
+        </div>
+      </dl>
+
+      <div class="tarjeta grafico">
+        <h3 class="tarjeta__titulo">Reportes por zona</h3>
+        <p class="tarjeta__ayuda">Cada barra usa el color oficial de su zonal.</p>
+        <div class="grafico__lienzo">
+          <canvas id="graficoZonas" height="260" aria-label="Gráfico de barras de reportes por zona" role="img"></canvas>
+        </div>
+        <p class="grafico__alternativa" id="graficoAlternativa">Cargando gráfico…</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3 class="tarjeta__titulo">Ranking de zonas con más reportes</h3>
+        <ol class="ranking" id="rankingZonas">
+          <li class="ranking__vacio">Cargando ranking…</li>
+        </ol>
+        <p class="tarjeta__nota" id="statsActualizado"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cómo funciona -->
+  <section class="seccion" aria-labelledby="tituloComo">
+    <div class="contenedor">
+      <h2 class="seccion__titulo" id="tituloComo">¿Cómo funciona?</h2>
+      <ol class="pasos-info">
+        <li><span class="pasos-info__num">1</span><div><strong>Marca el punto</strong><p>Toca tu calle en el mapa. Detectamos la zona automáticamente.</p></div></li>
+        <li><span class="pasos-info__num">2</span><div><strong>Toma la foto</strong><p>La imagen se comprime en tu celular antes de subir: menos datos, más rápido.</p></div></li>
+        <li><span class="pasos-info__num">3</span><div><strong>Sin registros</strong><p>Envías de forma anónima. Otros vecinos pueden apoyar tu reporte.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<!-- 8) FOOTER -->
+<footer class="footer">
+  <div class="contenedor">
+    <p class="footer__marca">👁️ Ojo Comas</p>
+    <p class="footer__linea">Este es un prototipo demostrativo sin fines oficiales.</p>
+    <p class="footer__linea">Cumple con la Ley N° 29733 de Protección de Datos Personales.</p>
+    <ul class="footer__enlaces">
+      <li><a href="https://github.com/ojo-comas/ojo-comas" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+      <li><button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></li>
+      <li><a href="#seccionTransparencia">Panel de transparencia</a></li>
+    </ul>
+    <div class="footer__atribucion">
+      <p>Límite distrital y barrios: © OpenStreetMap contributors (ODbL)</p>
+      <p>Áreas y zonales: Municipalidad Distrital de Comas (municomas.gob.pe)</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Región de avisos / toasts -->
+<div class="toasts" id="toasts" role="status" aria-live="polite" aria-atomic="false"></div>
+
+<!-- ============ MODAL: FORMULARIO DE REPORTE (3 PASOS) ============ -->
+<div class="modal-fondo oculto" id="modalReporte" hidden>
+  <div class="modal modal--reporte" role="dialog" aria-modal="true" aria-labelledby="tituloModalReporte" aria-describedby="descModalReporte">
+    <header class="modal__cabecera">
+      <div>
+        <h2 class="modal__titulo" id="tituloModalReporte">Nuevo reporte</h2>
+        <p class="modal__desc" id="descModalReporte">Paso <span id="pasoActual">1</span> de 3 · Reporte anónimo</p>
+      </div>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar el formulario de reporte">✕</button>
+    </header>
+
+    <div class="progreso" id="progresoReporte" role="group" aria-label="Progreso del formulario">
+      <div class="progreso__item es-activo" data-indicador="1"><span class="progreso__bola">1</span><span class="progreso__texto">Categoría</span></div>
+      <div class="progreso__item" data-indicador="2"><span class="progreso__bola">2</span><span class="progreso__texto">Detalle</span></div>
+      <div class="progreso__item" data-indicador="3"><span class="progreso__bola">3</span><span class="progreso__texto">Enviar</span></div>
+    </div>
+
+    <form class="modal__cuerpo" id="formReporte" novalidate>
+      <!-- Paso 1 -->
+      <fieldset class="paso" data-paso="1">
+        <legend class="paso__titulo">¿Qué quieres reportar?</legend>
+        <p class="paso__ayuda">Elige una categoría. Podrás añadir una foto en el siguiente paso.</p>
+        <div class="categorias" role="radiogroup" aria-label="Categoría del reporte">
+          <label class="categoria">
+            <input type="radio" name="categoria" value="bache" required>
+            <span class="categoria__caja"><span class="categoria__emoji" aria-hidden="true">🕳️</span><span class="categoria__nombre">Bache</span><span class="categoria__detalle">Pista o vereda dañada</span></span>
+          </label>
+          <label class="categoria">
+            <input type="radio" name="categoria" value="basura">
+            <span class="categoria__caja"><span class="categoria__emoji" aria-hidden="true">🗑️</span><span class="categoria__nombre">Basura</span><span class="categoria__detalle">Residuos acumulados</span></span>
+          </label>
+          <label class="categoria">
+            <input type="radio" name="categoria" value="alumbrado">
+            <span class="categoria__caja"><span class="categoria__emoji" aria-hidden="true">💡</span><span class="categoria__nombre">Alumbrado</span><span class="categoria__detalle">Poste o luminaria</span></span>
+          </label>
+          <label class="categoria">
+            <input type="radio" name="categoria" value="otro">
+            <span class="categoria__caja"><span class="categoria__emoji" aria-hidden="true">📌</span><span class="categoria__nombre">Otro</span><span class="categoria__detalle">Riesgo o incidencia</span></span>
+          </label>
+        </div>
+
+        <div class="ubicacion-caja">
+          <p class="ubicacion-caja__titulo">📍 Ubicación del reporte</p>
+          <p class="ubicacion-caja__coords" id="coordsSeleccion">Toca el mapa para marcar el punto exacto.</p>
+          <div class="ubicacion-caja__acciones">
+            <button type="button" class="btn btn--suave btn--chico" id="btnUsarMiUbicacion">Usar mi ubicación actual</button>
+            <button type="button" class="btn btn--suave btn--chico" id="btnElegirEnMapa">Elegir en el mapa</button>
+          </div>
+        </div>
+
+        <div class="paso__acciones">
+          <button type="button" class="btn btn--primario btn--bloque btn--grande" data-ir-paso="2">Continuar</button>
+        </div>
+        <p class="error-paso oculto" id="errorPaso1" role="alert"></p>
+      </fieldset>
+
+      <!-- Paso 2 -->
+      <fieldset class="paso oculto" data-paso="2">
+        <legend class="paso__titulo">Detalle del problema</legend>
+
+        <div class="campo">
+          <label class="campo__etiqueta" for="selectZona">Zona del distrito</label>
+          <p class="deteccion" id="deteccionZona" aria-live="polite">Detectando zona…</p>
+          <select class="select-grande" id="selectZona" name="zona" required aria-describedby="deteccionZona">
+            <option value="">Selecciona tu zona</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label class="campo__etiqueta" for="descripcion">Descripción breve</label>
+          <textarea class="textarea" id="descripcion" name="descripcion" maxlength="140" rows="3"
+            placeholder="Ejemplo: hueco grande frente al mercado, los mototaxis tienen que esquivarlo."
+            aria-describedby="contadorDescripcion"></textarea>
+          <p class="contador" id="contadorDescripcion"><span id="contadorNumero">0</span>/140</p>
+        </div>
+
+        <div class="campo">
+          <label class="campo__etiqueta" for="referencia">Referencia o dirección (opcional)</label>
+          <input type="text" class="input" id="referencia" name="referencia" maxlength="120"
+            placeholder="Ejemplo: Av. Tupac Amaru cdra. 12, frente al mercado" autocomplete="off">
+          <p class="campo__ayuda">Ayuda a ubicar el punto sin necesidad de dar tu dirección exacta.</p>
+        </div>
+
+        <div class="campo">
+          <span class="campo__etiqueta" id="etiquetaFoto">Foto del problema (opcional)</span>
+          <div class="foto-acciones" role="group" aria-labelledby="etiquetaFoto">
+            <button type="button" class="btn btn--suave" id="btnTomarFoto">📷 Tomar foto</button>
+            <button type="button" class="btn btn--suave" id="btnElegirFoto">🖼️ Elegir de galería</button>
+          </div>
+          <input type="file" id="inputFotoCamara" accept="image/*" capture="environment" class="oculto-visual">
+          <input type="file" id="inputFotoGaleria" accept="image/*" class="oculto-visual">
+
+          <div class="foto-preview oculto" id="fotoPreview">
+            <img id="fotoPreviewImg" alt="Vista previa de la foto del reporte" src="">
+            <div class="foto-preview__meta">
+              <p id="fotoPeso">0 KB</p>
+              <p class="foto-preview__nota">Redimensionada a máx. 1280 px y comprimida a JPEG (calidad 0.75) en tu dispositivo.</p>
+              <button type="button" class="btn btn--peligro-suave btn--chico" id="btnQuitarFoto">Quitar foto</button>
+            </div>
+          </div>
+          <p class="campo__ayuda" id="fotoEstado" aria-live="polite"></p>
+        </div>
+
+        <div class="paso__acciones paso__acciones--dos">
+          <button type="button" class="btn btn--fantasma" data-ir-paso="1">Atrás</button>
+          <button type="button" class="btn btn--primario btn--grande" data-ir-paso="3">Continuar</button>
+        </div>
+        <p class="error-paso oculto" id="errorPaso2" role="alert"></p>
+      </fieldset>
+
+      <!-- Paso 3 -->
+      <fieldset class="paso oculto" data-paso="3">
+        <legend class="paso__titulo">Revisa y envía</legend>
+
+        <div class="resumen" id="resumenReporte" aria-live="polite"></div>
+
+        <div class="anonimo-aviso">
+          <span aria-hidden="true">🔒</span>
+          <p>Tu reporte es anónimo por defecto. No se recopila DNI, nombres ni correo.</p>
+        </div>
+
+        <div class="campo campo--check">
+          <input type="checkbox" id="checkConsentimiento" name="consentimiento">
+          <label for="checkConsentimiento">Acepto que mis datos de contacto sean tratados conforme a la Ley N° 29733 para fines de seguimiento de este reporte.</label>
+        </div>
+
+        <div class="campo">
+          <label class="campo__etiqueta" for="contacto">Dato de contacto (opcional)</label>
+          <input type="text" class="input" id="contacto" name="contacto" disabled
+            placeholder="Se habilita al aceptar el consentimiento" autocomplete="off"
+            aria-describedby="contactoAyuda">
+          <p class="campo__ayuda" id="contactoAyuda">Solo se usará para avisarte sobre el avance de este reporte.</p>
+        </div>
+
+        <div class="campo">
+          <span class="campo__etiqueta">Verificación anti-bots</span>
+          <div class="turnstile-caja" id="turnstileCaja">
+            <div id="turnstileWidget"></div>
+            <p class="turnstile-caja__nota" id="turnstileNota">Cargando verificación de Cloudflare Turnstile…</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--rojo btn--bloque btn--grande" id="btnEnviar">Enviar Reporte</button>
+        <p class="error-paso oculto" id="errorEnvio" role="alert"></p>
+
+        <div class="paso__acciones">
+          <button type="button" class="btn btn--fantasma" data-ir-paso="2">Atrás</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <!-- Éxito (fuera del formulario: permite ocultar los pasos y celebrar el envío) -->
+    <div class="modal__cuerpo exito oculto" id="exitoReporte" role="status" aria-live="assertive" hidden>
+      <svg class="exito__check" viewBox="0 0 52 52" aria-hidden="true" focusable="false">
+        <circle class="exito__circulo" cx="26" cy="26" r="24" fill="none"/>
+        <path class="exito__marca" fill="none" d="M14 27l8 8 16-16"/>
+      </svg>
+      <h3 class="exito__titulo">¡Gracias! Tu reporte fue registrado.</h3>
+      <p class="exito__texto" id="exitoTexto"></p>
+      <button type="button" class="btn btn--primario btn--bloque" id="btnCerrarExito">Ver mi reporte en el mapa</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: APOYO VECINAL A UN REPORTE ============ -->
+<div class="modal-fondo oculto" id="modalApoyo" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloModalApoyo">
+    <header class="modal__cabecera">
+      <h2 class="modal__titulo" id="tituloModalApoyo">Apoyar este reporte</h2>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar el apoyo al reporte">✕</button>
+    </header>
+    <div class="modal__cuerpo">
+      <p class="seccion__ayuda" id="apoyoTexto">Cargando…</p>
+      <div class="anonimo-aviso">
+        <span aria-hidden="true">👍</span>
+        <p>Apoyar un reporte ayuda a que la zona gane prioridad. Es anónimo y se cuenta una sola vez por vecino.</p>
+      </div>
+      <div class="campo">
+        <span class="campo__etiqueta">Verificación anti-bots</span>
+        <div class="turnstile-caja" id="turnstileApoyoCaja">
+          <div id="turnstileApoyoWidget"></div>
+          <p class="turnstile-caja__nota" id="turnstileApoyoNota">Cargando verificación de Cloudflare Turnstile…</p>
+        </div>
+      </div>
+      <button type="button" class="btn btn--rojo btn--bloque btn--grande" id="btnConfirmarApoyo">Confirmar apoyo</button>
+      <p class="error-paso oculto" id="errorApoyo" role="alert"></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: DETALLE DE REPORTE ============ -->
+<div class="modal-fondo oculto" id="modalDetalle" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloModalDetalle">
+    <header class="modal__cabecera">
+      <h2 class="modal__titulo" id="tituloModalDetalle">Detalle del reporte</h2>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar el detalle del reporte">✕</button>
+    </header>
+    <div class="modal__cuerpo" id="detalleCuerpo">
+      <p>Cargando…</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: POLÍTICA DE PRIVACIDAD ============ -->
+<div class="modal-fondo oculto" id="modalPrivacidad" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloPrivacidad">
+    <header class="modal__cabecera">
+      <h2 class="modal__titulo" id="tituloPrivacidad">Política de Privacidad</h2>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar la política de privacidad">✕</button>
+    </header>
+    <div class="modal__cuerpo texto-legal">
+      <p class="texto-legal__fecha">Versión del prototipo · setiembre de 2026</p>
+
+      <h3>1. Qué es Ojo Comas</h3>
+      <p>
+        Ojo Comas es un <strong>prototipo de demostración ciudadana</strong> sin carácter oficial. No representa a la
+        Municipalidad Distrital de Comas ni a ninguna entidad del Estado, y <strong>todos los reportes que se muestran
+        son ficticios</strong>. Esta política describe, de manera simple y transparente, cómo se tratarían los datos
+        si el prototipo se usara con información real.
+      </p>
+
+      <h3>2. Qué datos se recopilan</h3>
+      <p>Cuando envías un reporte se registran únicamente:</p>
+      <ul>
+        <li>Las <strong>coordenadas geográficas</strong> del punto que marcas en el mapa.</li>
+        <li>La <strong>categoría</strong> del problema (bache, basura, alumbrado u otro).</li>
+        <li>La <strong>descripción</strong> de texto, de máximo 140 caracteres.</li>
+        <li>La <strong>fotografía</strong>, solo si decides adjuntarla.</li>
+        <li>Opcionalmente, un <strong>dato de contacto</strong> y tu consentimiento expreso.</li>
+      </ul>
+      <p>
+        <strong>No solicitamos ni almacenamos DNI, nombres, apellidos, correo electrónico, teléfono ni dirección
+        exacta.</strong> Tampoco creamos cuentas de usuario: no hay registro ni contraseña.
+      </p>
+
+      <h3>3. Anonimato por defecto</h3>
+      <p>
+        El envío es anónimo. El campo de contacto permanece <strong>deshabilitado</strong> hasta que marcas la casilla
+        de consentimiento; si no la marcas, el reporte se envía sin ningún dato de contacto ni información que permita
+        identificarte.
+      </p>
+
+      <h3>4. Base legal</h3>
+      <p>
+        El tratamiento se sustenta en la <strong>Ley N° 29733, Ley de Protección de Datos Personales</strong>, y su
+        reglamento aprobado por D.S. 003-2013-JUS, bajo los principios de consentimiento, finalidad, proporcionalidad,
+        calidad y seguridad. El contacto solo se trata con tu consentimiento libre, previo, expreso e informado.
+      </p>
+
+      <h3>5. Para qué se usan los datos</h3>
+      <p>
+        Exclusivamente para ubicar el problema en el mapa público, mostrarlo a la comunidad, permitir que otros
+        vecinos apoyen el reporte y dar seguimiento a su estado. No se usan con fines comerciales ni se venden ni
+        ceden a terceros.
+      </p>
+
+      <h3>6. Conservación y seguridad</h3>
+      <p>
+        Las fotografías se <strong>redimensionan y comprimen en tu propio dispositivo</strong> antes de enviarse, con
+        el fin de reducir datos y exposición. El prototipo no conserva información más tiempo del necesario para la
+        demostración, y aplica medidas técnicas razonables (cabeceras de seguridad, verificación anti-bots con
+        Cloudflare Turnstile y límites de envío).
+      </p>
+
+      <h3>7. Tus derechos</h3>
+      <p>
+        Puedes ejercer tus derechos de información, rectificación, cancelación y oposición (derechos ARCO) escribiendo
+        al repositorio del proyecto en GitHub. Al tratarse de un prototipo con datos ficticios, no existe una base de
+        datos con información personal de vecinos.
+      </p>
+
+      <h3>8. Menores de edad</h3>
+      <p>El prototipo no está dirigido a menores de edad y no recopila datos de menores de forma intencional.</p>
+
+      <h3>9. Atribución de datos geográficos</h3>
+      <p>
+        Límite distrital, barrios y mapa base: <strong>© OpenStreetMap contributors (ODbL)</strong>. Áreas y zonales:
+        <strong>Municipalidad Distrital de Comas (municomas.gob.pe)</strong>.
+      </p>
+
+      <h3>10. Carácter ficticio</h3>
+      <p>
+        Repetimos lo esencial: esta es una demostración. Las cifras, fotos y reportes son inventados y sirven solo
+        para mostrar cómo funcionaría una herramienta vecinal de este tipo.
+      </p>
+    </div>
+  </div>
+</div>
+
+<noscript>
+  <p class="aviso aviso--error">
+    Ojo Comas necesita JavaScript para mostrar el mapa y enviar reportes. Actívalo en tu navegador para continuar.
+  </p>
+</noscript>
+
+<!-- CDN: Leaflet, Turf.js, canvas-confetti, Chart.js, Turnstile -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/@turf/turf@7/turf.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<!-- Configuración de tiempo de ejecución (apiBase, sitekey de Turnstile). Debe ir ANTES de app.js -->
+<script src="./config.js"></script>
+
+<!-- Aplicación (script clásico, sin build step) -->
+<script src="./app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,10536 @@
+{
+ "version": 0.6,
+ "generator": "Overpass API 0.7.62.11 87bfad18",
+ "osm3s": {
+  "timestamp_osm_base": "2026-09-16T22:48:50Z",
+  "timestamp_areas_base": "2026-09-16T05:04:09Z",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+ },
+ "elements": [
+  {
+   "type": "way",
+   "id": 4832881,
+   "center": {
+    "lat": -11.9706588,
+    "lon": -77.0606386
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 4832882,
+   "center": {
+    "lat": -11.9568856,
+    "lon": -77.0638227
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 4832890,
+   "center": {
+    "lat": -11.9204397,
+    "lon": -77.0501072
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113781,
+   "center": {
+    "lat": -11.9513281,
+    "lon": -77.0545523
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113794,
+   "center": {
+    "lat": -11.9456418,
+    "lon": -77.063531
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113808,
+   "center": {
+    "lat": -11.9544472,
+    "lon": -77.0560021
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Carabayllo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113817,
+   "center": {
+    "lat": -11.9650752,
+    "lon": -77.0580364
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113820,
+   "center": {
+    "lat": -11.9650117,
+    "lon": -77.062359
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25113824,
+   "center": {
+    "lat": -11.9444784,
+    "lon": -77.0496556
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25137819,
+   "center": {
+    "lat": -11.955921,
+    "lon": -77.0573725
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25137971,
+   "center": {
+    "lat": -11.9452298,
+    "lon": -77.0685828
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "55",
+    "name": "Avenida 25 de Enero",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25137976,
+   "center": {
+    "lat": -11.9447989,
+    "lon": -77.0668367
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida 25 de Enero",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25137993,
+   "center": {
+    "lat": -11.947585,
+    "lon": -77.070213
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25138023,
+   "center": {
+    "lat": -11.9414513,
+    "lon": -77.0669602
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lane_markings": "no",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25138142,
+   "center": {
+    "lat": -11.9541908,
+    "lon": -77.0648064
+   },
+   "tags": {
+    "alt_name": "Avenida Rosa de America",
+    "highway": "tertiary",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 25139374,
+   "center": {
+    "lat": -11.941974,
+    "lon": -77.0637972
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 46960336,
+   "center": {
+    "lat": -11.9139741,
+    "lon": -77.0500161
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 46960345,
+   "center": {
+    "lat": -11.9377319,
+    "lon": -77.0656233
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 61732254,
+   "center": {
+    "lat": -11.9375877,
+    "lon": -77.0714882
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 61733684,
+   "center": {
+    "lat": -11.9451916,
+    "lon": -77.069395
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "55",
+    "name": "Avenida 25 de Enero",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 61733685,
+   "center": {
+    "lat": -11.9568477,
+    "lon": -77.0541145
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "45",
+    "name": "Avenida México",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70196511,
+   "center": {
+    "lat": -11.904194,
+    "lon": -77.0399156
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Martín",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70196520,
+   "center": {
+    "lat": -11.899484,
+    "lon": -77.0424182
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70196522,
+   "center": {
+    "lat": -11.8983626,
+    "lon": -77.0448145
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Please restore oneway tag on this way when construction is completed",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70196525,
+   "center": {
+    "lat": -11.9085311,
+    "lon": -77.034178
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Federico Villareal",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70196528,
+   "center": {
+    "lat": -11.9003583,
+    "lon": -77.0411049
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "As of February 2023, this way appears to be under construction.",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 70643768,
+   "center": {
+    "lat": -11.8974584,
+    "lon": -77.0431758
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 109831717,
+   "center": {
+    "lat": -11.9092242,
+    "lon": -77.0417045
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle San Mateo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 109831722,
+   "center": {
+    "lat": -11.9146308,
+    "lon": -77.044418
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 109831742,
+   "center": {
+    "lat": -11.9229928,
+    "lon": -77.0425978
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 109831751,
+   "center": {
+    "lat": -11.9169517,
+    "lon": -77.0423077
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061785,
+   "center": {
+    "lat": -11.9293014,
+    "lon": -77.0449062
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061788,
+   "center": {
+    "lat": -11.9128459,
+    "lon": -77.052205
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061796,
+   "center": {
+    "lat": -11.9218603,
+    "lon": -77.0613653
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "El Alamo",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061867,
+   "center": {
+    "lat": -11.9162027,
+    "lon": -77.0451125
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061931,
+   "center": {
+    "lat": -11.9196409,
+    "lon": -77.0588466
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida B",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061965,
+   "center": {
+    "lat": -11.9107719,
+    "lon": -77.0452605
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061975,
+   "center": {
+    "lat": -11.9363834,
+    "lon": -77.0602025
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "name:es": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110061988,
+   "center": {
+    "lat": -11.9123493,
+    "lon": -77.0315116
+   },
+   "tags": {
+    "alt_name": "Avenida Villa Real",
+    "highway": "tertiary",
+    "name": "Avenida Santa Cruz"
+   }
+  },
+  {
+   "type": "way",
+   "id": 110062015,
+   "center": {
+    "lat": -11.9176322,
+    "lon": -77.0537002
+   },
+   "tags": {
+    "alt_name": "Avenida 3",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Sangarará",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598026,
+   "center": {
+    "lat": -11.9318019,
+    "lon": -77.0501527
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598097,
+   "center": {
+    "lat": -11.9247046,
+    "lon": -77.0639768
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida 2",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598107,
+   "center": {
+    "lat": -11.9284694,
+    "lon": -77.0566547
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598123,
+   "center": {
+    "lat": -11.9280514,
+    "lon": -77.0409126
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Avelino Cáceres",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598194,
+   "center": {
+    "lat": -11.9203656,
+    "lon": -77.0360506
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "Avenida Alfonso Ugarte",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598204,
+   "center": {
+    "lat": -11.9251169,
+    "lon": -77.0630094
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida 2",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598209,
+   "center": {
+    "lat": -11.9249863,
+    "lon": -77.0406945
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598228,
+   "center": {
+    "lat": -11.9228334,
+    "lon": -77.0443978
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sangarara",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598249,
+   "center": {
+    "lat": -11.9322454,
+    "lon": -77.0553521
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598278,
+   "center": {
+    "lat": -11.9178854,
+    "lon": -77.0352552
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Jirón Manuel Gonzales Prada"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598284,
+   "center": {
+    "lat": -11.9225227,
+    "lon": -77.0443461
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sangarara",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598309,
+   "center": {
+    "lat": -11.9301141,
+    "lon": -77.0487543
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Manuel Villaran"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598314,
+   "center": {
+    "lat": -11.924863,
+    "lon": -77.0424299
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111598341,
+   "center": {
+    "lat": -11.9161563,
+    "lon": -77.0409061
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111699378,
+   "center": {
+    "lat": -11.9343249,
+    "lon": -77.0574862
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111699379,
+   "center": {
+    "lat": -11.9403689,
+    "lon": -77.0542464
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Jirón León Pinelo",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111699390,
+   "center": {
+    "lat": -11.932648,
+    "lon": -77.0546976
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111699400,
+   "center": {
+    "lat": -11.935306,
+    "lon": -77.0505735
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Enrique Paillardelle",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111699415,
+   "center": {
+    "lat": -11.9362994,
+    "lon": -77.0545698
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799756,
+   "center": {
+    "lat": -11.9339299,
+    "lon": -77.061348
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Bernardo Monteagudo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799794,
+   "center": {
+    "lat": -11.9507395,
+    "lon": -77.0605557
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799806,
+   "center": {
+    "lat": -11.9448967,
+    "lon": -77.057031
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Francisco Olazábal"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799811,
+   "center": {
+    "lat": -11.9355539,
+    "lon": -77.0447067
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Casanave"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799834,
+   "center": {
+    "lat": -11.93864,
+    "lon": -77.046579
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Casanave"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799836,
+   "center": {
+    "lat": -11.9387336,
+    "lon": -77.0579452
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799854,
+   "center": {
+    "lat": -11.9379139,
+    "lon": -77.0676275
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799903,
+   "center": {
+    "lat": -11.9441442,
+    "lon": -77.029582
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799963,
+   "center": {
+    "lat": -11.933836,
+    "lon": -77.0453015
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida López Albújar",
+    "oneway": "no"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799975,
+   "center": {
+    "lat": -11.9443991,
+    "lon": -77.0512558
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Francisco Bolognesi",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799994,
+   "center": {
+    "lat": -11.9347331,
+    "lon": -77.0630276
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 18"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111799995,
+   "center": {
+    "lat": -11.9390006,
+    "lon": -77.05184
+   },
+   "tags": {
+    "bicycle": "yes",
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111800003,
+   "center": {
+    "lat": -11.9382114,
+    "lon": -77.0585287
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111800029,
+   "center": {
+    "lat": -11.954505,
+    "lon": -77.0560727
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Carabayllo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111800051,
+   "center": {
+    "lat": -11.9454063,
+    "lon": -77.0635223
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111821114,
+   "center": {
+    "lat": -11.9647657,
+    "lon": -77.0616112
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111821177,
+   "center": {
+    "lat": -11.9544553,
+    "lon": -77.0645618
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111897992,
+   "center": {
+    "lat": -11.9274529,
+    "lon": -77.0633471
+   },
+   "tags": {
+    "alt_name": "Republica de Israel;Avenida B",
+    "highway": "tertiary",
+    "name": "Avenida Collique",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111909026,
+   "center": {
+    "lat": -11.9349258,
+    "lon": -77.0684443
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 111967498,
+   "center": {
+    "lat": -11.9233829,
+    "lon": -77.0370837
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau"
+   }
+  },
+  {
+   "type": "way",
+   "id": 114396113,
+   "center": {
+    "lat": -11.9703992,
+    "lon": -77.0604063
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 114396120,
+   "center": {
+    "lat": -11.9616079,
+    "lon": -77.058046
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "Avenida El Parral",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 114396138,
+   "center": {
+    "lat": -11.961524,
+    "lon": -77.0580094
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "Avenida El Parral",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 114504148,
+   "center": {
+    "lat": -11.9440089,
+    "lon": -77.066879
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "José Gálvez",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 115610774,
+   "center": {
+    "lat": -11.9652793,
+    "lon": -77.0580747
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 115715325,
+   "center": {
+    "lat": -11.95509,
+    "lon": -77.0459086
+   },
+   "tags": {
+    "alt_name": "Calle Puno",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Puno",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 115715403,
+   "center": {
+    "lat": -11.9598689,
+    "lon": -77.0475518
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Jorge Chávez",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 116911825,
+   "center": {
+    "lat": -11.9173472,
+    "lon": -77.0409097
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Alfonso Ugarte",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 116911874,
+   "center": {
+    "lat": -11.9172855,
+    "lon": -77.0408966
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Alfonso Ugarte",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 116911883,
+   "center": {
+    "lat": -11.9183336,
+    "lon": -77.0379807
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Gonzales Prada"
+   }
+  },
+  {
+   "type": "way",
+   "id": 117325877,
+   "center": {
+    "lat": -11.9375037,
+    "lon": -77.0698101
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Los Próceres de Huandoy",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215514,
+   "center": {
+    "lat": -11.9161153,
+    "lon": -77.0282623
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215516,
+   "center": {
+    "lat": -11.9155145,
+    "lon": -77.0302433
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida La Libertad",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215517,
+   "center": {
+    "lat": -11.915594,
+    "lon": -77.0298837
+   },
+   "tags": {
+    "alt_name": "Avenida La Libertad",
+    "highway": "tertiary",
+    "name": "Jirón Tacna",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215518,
+   "center": {
+    "lat": -11.9170545,
+    "lon": -77.0280196
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215519,
+   "center": {
+    "lat": -11.9204735,
+    "lon": -77.0250845
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215520,
+   "center": {
+    "lat": -11.9151895,
+    "lon": -77.0287089
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215521,
+   "center": {
+    "lat": -11.9171121,
+    "lon": -77.0322194
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215522,
+   "center": {
+    "lat": -11.9146616,
+    "lon": -77.0261509
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122215523,
+   "center": {
+    "lat": -11.9143733,
+    "lon": -77.0246279
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122236307,
+   "center": {
+    "lat": -11.9136593,
+    "lon": -77.0238169
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Pacasmayo"
+   }
+  },
+  {
+   "type": "way",
+   "id": 122242286,
+   "center": {
+    "lat": -11.9123563,
+    "lon": -77.0064392
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 124148558,
+   "center": {
+    "lat": -11.9281944,
+    "lon": -77.0711681
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Alfredo Mendiola",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 124148560,
+   "center": {
+    "lat": -11.9342657,
+    "lon": -77.0690111
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Industrial",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 124148571,
+   "center": {
+    "lat": -11.9341103,
+    "lon": -77.0701149
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Las Exportaciones"
+   }
+  },
+  {
+   "type": "way",
+   "id": 135424624,
+   "center": {
+    "lat": -11.9195758,
+    "lon": -77.0589588
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida B",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 135424625,
+   "center": {
+    "lat": -11.909348,
+    "lon": -77.0518395
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 135424626,
+   "center": {
+    "lat": -11.9138076,
+    "lon": -77.0555749
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 170159651,
+   "center": {
+    "lat": -11.9307123,
+    "lon": -77.072407
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "30",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 172412641,
+   "center": {
+    "lat": -11.9098347,
+    "lon": -77.0334419
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Federico Villareal",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 173557908,
+   "center": {
+    "lat": -11.9257142,
+    "lon": -77.0522397
+   },
+   "tags": {
+    "alt_name": "Andres Avelino Caceres",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 173557909,
+   "center": {
+    "lat": -11.9272824,
+    "lon": -77.0492847
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 173557911,
+   "center": {
+    "lat": -11.9502593,
+    "lon": -77.065015
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "tertiary",
+    "lane_markings": "no",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 173557913,
+   "center": {
+    "lat": -11.9527769,
+    "lon": -77.0672795
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida San Bernardo",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 173662732,
+   "center": {
+    "lat": -11.976747,
+    "lon": -77.0581011
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle 1",
+    "oneway": "yes",
+    "ref": "PE-20J",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 176518925,
+   "center": {
+    "lat": -11.9756718,
+    "lon": -77.0587216
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "María Parado de Bellido",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 253571715,
+   "center": {
+    "lat": -11.9256522,
+    "lon": -77.0535411
+   },
+   "tags": {
+    "alt_name": "Andres Avelino Caceres",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274831989,
+   "center": {
+    "lat": -11.8967958,
+    "lon": -77.0429089
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832022,
+   "center": {
+    "lat": -11.9584778,
+    "lon": -77.0631308
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832025,
+   "center": {
+    "lat": -11.8997269,
+    "lon": -77.0390953
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832028,
+   "center": {
+    "lat": -11.8996012,
+    "lon": -77.0425051
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832030,
+   "center": {
+    "lat": -11.9010764,
+    "lon": -77.0397789
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832047,
+   "center": {
+    "lat": -11.9583729,
+    "lon": -77.0606245
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832050,
+   "center": {
+    "lat": -11.9633479,
+    "lon": -77.0623981
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832055,
+   "center": {
+    "lat": -11.9035282,
+    "lon": -77.0415046
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832062,
+   "center": {
+    "lat": -11.9581186,
+    "lon": -77.0605772
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 274832077,
+   "center": {
+    "lat": -11.9648604,
+    "lon": -77.06165
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278894976,
+   "center": {
+    "lat": -11.8939368,
+    "lon": -77.04679
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278935573,
+   "center": {
+    "lat": -11.9130129,
+    "lon": -77.0085783
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278935608,
+   "center": {
+    "lat": -11.9132125,
+    "lon": -77.0163291
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278947624,
+   "center": {
+    "lat": -11.9414241,
+    "lon": -77.0434512
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278950016,
+   "center": {
+    "lat": -11.94419,
+    "lon": -77.029592
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278950018,
+   "center": {
+    "lat": -11.9415141,
+    "lon": -77.0427057
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278952389,
+   "center": {
+    "lat": -11.9149014,
+    "lon": -77.0328759
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278952390,
+   "center": {
+    "lat": -11.9147717,
+    "lon": -77.0290383
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278952392,
+   "center": {
+    "lat": -11.9181182,
+    "lon": -77.0271501
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 278952397,
+   "center": {
+    "lat": -11.9143585,
+    "lon": -77.0292177
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900329,
+   "center": {
+    "lat": -11.8939621,
+    "lon": -77.0465197
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900330,
+   "center": {
+    "lat": -11.9088335,
+    "lon": -77.055308
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900349,
+   "center": {
+    "lat": -11.8938253,
+    "lon": -77.0407506
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900357,
+   "center": {
+    "lat": -11.908377,
+    "lon": -77.0342401
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900373,
+   "center": {
+    "lat": -11.9083865,
+    "lon": -77.0344042
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 279900374,
+   "center": {
+    "lat": -11.8995763,
+    "lon": -77.0392978
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 280220298,
+   "center": {
+    "lat": -11.9129102,
+    "lon": -77.008595
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 280220302,
+   "center": {
+    "lat": -11.912462,
+    "lon": -77.0064255
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 280404126,
+   "center": {
+    "lat": -11.9304303,
+    "lon": -77.0719228
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "30",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 280404131,
+   "center": {
+    "lat": -11.9146719,
+    "lon": -77.0297695
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 285017676,
+   "center": {
+    "lat": -11.9612298,
+    "lon": -77.0618289
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 285827603,
+   "center": {
+    "lat": -11.9124778,
+    "lon": -76.9980469
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 285827623,
+   "center": {
+    "lat": -11.9134124,
+    "lon": -76.9921461
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295313724,
+   "center": {
+    "lat": -11.930661,
+    "lon": -77.0719429
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "30",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295313725,
+   "center": {
+    "lat": -11.9304771,
+    "lon": -77.072428
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "30",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295315809,
+   "center": {
+    "lat": -11.9509884,
+    "lon": -77.0515942
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316058,
+   "center": {
+    "lat": -11.9461255,
+    "lon": -77.0605873
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316059,
+   "center": {
+    "lat": -11.950799,
+    "lon": -77.0603969
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316060,
+   "center": {
+    "lat": -11.9459977,
+    "lon": -77.0608351
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316061,
+   "center": {
+    "lat": -11.9454874,
+    "lon": -77.0639127
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316062,
+   "center": {
+    "lat": -11.9461097,
+    "lon": -77.0603585
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316063,
+   "center": {
+    "lat": -11.9484744,
+    "lon": -77.0581563
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316064,
+   "center": {
+    "lat": -11.945982,
+    "lon": -77.0606063
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 295316065,
+   "center": {
+    "lat": -11.9441505,
+    "lon": -77.0604278
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 313629197,
+   "center": {
+    "lat": -11.9302011,
+    "lon": -77.0698861
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314302005,
+   "center": {
+    "lat": -11.9127352,
+    "lon": -77.0039172
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 314514135,
+   "center": {
+    "lat": -11.9375483,
+    "lon": -77.0717539
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 322559307,
+   "center": {
+    "lat": -11.9600691,
+    "lon": -77.063269
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 326389493,
+   "center": {
+    "lat": -11.9376636,
+    "lon": -77.0714811
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330293760,
+   "center": {
+    "lat": -11.9286871,
+    "lon": -77.0560926
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330293766,
+   "center": {
+    "lat": -11.9285716,
+    "lon": -77.0561623
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330293940,
+   "center": {
+    "lat": -11.9333429,
+    "lon": -77.0593364
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330294381,
+   "center": {
+    "lat": -11.9349497,
+    "lon": -77.0563468
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330294382,
+   "center": {
+    "lat": -11.9375203,
+    "lon": -77.0579566
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330294466,
+   "center": {
+    "lat": -11.9422546,
+    "lon": -77.0604272
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330294467,
+   "center": {
+    "lat": -11.9421682,
+    "lon": -77.0604544
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330387480,
+   "center": {
+    "lat": -11.9341269,
+    "lon": -77.0575981
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330387481,
+   "center": {
+    "lat": -11.9348315,
+    "lon": -77.0564288
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330388267,
+   "center": {
+    "lat": -11.9411139,
+    "lon": -77.059904
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330388647,
+   "center": {
+    "lat": -11.9376598,
+    "lon": -77.0679101
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330405384,
+   "center": {
+    "lat": -11.9449438,
+    "lon": -77.0664953
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 330406569,
+   "center": {
+    "lat": -11.9376997,
+    "lon": -77.0717391
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333849849,
+   "center": {
+    "lat": -11.9022383,
+    "lon": -77.0364313
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Martín",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333849956,
+   "center": {
+    "lat": -11.9009786,
+    "lon": -77.0397928
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333850315,
+   "center": {
+    "lat": -11.9423799,
+    "lon": -77.0602019
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333850327,
+   "center": {
+    "lat": -11.9424712,
+    "lon": -77.0601733
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333851017,
+   "center": {
+    "lat": -11.9434872,
+    "lon": -77.066665
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333851870,
+   "center": {
+    "lat": -11.9588013,
+    "lon": -77.0639884
+   },
+   "tags": {
+    "alt_name": "Avenida Rosa de America",
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Gerardo Unger",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 333851871,
+   "center": {
+    "lat": -11.9562965,
+    "lon": -77.0664676
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Genaro",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 334350367,
+   "center": {
+    "lat": -11.9388621,
+    "lon": -77.0617691
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 334350368,
+   "center": {
+    "lat": -11.9376064,
+    "lon": -77.0656064
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 334350372,
+   "center": {
+    "lat": -11.9335801,
+    "lon": -77.0683043
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 335812684,
+   "center": {
+    "lat": -11.939581,
+    "lon": -77.0606386
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 336789536,
+   "center": {
+    "lat": -11.9392559,
+    "lon": -77.0675753
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 339254717,
+   "center": {
+    "lat": -11.9392183,
+    "lon": -77.0673977
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 339364870,
+   "center": {
+    "lat": -11.9349544,
+    "lon": -77.0562017
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 339364992,
+   "center": {
+    "lat": -11.9363562,
+    "lon": -77.0545992
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 339365480,
+   "center": {
+    "lat": -11.9407176,
+    "lon": -77.0503428
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 342235091,
+   "center": {
+    "lat": -11.9323955,
+    "lon": -77.0550857
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "name:en": "Universitaria Avenue",
+    "name:es": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 357556685,
+   "center": {
+    "lat": -11.9621586,
+    "lon": -77.0654838
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370051447,
+   "center": {
+    "lat": -11.9481916,
+    "lon": -77.0658349
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370051449,
+   "center": {
+    "lat": -11.9455412,
+    "lon": -77.0660242
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370051460,
+   "center": {
+    "lat": -11.9295543,
+    "lon": -77.069945
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle H"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370069255,
+   "center": {
+    "lat": -11.9103732,
+    "lon": -77.0531689
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370069258,
+   "center": {
+    "lat": -11.9105054,
+    "lon": -77.0530943
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370644916,
+   "center": {
+    "lat": -11.9444917,
+    "lon": -77.0572107
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 370644926,
+   "center": {
+    "lat": -11.9287781,
+    "lon": -77.0560675
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 374350307,
+   "center": {
+    "lat": -11.927348,
+    "lon": -77.0587295
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 374350308,
+   "center": {
+    "lat": -11.9272352,
+    "lon": -77.058665
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 388726445,
+   "center": {
+    "lat": -11.9360854,
+    "lon": -77.0714238
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 391849363,
+   "center": {
+    "lat": -11.8963865,
+    "lon": -77.048206
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida San Felipe",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 396983577,
+   "center": {
+    "lat": -11.9590451,
+    "lon": -77.0411892
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Jirón La Habana",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 412260096,
+   "center": {
+    "lat": -11.9768018,
+    "lon": -77.058193
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle 1",
+    "oneway": "yes",
+    "ref": "PE-20J",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 426675713,
+   "center": {
+    "lat": -11.9661831,
+    "lon": -77.0558617
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428303306,
+   "center": {
+    "lat": -11.9449503,
+    "lon": -77.0676121
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "55",
+    "name": "Avenida 25 de Enero",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428303319,
+   "center": {
+    "lat": -11.9455067,
+    "lon": -77.0702153
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida 25 de Enero",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428330667,
+   "center": {
+    "lat": -11.9161914,
+    "lon": -77.045169
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428330668,
+   "center": {
+    "lat": -11.91648,
+    "lon": -77.0453189
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Sinchi Roca",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428330669,
+   "center": {
+    "lat": -11.9221694,
+    "lon": -77.0464903
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Sinchi Roca",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428338019,
+   "center": {
+    "lat": -11.9298442,
+    "lon": -77.0435877
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andres Avelino Cáceres",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 428338020,
+   "center": {
+    "lat": -11.9406218,
+    "lon": -77.0503985
+   },
+   "tags": {
+    "bicycle": "yes",
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 429473252,
+   "center": {
+    "lat": -11.9127754,
+    "lon": -77.0032026
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 429473253,
+   "center": {
+    "lat": -11.9433795,
+    "lon": -77.0336917
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 429473262,
+   "center": {
+    "lat": -11.9222453,
+    "lon": -77.0396745
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Francisco Bolognesi",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 432442239,
+   "center": {
+    "lat": -11.9179291,
+    "lon": -77.053881
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Sangarará",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435208768,
+   "center": {
+    "lat": -11.9142921,
+    "lon": -77.0303004
+   },
+   "tags": {
+    "alt_name": "Santa Cruz",
+    "highway": "tertiary",
+    "name": "Jirón Tacna",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435365525,
+   "center": {
+    "lat": -11.895125,
+    "lon": -77.0425786
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435366943,
+   "center": {
+    "lat": -11.8981991,
+    "lon": -77.0448212
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Please restore oneway tag on this way when construction is completed",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435366944,
+   "center": {
+    "lat": -11.8992182,
+    "lon": -77.0430695
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435366947,
+   "center": {
+    "lat": -11.8993513,
+    "lon": -77.0428166
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Mariano Condorcanqui",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435371605,
+   "center": {
+    "lat": -11.9078634,
+    "lon": -77.0402475
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida San Carlos",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435371608,
+   "center": {
+    "lat": -11.9079843,
+    "lon": -77.0403281
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida San Carlos",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435373854,
+   "center": {
+    "lat": -11.9153133,
+    "lon": -77.047746
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435373855,
+   "center": {
+    "lat": -11.9151602,
+    "lon": -77.0477367
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435379717,
+   "center": {
+    "lat": -11.9185199,
+    "lon": -77.0521958
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435379718,
+   "center": {
+    "lat": -11.9140577,
+    "lon": -77.0499892
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435379719,
+   "center": {
+    "lat": -11.9151078,
+    "lon": -77.0481132
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435379720,
+   "center": {
+    "lat": -11.9140349,
+    "lon": -77.049906
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435383870,
+   "center": {
+    "lat": -11.9335661,
+    "lon": -77.0587595
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435383871,
+   "center": {
+    "lat": -11.9332079,
+    "lon": -77.0593083
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435383873,
+   "center": {
+    "lat": -11.9336492,
+    "lon": -77.0587302
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435383874,
+   "center": {
+    "lat": -11.93137,
+    "lon": -77.0574108
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435494436,
+   "center": {
+    "lat": -11.908351,
+    "lon": -77.0412325
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle San Mateo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435516552,
+   "center": {
+    "lat": -11.9257135,
+    "lon": -77.0551438
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435520737,
+   "center": {
+    "lat": -11.931141,
+    "lon": -77.0574394
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435520738,
+   "center": {
+    "lat": -11.9287479,
+    "lon": -77.055974
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435520739,
+   "center": {
+    "lat": -11.9294416,
+    "lon": -77.0548378
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435520740,
+   "center": {
+    "lat": -11.9286568,
+    "lon": -77.0559991
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435520741,
+   "center": {
+    "lat": -11.921279,
+    "lon": -77.0528728
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435659402,
+   "center": {
+    "lat": -11.9307941,
+    "lon": -77.0696788
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Industrial",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435659403,
+   "center": {
+    "lat": -11.9302509,
+    "lon": -77.0697952
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Industrial",
+    "surface": "paved"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435664254,
+   "center": {
+    "lat": -11.9083169,
+    "lon": -77.0547642
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435675754,
+   "center": {
+    "lat": -11.9258606,
+    "lon": -77.0668951
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt",
+    "wikipedia:es": "Avenida Chillón Trapiche"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435701184,
+   "center": {
+    "lat": -11.9249909,
+    "lon": -77.0648264
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Chillón Trapiche",
+    "oneway": "yes",
+    "ref": "PE-20A",
+    "surface": "asphalt",
+    "wikipedia:es": "Avenida Chillón Trapiche"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435885374,
+   "center": {
+    "lat": -11.9633478,
+    "lon": -77.0627162
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 435885376,
+   "center": {
+    "lat": -11.9655348,
+    "lon": -77.0614517
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436278089,
+   "center": {
+    "lat": -11.9112613,
+    "lon": -77.0368692
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436278090,
+   "center": {
+    "lat": -11.9162112,
+    "lon": -77.0407516
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436457002,
+   "center": {
+    "lat": -11.9131436,
+    "lon": -77.0239547
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Pacasmayo",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436594070,
+   "center": {
+    "lat": -11.9300799,
+    "lon": -77.0536599
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436773788,
+   "center": {
+    "lat": -11.9404589,
+    "lon": -77.0505201
+   },
+   "tags": {
+    "bicycle": "yes",
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 436773789,
+   "center": {
+    "lat": -11.9405193,
+    "lon": -77.050522
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 437449975,
+   "center": {
+    "lat": -11.9554005,
+    "lon": -77.0596856
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 438896293,
+   "center": {
+    "lat": -11.9467478,
+    "lon": -77.0657015
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 440502401,
+   "center": {
+    "lat": -11.9458086,
+    "lon": -77.0634285
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 440504283,
+   "center": {
+    "lat": -11.9566276,
+    "lon": -77.0634838
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 441952197,
+   "center": {
+    "lat": -11.9468583,
+    "lon": -77.0588192
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Jirón Francisco Olazábal"
+   }
+  },
+  {
+   "type": "way",
+   "id": 476170897,
+   "center": {
+    "lat": -11.9581214,
+    "lon": -77.0457505
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Arequipa",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 516701771,
+   "center": {
+    "lat": -11.9549545,
+    "lon": -77.0693282
+   },
+   "tags": {
+    "destination": "Salida",
+    "highway": "secondary",
+    "lanes": "1",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 567588296,
+   "center": {
+    "lat": -11.9289769,
+    "lon": -77.0670402
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Trapiche"
+   }
+  },
+  {
+   "type": "way",
+   "id": 572430845,
+   "center": {
+    "lat": -11.921057,
+    "lon": -77.024702
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle San Cipriano"
+   }
+  },
+  {
+   "type": "way",
+   "id": 584747999,
+   "center": {
+    "lat": -11.945093,
+    "lon": -77.0710196
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "bridge": "yes",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "layer": "1",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 584748000,
+   "center": {
+    "lat": -11.9455139,
+    "lon": -77.0706676
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 584748001,
+   "center": {
+    "lat": -11.9459177,
+    "lon": -77.0709516
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "bridge": "yes",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "layer": "1",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 584748003,
+   "center": {
+    "lat": -11.9497699,
+    "lon": -77.0700108
+   },
+   "tags": {
+    "alt_name": "Santa Marina",
+    "highway": "secondary",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 584748004,
+   "center": {
+    "lat": -11.9515361,
+    "lon": -77.0698901
+   },
+   "tags": {
+    "check_date:surface": "2023-10-13",
+    "highway": "secondary",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 590546538,
+   "center": {
+    "lat": -11.9523331,
+    "lon": -77.0520645
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 590546539,
+   "center": {
+    "lat": -11.9529023,
+    "lon": -77.0514294
+   },
+   "tags": {
+    "alt_name": "Calle Puno",
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Jirón Puno",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 591384422,
+   "center": {
+    "lat": -11.9560849,
+    "lon": -77.066516
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida San Genaro",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 591384423,
+   "center": {
+    "lat": -11.95552,
+    "lon": -77.0619983
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 597945290,
+   "center": {
+    "lat": -11.901564,
+    "lon": -77.0356413
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Martín",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 597945292,
+   "center": {
+    "lat": -11.904052,
+    "lon": -77.0399175
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Martín",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 597945299,
+   "center": {
+    "lat": -11.9041733,
+    "lon": -77.0374271
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 601149371,
+   "center": {
+    "lat": -11.9091911,
+    "lon": -77.041759
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle San Mateo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 601149374,
+   "center": {
+    "lat": -11.9084136,
+    "lon": -77.0411322
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Calle San Mateo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 601155654,
+   "center": {
+    "lat": -11.909836,
+    "lon": -77.0420874
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 601155655,
+   "center": {
+    "lat": -11.9110312,
+    "lon": -77.0428894
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 601160472,
+   "center": {
+    "lat": -11.9159713,
+    "lon": -77.0301429
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 603285167,
+   "center": {
+    "lat": -11.9124593,
+    "lon": -77.0435782
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sinchi Roca",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604415502,
+   "center": {
+    "lat": -11.9129765,
+    "lon": -77.0393879
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604415505,
+   "center": {
+    "lat": -11.929911,
+    "lon": -77.0436143
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andres Avelino Cáceres",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604415506,
+   "center": {
+    "lat": -11.9171979,
+    "lon": -77.0411387
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Alfonso Ugarte",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604415507,
+   "center": {
+    "lat": -11.9173071,
+    "lon": -77.0411668
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Alfonso Ugarte",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 604415508,
+   "center": {
+    "lat": -11.9085609,
+    "lon": -77.034246
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Federico Villareal",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606895928,
+   "center": {
+    "lat": -11.9013064,
+    "lon": -77.0392775
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606919548,
+   "center": {
+    "lat": -11.9167159,
+    "lon": -77.0443381
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606919549,
+   "center": {
+    "lat": -11.9222292,
+    "lon": -77.0465714
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Sinchi Roca",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606919550,
+   "center": {
+    "lat": -11.91583,
+    "lon": -77.0464384
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606919551,
+   "center": {
+    "lat": -11.9165756,
+    "lon": -77.0443107
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 606919553,
+   "center": {
+    "lat": -11.9170665,
+    "lon": -77.0423932
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 609766742,
+   "center": {
+    "lat": -11.9330249,
+    "lon": -77.0596562
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste"
+   }
+  },
+  {
+   "type": "way",
+   "id": 611722068,
+   "center": {
+    "lat": -11.9292101,
+    "lon": -77.0453304
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 611722075,
+   "center": {
+    "lat": -11.9268563,
+    "lon": -77.0497627
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 611722078,
+   "center": {
+    "lat": -11.9283764,
+    "lon": -77.0468948
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 611725662,
+   "center": {
+    "lat": -11.9299347,
+    "lon": -77.0434223
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Andres Avelino Cáceres",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 611725664,
+   "center": {
+    "lat": -11.9301665,
+    "lon": -77.0430229
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andres Avelino Cáceres",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 613229128,
+   "center": {
+    "lat": -11.929958,
+    "lon": -77.0537414
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 613229129,
+   "center": {
+    "lat": -11.9298449,
+    "lon": -77.0538108
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 613597745,
+   "center": {
+    "lat": -11.9065724,
+    "lon": -77.0354041
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 614136966,
+   "center": {
+    "lat": -11.9074987,
+    "lon": -77.050225
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Mariano Condorcanqui",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830247,
+   "center": {
+    "lat": -11.9083075,
+    "lon": -77.0343664
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830250,
+   "center": {
+    "lat": -11.907836,
+    "lon": -77.0347586
+   },
+   "tags": {
+    "fixme": "access",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "note": "Way appears to be under construction as of February 2023.",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830251,
+   "center": {
+    "lat": -11.9057054,
+    "lon": -77.0360016
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830252,
+   "center": {
+    "lat": -11.9054936,
+    "lon": -77.0364173
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830253,
+   "center": {
+    "lat": -11.9050917,
+    "lon": -77.0366142
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830254,
+   "center": {
+    "lat": -11.9053888,
+    "lon": -77.0363157
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830255,
+   "center": {
+    "lat": -11.9057861,
+    "lon": -77.0361164
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830256,
+   "center": {
+    "lat": -11.9039875,
+    "lon": -77.0373693
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830257,
+   "center": {
+    "lat": -11.9052224,
+    "lon": -77.0367077
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830259,
+   "center": {
+    "lat": -11.9008615,
+    "lon": -77.0400132
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617830260,
+   "center": {
+    "lat": -11.9007691,
+    "lon": -77.0400226
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617838881,
+   "center": {
+    "lat": -11.9105843,
+    "lon": -77.0454558
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 617838882,
+   "center": {
+    "lat": -11.9036481,
+    "lon": -77.0412873
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618090935,
+   "center": {
+    "lat": -11.9008708,
+    "lon": -77.0441387
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Mariano Condorcanqui"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618090937,
+   "center": {
+    "lat": -11.9039302,
+    "lon": -77.0469656
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Mariano Condorcanqui",
+    "surface": "unpaved"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118360,
+   "center": {
+    "lat": -11.9161012,
+    "lon": -77.0369498
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118361,
+   "center": {
+    "lat": -11.9167598,
+    "lon": -77.0385791
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118362,
+   "center": {
+    "lat": -11.9161427,
+    "lon": -77.0408441
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118363,
+   "center": {
+    "lat": -11.9166846,
+    "lon": -77.038584
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118364,
+   "center": {
+    "lat": -11.9152784,
+    "lon": -77.033374
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 618118365,
+   "center": {
+    "lat": -11.9160387,
+    "lon": -77.0370067
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620127521,
+   "center": {
+    "lat": -11.9170646,
+    "lon": -77.0278862
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620127523,
+   "center": {
+    "lat": -11.9205494,
+    "lon": -77.0251808
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620127525,
+   "center": {
+    "lat": -11.9180858,
+    "lon": -77.0270331
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160834,
+   "center": {
+    "lat": -11.91696,
+    "lon": -77.0316439
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160835,
+   "center": {
+    "lat": -11.9169249,
+    "lon": -77.0320301
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160836,
+   "center": {
+    "lat": -11.9161254,
+    "lon": -77.0283929
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160837,
+   "center": {
+    "lat": -11.915271,
+    "lon": -77.0286599
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160838,
+   "center": {
+    "lat": -11.9152075,
+    "lon": -77.0287809
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 620160839,
+   "center": {
+    "lat": -11.9160476,
+    "lon": -77.0300927
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 627699869,
+   "center": {
+    "lat": -11.948335,
+    "lon": -77.0582041
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 627699870,
+   "center": {
+    "lat": -11.9513884,
+    "lon": -77.054574
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 640398106,
+   "center": {
+    "lat": -11.9770666,
+    "lon": -77.0594485
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Indoamericana",
+    "oneway": "yes",
+    "ref": "PE-20J",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 640399794,
+   "center": {
+    "lat": -11.9247653,
+    "lon": -77.0724912
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Alfredo Mendiola",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 640401211,
+   "center": {
+    "lat": -11.9325943,
+    "lon": -77.0690805
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 640401212,
+   "center": {
+    "lat": -11.9327847,
+    "lon": -77.0690427
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 640401213,
+   "center": {
+    "lat": -11.9308018,
+    "lon": -77.0653372
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 647084713,
+   "center": {
+    "lat": -11.9136924,
+    "lon": -77.0196569
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 647084714,
+   "center": {
+    "lat": -11.9147772,
+    "lon": -77.0288883
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 650756872,
+   "center": {
+    "lat": -11.9571433,
+    "lon": -77.0515117
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Ricardo Palma",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 650756874,
+   "center": {
+    "lat": -11.9570204,
+    "lon": -77.0502432
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Los Pinos",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 654088763,
+   "center": {
+    "lat": -11.9259097,
+    "lon": -77.0613564
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 654088764,
+   "center": {
+    "lat": -11.9260165,
+    "lon": -77.0614157
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 654287511,
+   "center": {
+    "lat": -11.9452519,
+    "lon": -77.0664412
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Gerardo Unger",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 654290639,
+   "center": {
+    "lat": -11.9279641,
+    "lon": -77.0478169
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Sinchi Roca",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 666005378,
+   "center": {
+    "lat": -11.9023815,
+    "lon": -77.0404458
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 679142537,
+   "center": {
+    "lat": -11.9317133,
+    "lon": -77.0622365
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "3",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 679142538,
+   "center": {
+    "lat": -11.9324765,
+    "lon": -77.0605906
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "3",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699929405,
+   "center": {
+    "lat": -11.9432521,
+    "lon": -77.034448
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Este",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699953178,
+   "center": {
+    "lat": -11.9195678,
+    "lon": -77.0259501
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699953179,
+   "center": {
+    "lat": -11.9194951,
+    "lon": -77.025861
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Milagros de Jesús",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699953180,
+   "center": {
+    "lat": -11.9143397,
+    "lon": -77.0292903
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 699976323,
+   "center": {
+    "lat": -11.9008521,
+    "lon": -77.039864
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 756642329,
+   "center": {
+    "lat": -11.9164714,
+    "lon": -77.0402531
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 756642330,
+   "center": {
+    "lat": -11.9163928,
+    "lon": -77.0402191
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 757456272,
+   "center": {
+    "lat": -11.9529314,
+    "lon": -77.0513372
+   },
+   "tags": {
+    "alt_name": "Calle Puno",
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Jirón Puno",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 759915586,
+   "center": {
+    "lat": -11.9408694,
+    "lon": -77.0503184
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 892440702,
+   "center": {
+    "lat": -11.9337557,
+    "lon": -77.046746
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 925030367,
+   "center": {
+    "lat": -11.9312082,
+    "lon": -77.0586931
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Manuel González Prada",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 925030368,
+   "center": {
+    "lat": -11.9313092,
+    "lon": -77.0586434
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Manuel González Prada",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 952776281,
+   "center": {
+    "lat": -11.9248182,
+    "lon": -77.0618779
+   },
+   "tags": {
+    "alt_name": "Republica de Israel;Avenida B",
+    "highway": "tertiary",
+    "name": "Avenida Collique",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 954126587,
+   "center": {
+    "lat": -11.931016,
+    "lon": -77.0631561
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000853340,
+   "center": {
+    "lat": -11.937406,
+    "lon": -77.0677213
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000853343,
+   "center": {
+    "lat": -11.9373632,
+    "lon": -77.0679688
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000853344,
+   "center": {
+    "lat": -11.9373417,
+    "lon": -77.0678539
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "sidewalk:right": "separate",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000853346,
+   "center": {
+    "lat": -11.9373436,
+    "lon": -77.0681809
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1000853347,
+   "center": {
+    "lat": -11.9374098,
+    "lon": -77.0681465
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Los Próceres de Huandoy",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1011854813,
+   "center": {
+    "lat": -11.9365155,
+    "lon": -77.0640719
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 18",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1030127050,
+   "center": {
+    "lat": -11.9296171,
+    "lon": -77.0645602
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida Collique",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1030127052,
+   "center": {
+    "lat": -11.9312271,
+    "lon": -77.0653737
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1051992238,
+   "center": {
+    "lat": -11.9421947,
+    "lon": -77.066808
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1080804073,
+   "center": {
+    "lat": -11.9746336,
+    "lon": -77.0595991
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 20",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1087130785,
+   "center": {
+    "lat": -11.9162247,
+    "lon": -77.0408136
+   },
+   "tags": {
+    "highway": "primary",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1091755725,
+   "center": {
+    "lat": -11.9124304,
+    "lon": -76.9944383
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1091755726,
+   "center": {
+    "lat": -11.9130435,
+    "lon": -77.0019721
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1091755727,
+   "center": {
+    "lat": -11.9124053,
+    "lon": -76.9948595
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Revolución",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1091755730,
+   "center": {
+    "lat": -11.9125524,
+    "lon": -76.9980398
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1098376099,
+   "center": {
+    "lat": -11.9128916,
+    "lon": -76.9932198
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1112570184,
+   "center": {
+    "lat": -11.9131268,
+    "lon": -77.003011
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1112570186,
+   "center": {
+    "lat": -11.9129388,
+    "lon": -77.0016959
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1112570187,
+   "center": {
+    "lat": -11.9123751,
+    "lon": -77.0043923
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1119727280,
+   "center": {
+    "lat": -11.8995291,
+    "lon": -77.0429279
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Mariano Condorcanqui",
+    "surface": "unpaved"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1119950857,
+   "center": {
+    "lat": -11.9092954,
+    "lon": -77.0518772
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Mariano Condorcanqui",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1120225833,
+   "center": {
+    "lat": -11.9320511,
+    "lon": -77.0674209
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1120225834,
+   "center": {
+    "lat": -11.932299,
+    "lon": -77.0673274
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1120652465,
+   "center": {
+    "lat": -11.9618242,
+    "lon": -77.0630547
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1120652467,
+   "center": {
+    "lat": -11.9647893,
+    "lon": -77.0617233
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1125527497,
+   "center": {
+    "lat": -11.9661138,
+    "lon": -77.0558207
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1125530239,
+   "center": {
+    "lat": -11.9272898,
+    "lon": -77.043036
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1125530247,
+   "center": {
+    "lat": -11.9248486,
+    "lon": -77.0425409
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1125530248,
+   "center": {
+    "lat": -11.924757,
+    "lon": -77.0425267
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1125530254,
+   "center": {
+    "lat": -11.9251074,
+    "lon": -77.0407678
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1138481599,
+   "center": {
+    "lat": -11.9363891,
+    "lon": -77.0453812
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Ignacio Prado"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1138488463,
+   "center": {
+    "lat": -11.9363088,
+    "lon": -77.060316
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1148985992,
+   "center": {
+    "lat": -11.9137422,
+    "lon": -77.0556945
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1149237597,
+   "center": {
+    "lat": -11.9394644,
+    "lon": -77.0605678
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1152967824,
+   "center": {
+    "lat": -11.9147117,
+    "lon": -77.0260034
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1152967826,
+   "center": {
+    "lat": -11.9150523,
+    "lon": -77.0275013
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Santa Rosa",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1154121428,
+   "center": {
+    "lat": -11.9117165,
+    "lon": -76.9909
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1154121429,
+   "center": {
+    "lat": -11.9097736,
+    "lon": -76.9930894
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1154121430,
+   "center": {
+    "lat": -11.9090045,
+    "lon": -76.992053
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1154121431,
+   "center": {
+    "lat": -11.908876,
+    "lon": -76.9909178
+   },
+   "tags": {
+    "alt_name": "Pasamayito",
+    "highway": "primary",
+    "lanes": "2",
+    "name": "Arquitecto Fernando Belaúnde Terry",
+    "oneway": "no",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1155902063,
+   "center": {
+    "lat": -11.9429152,
+    "lon": -77.0669722
+   },
+   "tags": {
+    "construction": "residential",
+    "highway": "secondary",
+    "name": "José Gálvez",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1155902065,
+   "center": {
+    "lat": -11.9415463,
+    "lon": -77.0671239
+   },
+   "tags": {
+    "construction": "residential",
+    "highway": "secondary",
+    "name": "Avenida Francisco Bolognesi",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156114883,
+   "center": {
+    "lat": -11.9237135,
+    "lon": -77.0611179
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida B",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156116336,
+   "center": {
+    "lat": -11.9236284,
+    "lon": -77.0612203
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida B",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156125478,
+   "center": {
+    "lat": -11.896602,
+    "lon": -77.0481039
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156125482,
+   "center": {
+    "lat": -11.8991652,
+    "lon": -77.0430193
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156140870,
+   "center": {
+    "lat": -11.897038,
+    "lon": -77.0472877
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Please restore oneway tag on this way when construction is completed",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156140871,
+   "center": {
+    "lat": -11.8968999,
+    "lon": -77.0472371
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Please restore oneway tag on this way when construction is completed",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156346103,
+   "center": {
+    "lat": -11.9150544,
+    "lon": -77.0401497
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156349173,
+   "center": {
+    "lat": -11.9077645,
+    "lon": -77.0346318
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156349174,
+   "center": {
+    "lat": -11.9066385,
+    "lon": -77.0355348
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156349175,
+   "center": {
+    "lat": -11.9009744,
+    "lon": -77.0399671
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156368089,
+   "center": {
+    "lat": -11.9172639,
+    "lon": -77.0411077
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156368090,
+   "center": {
+    "lat": -11.9167307,
+    "lon": -77.0409308
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156372998,
+   "center": {
+    "lat": -11.9096599,
+    "lon": -77.0375858
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156372999,
+   "center": {
+    "lat": -11.908968,
+    "lon": -77.0359857
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156373001,
+   "center": {
+    "lat": -11.9336237,
+    "lon": -77.0468614
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156403949,
+   "center": {
+    "lat": -11.918877,
+    "lon": -77.0375603
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "Avenida Alfonso Ugarte",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156403950,
+   "center": {
+    "lat": -11.9179021,
+    "lon": -77.0393645
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "50",
+    "name": "Avenida Alfonso Ugarte",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156418664,
+   "center": {
+    "lat": -11.9365155,
+    "lon": -77.0640719
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 18",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156418665,
+   "center": {
+    "lat": -11.9371912,
+    "lon": -77.0644995
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 18"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156418674,
+   "center": {
+    "lat": -11.9338249,
+    "lon": -77.0613734
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Bernardo Monteagudo",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156453821,
+   "center": {
+    "lat": -11.8999875,
+    "lon": -77.0414839
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Oneway will need to be restore when barrier at north end of the way is removed.",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156453822,
+   "center": {
+    "lat": -11.8997651,
+    "lon": -77.0418887
+   },
+   "tags": {
+    "access": "no",
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "note",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Modified access tag on this way because of barriers blocking the way. Please restore access when appropriate",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156457971,
+   "center": {
+    "lat": -11.8966593,
+    "lon": -77.047995
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "fixme": "oneway",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "Please restore oneway tag on this way when construction is completed",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156457972,
+   "center": {
+    "lat": -11.896473,
+    "lon": -77.048032
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156627829,
+   "center": {
+    "lat": -11.9114931,
+    "lon": -77.0544307
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "45",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156644666,
+   "center": {
+    "lat": -11.9224811,
+    "lon": -77.0463398
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Sangarara",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995502,
+   "center": {
+    "lat": -11.9337389,
+    "lon": -77.0585595
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995503,
+   "center": {
+    "lat": -11.9337842,
+    "lon": -77.0587298
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "name:es": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995504,
+   "center": {
+    "lat": -11.933424,
+    "lon": -77.0586848
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995505,
+   "center": {
+    "lat": -11.9337126,
+    "lon": -77.0588404
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995506,
+   "center": {
+    "lat": -11.9334433,
+    "lon": -77.0588627
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156995507,
+   "center": {
+    "lat": -11.9335699,
+    "lon": -77.0588864
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996015,
+   "center": {
+    "lat": -11.9461021,
+    "lon": -77.0608142
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996016,
+   "center": {
+    "lat": -11.9460216,
+    "lon": -77.0610033
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996017,
+   "center": {
+    "lat": -11.9459221,
+    "lon": -77.0608769
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996018,
+   "center": {
+    "lat": -11.9456653,
+    "lon": -77.0608705
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996019,
+   "center": {
+    "lat": -11.946192,
+    "lon": -77.0603123
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996020,
+   "center": {
+    "lat": -11.9458741,
+    "lon": -77.0604028
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996021,
+   "center": {
+    "lat": -11.9461033,
+    "lon": -77.0601285
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996022,
+   "center": {
+    "lat": -11.946553,
+    "lon": -77.0603828
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996023,
+   "center": {
+    "lat": -11.9288758,
+    "lon": -77.0558864
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996024,
+   "center": {
+    "lat": -11.9287541,
+    "lon": -77.0558182
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996025,
+   "center": {
+    "lat": -11.928579,
+    "lon": -77.0558756
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996026,
+   "center": {
+    "lat": -11.92852,
+    "lon": -77.0559993
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996027,
+   "center": {
+    "lat": -11.9283522,
+    "lon": -77.0565785
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996028,
+   "center": {
+    "lat": -11.9286899,
+    "lon": -77.0562388
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "30",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996029,
+   "center": {
+    "lat": -11.9288486,
+    "lon": -77.0561834
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156996030,
+   "center": {
+    "lat": -11.9289334,
+    "lon": -77.0560787
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156998368,
+   "center": {
+    "lat": -11.9439348,
+    "lon": -77.0607675
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1156998374,
+   "center": {
+    "lat": -11.9428119,
+    "lon": -77.0555944
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Prolongación Los Ángeles",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157000588,
+   "center": {
+    "lat": -11.937965,
+    "lon": -77.0678492
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157000590,
+   "center": {
+    "lat": -11.9376435,
+    "lon": -77.0676756
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157019075,
+   "center": {
+    "lat": -11.976676,
+    "lon": -77.0599847
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "source:ref": "MTC",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704940,
+   "center": {
+    "lat": -11.9380339,
+    "lon": -77.0633513
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704941,
+   "center": {
+    "lat": -11.9379308,
+    "lon": -77.0632925
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704942,
+   "center": {
+    "lat": -11.9382422,
+    "lon": -77.0627312
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704943,
+   "center": {
+    "lat": -11.9383158,
+    "lon": -77.0628588
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704944,
+   "center": {
+    "lat": -11.9386765,
+    "lon": -77.0622214
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157704947,
+   "center": {
+    "lat": -11.9386058,
+    "lon": -77.062096
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157740549,
+   "center": {
+    "lat": -11.9300291,
+    "lon": -77.0647895
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida Collique",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157740550,
+   "center": {
+    "lat": -11.9300828,
+    "lon": -77.0646895
+   },
+   "tags": {
+    "alt_name": "Republica de Israel",
+    "highway": "tertiary",
+    "name": "Avenida Collique",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157980644,
+   "center": {
+    "lat": -11.925881,
+    "lon": -77.052087
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157980645,
+   "center": {
+    "lat": -11.9257926,
+    "lon": -77.0522009
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1157980646,
+   "center": {
+    "lat": -11.9278817,
+    "lon": -77.0529606
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1178708781,
+   "center": {
+    "lat": -11.9762777,
+    "lon": -77.0595247
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "1",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1183855082,
+   "center": {
+    "lat": -11.911606,
+    "lon": -77.0543328
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Los Pinos",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1183855083,
+   "center": {
+    "lat": -11.9111359,
+    "lon": -77.0553329
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1200928274,
+   "center": {
+    "lat": -11.9419287,
+    "lon": -77.0604183
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1200928275,
+   "center": {
+    "lat": -11.9441684,
+    "lon": -77.0603172
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1200930224,
+   "center": {
+    "lat": -11.9388445,
+    "lon": -77.0616785
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1200930225,
+   "center": {
+    "lat": -11.9389479,
+    "lon": -77.0617396
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Los Ángeles",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1200930226,
+   "center": {
+    "lat": -11.9389303,
+    "lon": -77.061649
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "35",
+    "name": "Avenida El Retablo",
+    "name:es": "Avenida El Retablo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1227687006,
+   "center": {
+    "lat": -11.9084859,
+    "lon": -77.034346
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1227912507,
+   "center": {
+    "lat": -11.9371198,
+    "lon": -77.0481704
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061800,
+   "center": {
+    "lat": -11.9660283,
+    "lon": -77.0560489
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061801,
+   "center": {
+    "lat": -11.9661242,
+    "lon": -77.0560498
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061802,
+   "center": {
+    "lat": -11.9661708,
+    "lon": -77.0559611
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061803,
+   "center": {
+    "lat": -11.9659816,
+    "lon": -77.0559599
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061804,
+   "center": {
+    "lat": -11.9710861,
+    "lon": -77.0577793
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228061805,
+   "center": {
+    "lat": -11.9660285,
+    "lon": -77.0558813
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228067792,
+   "center": {
+    "lat": -11.9316644,
+    "lon": -77.045437
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228067793,
+   "center": {
+    "lat": -11.9297796,
+    "lon": -77.0437594
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Andres Avelino Cáceres",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228067794,
+   "center": {
+    "lat": -11.9298179,
+    "lon": -77.0439016
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228067795,
+   "center": {
+    "lat": -11.9297756,
+    "lon": -77.0440024
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228067796,
+   "center": {
+    "lat": -11.9315859,
+    "lon": -77.044943
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228068635,
+   "center": {
+    "lat": -11.9336986,
+    "lon": -77.0468534
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228068636,
+   "center": {
+    "lat": -11.933656,
+    "lon": -77.0466659
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228070646,
+   "center": {
+    "lat": -11.9210473,
+    "lon": -77.0417425
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228070647,
+   "center": {
+    "lat": -11.9247706,
+    "lon": -77.0424141
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Almirante Miguel Grau",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228078530,
+   "center": {
+    "lat": -11.9172748,
+    "lon": -77.0413273
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1228078533,
+   "center": {
+    "lat": -11.9171731,
+    "lon": -77.0412412
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942756,
+   "center": {
+    "lat": -11.9647304,
+    "lon": -77.0618371
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942757,
+   "center": {
+    "lat": -11.9632567,
+    "lon": -77.0620493
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942758,
+   "center": {
+    "lat": -11.9648466,
+    "lon": -77.0619712
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942759,
+   "center": {
+    "lat": -11.9647781,
+    "lon": -77.0620393
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942760,
+   "center": {
+    "lat": -11.9646946,
+    "lon": -77.0616844
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942761,
+   "center": {
+    "lat": -11.9629177,
+    "lon": -77.061805
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942762,
+   "center": {
+    "lat": -11.96476,
+    "lon": -77.0619603
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942763,
+   "center": {
+    "lat": -11.96485,
+    "lon": -77.0623974
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942764,
+   "center": {
+    "lat": -11.9648687,
+    "lon": -77.0620744
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942765,
+   "center": {
+    "lat": -11.9649372,
+    "lon": -77.0620063
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942766,
+   "center": {
+    "lat": -11.9699003,
+    "lon": -77.0609396
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "30",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942767,
+   "center": {
+    "lat": -11.9707247,
+    "lon": -77.060867
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942768,
+   "center": {
+    "lat": -11.9648986,
+    "lon": -77.0618308
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942774,
+   "center": {
+    "lat": -11.9510656,
+    "lon": -77.0600966
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942775,
+   "center": {
+    "lat": -11.9553236,
+    "lon": -77.0599094
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942776,
+   "center": {
+    "lat": -11.9553846,
+    "lon": -77.0600349
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942777,
+   "center": {
+    "lat": -11.9553157,
+    "lon": -77.0600912
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942778,
+   "center": {
+    "lat": -11.9553314,
+    "lon": -77.0597334
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942779,
+   "center": {
+    "lat": -11.9509292,
+    "lon": -77.0600018
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942780,
+   "center": {
+    "lat": -11.9559888,
+    "lon": -77.0573763
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942781,
+   "center": {
+    "lat": -11.955396,
+    "lon": -77.0597839
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942782,
+   "center": {
+    "lat": -11.9554651,
+    "lon": -77.059736
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942783,
+   "center": {
+    "lat": -11.9554447,
+    "lon": -77.0621614
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942784,
+   "center": {
+    "lat": -11.9553794,
+    "lon": -77.0601493
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942785,
+   "center": {
+    "lat": -11.9554483,
+    "lon": -77.060093
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942786,
+   "center": {
+    "lat": -11.9581545,
+    "lon": -77.0612741
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942787,
+   "center": {
+    "lat": -11.9554431,
+    "lon": -77.0602035
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942788,
+   "center": {
+    "lat": -11.9583739,
+    "lon": -77.0612278
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942789,
+   "center": {
+    "lat": -11.9554572,
+    "lon": -77.0599019
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1231942790,
+   "center": {
+    "lat": -11.9555679,
+    "lon": -77.0596941
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081801,
+   "center": {
+    "lat": -11.9004663,
+    "lon": -77.0405942
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081802,
+   "center": {
+    "lat": -11.9008995,
+    "lon": -77.0401054
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "As of February 2023, this way appears to be under construction.",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081803,
+   "center": {
+    "lat": -11.9008574,
+    "lon": -77.040184
+   },
+   "tags": {
+    "alt_name": "Avenida Diego Meza",
+    "highway": "secondary",
+    "lanes": "2",
+    "name": "Avenida San Felipe",
+    "note": "As of February 2023, this way appears to be under construction.",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081804,
+   "center": {
+    "lat": -11.9009383,
+    "lon": -77.0397023
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081805,
+   "center": {
+    "lat": -11.9014134,
+    "lon": -77.0393809
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081824,
+   "center": {
+    "lat": -11.9386413,
+    "lon": -77.0582024
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081825,
+   "center": {
+    "lat": -11.9422573,
+    "lon": -77.0602932
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081826,
+   "center": {
+    "lat": -11.9423498,
+    "lon": -77.060131
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081827,
+   "center": {
+    "lat": -11.9439368,
+    "lon": -77.0606815
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081828,
+   "center": {
+    "lat": -11.9423771,
+    "lon": -77.0603359
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081829,
+   "center": {
+    "lat": -11.9446217,
+    "lon": -77.0572509
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081830,
+   "center": {
+    "lat": -11.941826,
+    "lon": -77.0624931
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081831,
+   "center": {
+    "lat": -11.9422901,
+    "lon": -77.0604941
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081832,
+   "center": {
+    "lat": -11.9325198,
+    "lon": -77.0548586
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081833,
+   "center": {
+    "lat": -11.9348363,
+    "lon": -77.0562837
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081834,
+   "center": {
+    "lat": -11.9299648,
+    "lon": -77.0535967
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081835,
+   "center": {
+    "lat": -11.9279641,
+    "lon": -77.0527231
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081836,
+   "center": {
+    "lat": -11.9300857,
+    "lon": -77.0535159
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081837,
+   "center": {
+    "lat": -11.9301666,
+    "lon": -77.0535036
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081838,
+   "center": {
+    "lat": -11.9319319,
+    "lon": -77.050181
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081839,
+   "center": {
+    "lat": -11.9293048,
+    "lon": -77.0548046
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081840,
+   "center": {
+    "lat": -11.9299775,
+    "lon": -77.0538424
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081845,
+   "center": {
+    "lat": -11.925742,
+    "lon": -77.0520633
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081846,
+   "center": {
+    "lat": -11.9205286,
+    "lon": -77.0498574
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081847,
+   "center": {
+    "lat": -11.9258304,
+    "lon": -77.0519493
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081848,
+   "center": {
+    "lat": -11.9257835,
+    "lon": -77.0518371
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081849,
+   "center": {
+    "lat": -11.9255178,
+    "lon": -77.0535139
+   },
+   "tags": {
+    "alt_name": "Andres Avelino Caceres",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1232081850,
+   "center": {
+    "lat": -11.9258547,
+    "lon": -77.0522646
+   },
+   "tags": {
+    "alt_name": "Andres Avelino Caceres",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Jamaica",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1286663201,
+   "center": {
+    "lat": -11.9305456,
+    "lon": -77.0649464
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1305340780,
+   "center": {
+    "lat": -11.9489053,
+    "lon": -77.0655526
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1305340781,
+   "center": {
+    "lat": -11.9517466,
+    "lon": -77.0650174
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1305340782,
+   "center": {
+    "lat": -11.9406119,
+    "lon": -77.0671402
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1305844859,
+   "center": {
+    "lat": -11.9783399,
+    "lon": -77.0592505
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "María Parado de Bellido",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1305844860,
+   "center": {
+    "lat": -11.973001,
+    "lon": -77.0577036
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "María Parado de Bellido",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1316964308,
+   "center": {
+    "lat": -11.9451513,
+    "lon": -77.0662674
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1316973999,
+   "center": {
+    "lat": -11.9345278,
+    "lon": -77.0442934
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida José Pardo",
+    "oneway": "no"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441807,
+   "center": {
+    "lat": -11.9422509,
+    "lon": -77.0605714
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441808,
+   "center": {
+    "lat": -11.942129,
+    "lon": -77.0605312
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441809,
+   "center": {
+    "lat": -11.9423957,
+    "lon": -77.0600505
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441810,
+   "center": {
+    "lat": -11.9425225,
+    "lon": -77.0600905
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441811,
+   "center": {
+    "lat": -11.9423619,
+    "lon": -77.0604637
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441812,
+   "center": {
+    "lat": -11.9423161,
+    "lon": -77.0605533
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441813,
+   "center": {
+    "lat": -11.9421149,
+    "lon": -77.06049
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441814,
+   "center": {
+    "lat": -11.9421612,
+    "lon": -77.0603954
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441815,
+   "center": {
+    "lat": -11.9422725,
+    "lon": -77.0601625
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441816,
+   "center": {
+    "lat": -11.942324,
+    "lon": -77.0600611
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441817,
+   "center": {
+    "lat": -11.9424838,
+    "lon": -77.0602356
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1342441818,
+   "center": {
+    "lat": -11.9425434,
+    "lon": -77.0601333
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344664,
+   "center": {
+    "lat": -11.9554378,
+    "lon": -77.0602961
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344665,
+   "center": {
+    "lat": -11.9553088,
+    "lon": -77.060237
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344668,
+   "center": {
+    "lat": -11.9554692,
+    "lon": -77.0596404
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344669,
+   "center": {
+    "lat": -11.9553346,
+    "lon": -77.0596344
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344670,
+   "center": {
+    "lat": -11.9552805,
+    "lon": -77.0601451
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344671,
+   "center": {
+    "lat": -11.9552847,
+    "lon": -77.060035
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344672,
+   "center": {
+    "lat": -11.9554788,
+    "lon": -77.060153
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344673,
+   "center": {
+    "lat": -11.9554847,
+    "lon": -77.0600368
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344674,
+   "center": {
+    "lat": -11.9555003,
+    "lon": -77.0597848
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344675,
+   "center": {
+    "lat": -11.9555056,
+    "lon": -77.0596902
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344676,
+   "center": {
+    "lat": -11.9552938,
+    "lon": -77.0597822
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343344677,
+   "center": {
+    "lat": -11.9552987,
+    "lon": -77.0596834
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343440425,
+   "center": {
+    "lat": -11.9301671,
+    "lon": -77.0694881
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465848,
+   "center": {
+    "lat": -11.9350346,
+    "lon": -77.0562465
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465849,
+   "center": {
+    "lat": -11.9349142,
+    "lon": -77.0564746
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465850,
+   "center": {
+    "lat": -11.9350387,
+    "lon": -77.0561792
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465851,
+   "center": {
+    "lat": -11.9349248,
+    "lon": -77.0561179
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465852,
+   "center": {
+    "lat": -11.9348702,
+    "lon": -77.056493
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343465853,
+   "center": {
+    "lat": -11.9347573,
+    "lon": -77.0564314
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343468172,
+   "center": {
+    "lat": -11.9143081,
+    "lon": -77.0291838
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Julio César Tello",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343536262,
+   "center": {
+    "lat": -11.9207372,
+    "lon": -77.0419213
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Francisco Bolognesi",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343625323,
+   "center": {
+    "lat": -11.913647,
+    "lon": -77.0258853
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343625324,
+   "center": {
+    "lat": -11.913019,
+    "lon": -77.0225366
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632149,
+   "center": {
+    "lat": -11.9462415,
+    "lon": -77.0607827
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632152,
+   "center": {
+    "lat": -11.9462081,
+    "lon": -77.0603525
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632153,
+   "center": {
+    "lat": -11.9462551,
+    "lon": -77.0600483
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632154,
+   "center": {
+    "lat": -11.9460462,
+    "lon": -77.0603293
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632155,
+   "center": {
+    "lat": -11.9460058,
+    "lon": -77.0603694
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632158,
+   "center": {
+    "lat": -11.9458967,
+    "lon": -77.0608527
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "primary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632159,
+   "center": {
+    "lat": -11.9458627,
+    "lon": -77.061154
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343632160,
+   "center": {
+    "lat": -11.9460585,
+    "lon": -77.0608614
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida 22 de Agosto",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343637979,
+   "center": {
+    "lat": -11.9335994,
+    "lon": -77.0467741
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343669100,
+   "center": {
+    "lat": -11.9302344,
+    "lon": -77.064838
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "lanes": "3",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1343669101,
+   "center": {
+    "lat": -11.9302041,
+    "lon": -77.0647546
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "tertiary",
+    "name": "Republica de Israel",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1349695448,
+   "center": {
+    "lat": -11.9333896,
+    "lon": -77.062279
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Calle 18"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1391917665,
+   "center": {
+    "lat": -11.9067205,
+    "lon": -77.0428667
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1391917666,
+   "center": {
+    "lat": -11.9050517,
+    "lon": -77.0419385
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1393433071,
+   "center": {
+    "lat": -11.9252249,
+    "lon": -77.0630666
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Avenida 2",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1393433072,
+   "center": {
+    "lat": -11.9245999,
+    "lon": -77.0639199
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "name": "Avenida 2",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1418827752,
+   "center": {
+    "lat": -11.9769831,
+    "lon": -77.0592952
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Calle 1",
+    "oneway": "yes",
+    "ref": "PE-20J",
+    "surface": "asphalt",
+    "turn:lanes": "right|right"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1418827759,
+   "center": {
+    "lat": -11.976103,
+    "lon": -77.0594744
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt",
+    "turn:lanes": "through|slight_right"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1418827760,
+   "center": {
+    "lat": -11.9774722,
+    "lon": -77.0595214
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "source_ref": "MTC",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1423486992,
+   "center": {
+    "lat": -11.9153782,
+    "lon": -77.0476293
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1423487002,
+   "center": {
+    "lat": -11.9159882,
+    "lon": -77.0464385
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1423487003,
+   "center": {
+    "lat": -11.9145732,
+    "lon": -77.0490679
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1423487004,
+   "center": {
+    "lat": -11.9122027,
+    "lon": -77.0531096
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1450770094,
+   "center": {
+    "lat": -11.9636002,
+    "lon": -77.0549163
+   },
+   "tags": {
+    "highway": "secondary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1450770095,
+   "center": {
+    "lat": -11.9298429,
+    "lon": -77.0437269
+   },
+   "tags": {
+    "highway": "tertiary",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1450770102,
+   "center": {
+    "lat": -11.9373368,
+    "lon": -77.0683485
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Industrial",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1450770104,
+   "center": {
+    "lat": -11.9524556,
+    "lon": -77.0647341
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida San Bernardo",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1457937191,
+   "center": {
+    "lat": -11.9451595,
+    "lon": -77.0708102
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1457937192,
+   "center": {
+    "lat": -11.9644288,
+    "lon": -77.0600621
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Carabayllo",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1457937193,
+   "center": {
+    "lat": -11.9645162,
+    "lon": -77.0608517
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458167894,
+   "center": {
+    "lat": -11.9646783,
+    "lon": -77.0608216
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Maestro Peruano",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458167897,
+   "center": {
+    "lat": -11.9149883,
+    "lon": -77.0480488
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458167898,
+   "center": {
+    "lat": -11.9300309,
+    "lon": -77.0537477
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458167900,
+   "center": {
+    "lat": -11.930128,
+    "lon": -77.0535728
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Micaela Bastidas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458167903,
+   "center": {
+    "lat": -11.9152708,
+    "lon": -77.0478222
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1458553365,
+   "center": {
+    "lat": -11.9010343,
+    "lon": -77.0398567
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1459435108,
+   "center": {
+    "lat": -11.9554617,
+    "lon": -77.0598074
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1459435110,
+   "center": {
+    "lat": -11.9554525,
+    "lon": -77.0600038
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1460619641,
+   "center": {
+    "lat": -11.9343138,
+    "lon": -77.0716405
+   },
+   "tags": {
+    "highway": "secondary",
+    "name": "Las Exportaciones"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1468972678,
+   "center": {
+    "lat": -11.9415135,
+    "lon": -77.070906
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1468972679,
+   "center": {
+    "lat": -11.9344165,
+    "lon": -77.0715728
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023746,
+   "center": {
+    "lat": -11.9030919,
+    "lon": -77.0380463
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Martín",
+    "oneway": "yes",
+    "surface": "concrete"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023747,
+   "center": {
+    "lat": -11.9023484,
+    "lon": -77.0384433
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023748,
+   "center": {
+    "lat": -11.9024908,
+    "lon": -77.0385311
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida San Felipe",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023749,
+   "center": {
+    "lat": -11.9152018,
+    "lon": -77.0479454
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023750,
+   "center": {
+    "lat": -11.9150987,
+    "lon": -77.0479896
+   },
+   "tags": {
+    "bicycle": "no",
+    "foot": "no",
+    "highway": "primary",
+    "horse": "no",
+    "lanes": "2",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023751,
+   "center": {
+    "lat": -11.9150547,
+    "lon": -77.0479285
+   },
+   "tags": {
+    "foot": "no",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023752,
+   "center": {
+    "lat": -11.9144286,
+    "lon": -77.0490655
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Los Incas",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023755,
+   "center": {
+    "lat": -11.9419685,
+    "lon": -77.0659535
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023759,
+   "center": {
+    "lat": -11.9417091,
+    "lon": -77.0646598
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Guillermo de la Fuente",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023761,
+   "center": {
+    "lat": -11.9452269,
+    "lon": -77.0707411
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1469023766,
+   "center": {
+    "lat": -11.9557183,
+    "lon": -77.0637348
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1472544421,
+   "center": {
+    "lat": -11.9408531,
+    "lon": -77.0502616
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Avenida Andrés Belaúnde Oeste",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1475457450,
+   "center": {
+    "lat": -11.9314047,
+    "lon": -77.0691834
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1476350220,
+   "center": {
+    "lat": -11.938612,
+    "lon": -77.071196
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Alfredo Mendiola",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1491124735,
+   "center": {
+    "lat": -11.9457986,
+    "lon": -77.0707167
+   },
+   "tags": {
+    "alt_name": "25 de Enero",
+    "foot": "no",
+    "highway": "primary",
+    "junction": "roundabout",
+    "lanes": "4",
+    "maxspeed": "40",
+    "name": "Óvalo Infantas",
+    "name:en": "Infantas Roundabout",
+    "note": "La pista original fue actualzada de http://www.andina.com.pe/agencia/noticia-panamericana-norte-tendra-un-intercambio-vial-zona-infantas-521996.aspx",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1498359238,
+   "center": {
+    "lat": -11.9615822,
+    "lon": -77.0635033
+   },
+   "tags": {
+    "highway": "primary",
+    "lanes": "3",
+    "maxspeed": "60",
+    "name": "Avenida Universitaria",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1499807301,
+   "center": {
+    "lat": -11.9406245,
+    "lon": -77.0672082
+   },
+   "tags": {
+    "alt_name": "Avenida Metropolitana",
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "45",
+    "name": "Avenida Gerardo Unger",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1502723339,
+   "center": {
+    "lat": -11.9606214,
+    "lon": -77.0542034
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "40",
+    "name": "Avenida Túpac Amaru",
+    "name:es": "Avenida Túpac Amaru",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1515746200,
+   "center": {
+    "lat": -11.9373105,
+    "lon": -77.0680032
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "30",
+    "name": "Avenida Los Próceres de Huandoy",
+    "sidewalk:right": "separate",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1531533803,
+   "center": {
+    "lat": -11.9124687,
+    "lon": -77.0052357
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1531533805,
+   "center": {
+    "lat": -11.9123596,
+    "lon": -77.005234
+   },
+   "tags": {
+    "highway": "primary",
+    "maxspeed": "50",
+    "name": "Avenida Revolución",
+    "oneway": "yes"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1532865403,
+   "center": {
+    "lat": -11.9557728,
+    "lon": -77.0638766
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida México",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1532865404,
+   "center": {
+    "lat": -11.9541095,
+    "lon": -77.0642458
+   },
+   "tags": {
+    "highway": "secondary",
+    "lanes": "2",
+    "maxspeed": "50",
+    "name": "Avenida Metropolitana",
+    "oneway": "yes",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1539939320,
+   "center": {
+    "lat": -11.9343322,
+    "lon": -77.0604242
+   },
+   "tags": {
+    "highway": "tertiary",
+    "name": "Jirón Bernardo Monteagudo",
+    "oneway": "yes",
+    "sidewalk:right": "separate"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1539939321,
+   "center": {
+    "lat": -11.9343316,
+    "lon": -77.0604446
+   },
+   "tags": {
+    "highway": "tertiary",
+    "lanes": "2",
+    "name": "Avenida Manuel González Prada",
+    "oneway": "yes",
+    "sidewalk:right": "separate",
+    "surface": "asphalt"
+   }
+  },
+  {
+   "type": "way",
+   "id": 1547815254,
+   "center": {
+    "lat": -11.9151618,
+    "lon": -77.0301494
+   },
+   "tags": {
+    "alt_name": "Avenida La Libertad",
+    "highway": "tertiary",
+    "name": "Jirón Tacna",
+    "surface": "asphalt"
+   }
+  }
+ ]
+}

@@ -1,0 +1,96 @@
+{
+  //:schema ./node_modules/wrangler/config-schema.json
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "ojo-comas-api",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-09-16",
+  "workers_dev": true,
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1,
+    "traces": {
+      "enabled": true,
+      "head_sampling_rate": 0.1
+    }
+  },
+
+  // Variables NO secretas. Los secretos (TURNSTILE_SECRET, ADMIN_TOKEN, IP_SALT) NO van aqui:
+  // en local se ponen en .dev.vars (ignorado por git) y en produccion con
+  //   npx wrangler secret put TURNSTILE_SECRET
+  "vars": {
+    "ENTORNO": "local",
+    // Sitekey de PRUEBA de Cloudflare (siempre pasa). Sustituir por la real en produccion.
+    "TURNSTILE_SITEKEY": "1x00000000000000000000AA",
+    // Hostnames que siteverify debe devolver. "*" desactiva la comprobacion (SOLO para la
+    // demo local con claves de prueba). En produccion: "ojo-comas.pages.dev,ojo-comas.pe".
+    "TURNSTILE_HOSTNAMES": "*",
+    // Acciones permitidas del widget Turnstile.
+    "TURNSTILE_ACTIONS": "reporte,apoyo",
+    "MAX_FOTO_BYTES": "2097152",
+    // En local se deja holgado para poder repetir la prueba de humo (todas las peticiones salen
+    // del mismo 127.0.0.1). El limite real de produccion es 8 por hora (ver env.produccion), y el
+    // limitador se prueba de verdad arrancando un servidor con --var MAX_REPORTES_POR_HORA:1.
+    "MAX_REPORTES_POR_HORA": "40",
+    "MAX_APOYOS_POR_HORA": "30",
+    "CORS_ORIGINS": "http://localhost:8788,http://127.0.0.1:8788,http://localhost:8787,http://127.0.0.1:8787,http://localhost:3000"
+  },
+
+  // Secretos que el Worker EXIGE. Declararlos aqui hace que `wrangler types` los incluya siempre
+  // en los tipos generados, aunque no exista un .dev.vars local (que esta ignorado por git). Sin
+  // esta declaracion, `npx wrangler types && tsc --noEmit` fallaria en CI al no conocer
+  // c.env.TURNSTILE_SECRET. Los VALORES nunca viven aqui: se cargan con
+  //   npx wrangler secret put TURNSTILE_SECRET --env produccion
+  "secrets": {
+    "required": ["TURNSTILE_SECRET", "ADMIN_TOKEN", "IP_SALT"]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ojo-comas-db",
+      // PLACEHOLDER: sustituir por el ID real que devuelve
+      //   npx wrangler d1 create ojo-comas-db
+      // `wrangler dev` y `--local` funcionan sin cambiarlo porque usan SQLite local.
+      "database_id": "00000000-0000-0000-0000-000000000000",
+      "migrations_dir": "migrations"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "FOTOS",
+      "bucket_name": "ojo-comas-fotos"
+    }
+  ],
+
+  // Entorno de produccion. `npx wrangler deploy --env produccion`
+  "env": {
+    "produccion": {
+      "name": "ojo-comas-api",
+      "vars": {
+        "ENTORNO": "produccion",
+        "TURNSTILE_SITEKEY": "REEMPLAZAR-CON-TU-SITEKEY-REAL",
+        "TURNSTILE_HOSTNAMES": "REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES",
+        "TURNSTILE_ACTIONS": "reporte,apoyo",
+        "MAX_FOTO_BYTES": "2097152",
+        "MAX_REPORTES_POR_HORA": "8",
+        "MAX_APOYOS_POR_HORA": "30",
+        "CORS_ORIGINS": "REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES"
+      },
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "ojo-comas-db",
+          "database_id": "REEMPLAZAR-CON-EL-ID-DE-TU-D1",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "r2_buckets": [
+        {
+          "binding": "FOTOS",
+          "bucket_name": "ojo-comas-fotos"
+        }
+      ]
+    }
+  }
+}
