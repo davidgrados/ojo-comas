@@ -21,12 +21,19 @@ sustituye a la Municipalidad Distrital de Comas.
 > las **claves de prueba** de Cloudflare, que no protegen nada. Ver
 > [Endurecer Turnstile](#endurecer-turnstile-antes-de-difundirlo).
 
+📋 **Antes de difundir esto o de usarlo con datos reales, lee
+[`docs/CUMPLIMIENTO-LEGAL.md`](docs/CUMPLIMIENTO-LEGAL.md)**: analiza el riesgo real ante
+autoridades peruanas (ANPD, Municipalidad de Comas, INDECOPI), qué está ya mitigado y la lista de
+acciones obligatorias previas — la primera, inscribir el banco de datos ante la ANPD.
+Las licencias de código y datos están en [`LICENCIAS.md`](LICENCIAS.md).
+
 ---
 
 ## Índice
 
 - [Qué hace](#qué-hace)
 - [Cumplimiento legal](#cumplimiento-legal)
+- [Riesgo legal y acciones previas](docs/CUMPLIMIENTO-LEGAL.md)
 - [Arquitectura](#arquitectura)
 - [Los datos: qué es real y qué es ficticio](#los-datos-qué-es-real-y-qué-es-ficticio)
 - [Cómo ejecutarlo en local](#cómo-ejecutarlo-en-local)
@@ -57,7 +64,14 @@ sustituye a la Municipalidad Distrital de Comas.
 
 ## Cumplimiento legal
 
-### Ley N° 29733 — Protección de Datos Personales
+> El análisis completo de riesgos, con las fuentes normativas y la lista de acciones obligatorias
+> antes de usar esto con datos reales, está en **[`docs/CUMPLIMIENTO-LEGAL.md`](docs/CUMPLIMIENTO-LEGAL.md)**.
+> Resumen ejecutivo de la situación actual más abajo.
+
+### Ley N° 29733 y su reglamento vigente — D.S. N° 016-2024-JUS
+
+> El reglamento aplicable desde el **30 de marzo de 2025** es el **D.S. N° 016-2024-JUS**, que
+> derogó el D.S. N° 003-2013-JUS. La política de privacidad citaba el derogado: **corregido**.
 
 | Requisito | Cómo se cumple |
 |---|---|
@@ -66,6 +80,11 @@ sustituye a la Municipalidad Distrital de Comas.
 | Minimización | El servidor **descarta el contacto** si `consentimiento` es `false`, y una restricción `CHECK` en D1 impide guardar contacto sin consentimiento. |
 | No exponer datos personales | Ninguna respuesta pública incluye `contact`, `consent` ni `ip_hash`. Está verificado automáticamente en la prueba de humo. |
 | Direcciones IP | **No se almacenan.** Solo se guarda un SHA-256 de `(IP + fecha + sal secreta)` que rota a diario y sirve únicamente para limitar abusos. |
+| Identificación del responsable | La política identifica al responsable del banco de datos y el canal de contacto. |
+| Derechos ARCO | Canal habilitado en las *issues* del repositorio, con la advertencia del plazo de 10 días que exige el reglamento. |
+| Flujo transfronterizo | Declarado: la base D1 está en la región ENAM (EE. UU.) y las fotos en R2. Con datos reales exigiría salvaguardas documentadas. |
+| Inscripción del banco de datos ante la ANPD | **Pendiente y bloqueante solo si se usan datos reales.** Hoy son ficticios, así que no procede. Ver la lista de comprobación del documento de cumplimiento. |
+| Incidentes de seguridad (48 h) | No hay procedimiento documentado: **pendiente** si se usaran datos reales. |
 | Política de privacidad | Modal accesible desde el banner superior y el pie de página. |
 
 ### D.S. N° 029-2021-PCM — Gobierno Digital
@@ -83,6 +102,37 @@ sustituye a la Municipalidad Distrital de Comas.
 - Fomenta la **participación vecinal** (Art. 53): reporte abierto y apoyo a reportes de otros.
 - **No suplanta** a la Municipalidad: el banner de advertencia es fijo y visible en toda la
   interfaz, y el pie de página lo repite.
+
+### Carácter no oficial y ausencia de efectos legales
+
+Es la salvaguarda más importante frente a una posible **usurpación de funciones públicas**
+(Código Penal, art. 362) y frente a que un vecino confunda esta herramienta con un canal oficial y
+pierda derechos por no acudir al que sí lo es.
+
+En la interfaz, un reporte **no**:
+
+- inicia un procedimiento administrativo ni genera expediente;
+- produce efectos ante el **silencio administrativo** ni plazos de respuesta (Ley N.° 27444);
+- obliga a ninguna entidad a actuar ni a responder;
+- sustituye al **Libro de Reclamaciones** ni a la mesa de partes.
+
+Está declarado en el **banner superior**, en el pie de página y en el modal
+**«Aviso legal y normas de uso»** nuevo. La aplicación **no ejerce función pública**, no usa el
+escudo ni el nombre oficial de la municipalidad (verificado) y remite expresamente a los canales
+oficiales.
+
+### Datos ficticios imposibles de confundir
+
+El mapa sitúa 28 reportes ficticios sobre **calles reales** del distrito. Para que una captura de
+pantalla no pueda circular como si fueran problemas reales:
+
+- **marca de agua permanente** sobre el mapa («DATOS FICTICIOS · PROTOTIPO NO OFICIAL»), dentro del
+  contenedor del mapa, así que sale en cualquier captura;
+- **etiqueta «Ficticio»** en cada reporte, tanto en el globo del mapa como en las tarjetas;
+- **«FOTO SIMULADA»** en las imágenes generadas.
+
+Estos requisitos están cubiertos por **14 comprobaciones automáticas** en
+`tools/verificar_frontend.mjs` que fallan si alguien los elimina.
 
 ---
 

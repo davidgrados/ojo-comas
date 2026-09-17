@@ -31,7 +31,7 @@
 
 <!-- 1) BANNER LEGAL FIJO Y NO INTRUSIVO -->
 <div class="banner-legal" id="bannerLegal" role="note">
-  <p class="banner-legal__texto">⚠️ PROTOTIPO DE DEMOSTRACIÓN - Datos 100% ficticios. No representa oficialmente a la Municipalidad Distrital de Comas. Cumple con la Ley N° 29733 de Protección de Datos Personales. <button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></p>
+  <p class="banner-legal__texto">⚠️ PROTOTIPO DE DEMOSTRACIÓN - Datos 100% ficticios. No representa oficialmente a la Municipalidad Distrital de Comas y no tramita reclamos oficiales: los reportes NO tienen efectos legales ni administrativos. Cumple con la Ley N° 29733 de Protección de Datos Personales. <button type="button" class="enlace-inline" data-abrir-modal="modalAvisoLegal">Aviso legal</button> · <button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></p>
 </div>
 
 <!-- 2) HERO -->
@@ -90,6 +90,17 @@
 
       <div class="mapa-envoltorio">
         <div id="map" class="mapa" role="application" aria-label="Mapa interactivo de reportes del distrito de Comas"></div>
+
+        <!-- Marca de agua permanente sobre el mapa.
+             Existe por un motivo legal concreto: si alguien captura la pantalla y la difunde sin el
+             banner, la imagen podría hacer creer que los 28 reportes ficticios son problemas reales
+             del distrito. La marca viaja dentro de la propia captura, así que el carácter ficticio
+             no se puede separar del mapa. No bloquea el ratón (pointer-events: none). -->
+        <div class="mapa-marca-ficticio" aria-hidden="true">
+          <span class="mapa-marca-ficticio__linea1">DATOS FICTICIOS</span>
+          <span class="mapa-marca-ficticio__linea2">PROTOTIPO NO OFICIAL · DEMOSTRACIÓN</span>
+        </div>
+
         <div id="mapaSinLeaflet" class="mapa-mensaje oculto" role="alert">
           No se pudo cargar la librería del mapa (Leaflet). Revisa tu conexión: el resto de la aplicación sigue funcionando.
         </div>
@@ -209,9 +220,11 @@
   <div class="contenedor">
     <p class="footer__marca">👁️ Ojo Comas</p>
     <p class="footer__linea">Este es un prototipo demostrativo sin fines oficiales.</p>
-    <p class="footer__linea">Cumple con la Ley N° 29733 de Protección de Datos Personales.</p>
+    <p class="footer__linea">No es un canal oficial de reclamos: los reportes no tienen efectos legales ni administrativos.</p>
+    <p class="footer__linea">Cumple con la Ley N° 29733 de Protección de Datos Personales y su reglamento vigente (D.S. N° 016-2024-JUS).</p>
     <ul class="footer__enlaces">
       <li><a href="https://github.com/davidgrados/ojo-comas" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
+      <li><button type="button" class="enlace-inline" data-abrir-modal="modalAvisoLegal">Aviso legal y normas de uso</button></li>
       <li><button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></li>
       <li><a href="#seccionTransparencia">Panel de transparencia</a></li>
     </ul>
@@ -467,48 +480,190 @@
         identificarte.
       </p>
 
-      <h3>4. Base legal</h3>
+      <h3>4. Base legal y responsable del tratamiento</h3>
       <p>
-        El tratamiento se sustenta en la <strong>Ley N° 29733, Ley de Protección de Datos Personales</strong>, y su
-        reglamento aprobado por D.S. 003-2013-JUS, bajo los principios de consentimiento, finalidad, proporcionalidad,
-        calidad y seguridad. El contacto solo se trata con tu consentimiento libre, previo, expreso e informado.
+        El tratamiento se sustenta en la <strong>Ley N.° 29733, Ley de Protección de Datos Personales</strong>, y en su
+        reglamento vigente aprobado por <strong>Decreto Supremo N.° 016-2024-JUS</strong> (en vigor desde el 30 de
+        marzo de 2025, que derogó el reglamento anterior de 2013). Se aplican los principios de consentimiento,
+        finalidad, proporcionalidad, calidad, seguridad y disposición de recurso.
+      </p>
+      <p>
+        <strong>Responsable del banco de datos:</strong> el promotor ciudadano independiente de este prototipo, que no
+        es una entidad pública ni actúa en nombre de ninguna. El canal de contacto para cualquier asunto de datos
+        personales es el indicado en la sección 7.
+      </p>
+      <p>
+        <strong>Aviso importante sobre el estado del prototipo:</strong> mientras se use con datos ficticios, como
+        ahora, no existe un banco de datos personales de vecinos y por tanto no procede inscripción. Si en el futuro
+        se usara con reportes reales, <strong>antes de recoger un solo dato</strong> habría que inscribir el banco de
+        datos ante el Registro Nacional de Protección de Datos Personales de la Autoridad Nacional de Protección de
+        Datos Personales (ANPD), trámite gratuito y de aprobación automática, y notificar cualquier incidente de
+        seguridad dentro de las 48 horas siguientes a su detección.
       </p>
 
-      <h3>5. Para qué se usan los datos</h3>
+      <h3>5. Dónde se guardan los datos (flujo transfronterizo)</h3>
+      <p>
+        La aplicación se aloja en <strong>Cloudflare</strong>. Los reportes se guardan en Cloudflare D1 y las
+        fotografías en Cloudflare R2, infraestructura que puede estar ubicada <strong>fuera del territorio
+        peruano</strong>. Eso implica un flujo transfronterizo de datos en el sentido del reglamento vigente.
+      </p>
+      <p>
+        Mientras el prototipo funcione solo con datos ficticios, no hay transferencia de datos personales de vecinos.
+        Si se usara con datos reales, el responsable tendría que verificar el nivel de protección del país de destino
+        y, si no fuera adecuado, aplicar las salvaguardas que exige la norma, dejando constancia de ellas.
+      </p>
+
+      <h3>6. Para qué se usan los datos</h3>
       <p>
         Exclusivamente para ubicar el problema en el mapa público, mostrarlo a la comunidad, permitir que otros
-        vecinos apoyen el reporte y dar seguimiento a su estado. No se usan con fines comerciales ni se venden ni
-        ceden a terceros.
+        vecinos apoyen el reporte y dar seguimiento a su estado. No se usan con fines comerciales, no se venden ni se
+        ceden a terceros, y no se usan para elaborar perfiles ni para tomar decisiones automatizadas sobre personas.
+      </p>
+      <p>
+        La referencia de la calle se aproxima con <strong>Nominatim</strong>, el servicio de geocodificación inversa
+        de OpenStreetMap, lo que implica enviar las coordenadas a ese servicio de terceros para poder mostrar una
+        dirección legible.
       </p>
 
-      <h3>6. Conservación y seguridad</h3>
+      <h3>7. Conservación y seguridad</h3>
       <p>
         Las fotografías se <strong>redimensionan y comprimen en tu propio dispositivo</strong> antes de enviarse, con
-        el fin de reducir datos y exposición. El prototipo no conserva información más tiempo del necesario para la
-        demostración, y aplica medidas técnicas razonables (cabeceras de seguridad, verificación anti-bots con
-        Cloudflare Turnstile y límites de envío).
+        el fin de reducir datos y exposición. <strong>No se guardan direcciones IP</strong>: solo se conserva un hash
+        irreversible con una sal que cambia cada día, y únicamente para limitar envíos abusivos.
       </p>
-
-      <h3>7. Tus derechos</h3>
       <p>
-        Puedes ejercer tus derechos de información, rectificación, cancelación y oposición (derechos ARCO) escribiendo
-        al repositorio del proyecto en GitHub. Al tratarse de un prototipo con datos ficticios, no existe una base de
-        datos con información personal de vecinos.
+        <strong>Plazo de conservación:</strong> mientras el prototipo funcione con datos ficticios, los reportes de
+        demostración viven solo hasta la siguiente regeneración de los datos de ejemplo. Si en el futuro se usara con
+        reportes reales, el plazo debe fijarse <em>antes</em> de empezar y no exceder lo necesario para la finalidad
+        (una referencia razonable serían 24 meses desde el cierre del reporte, eliminando las fotografías al
+        resolverse).
       </p>
 
-      <h3>8. Menores de edad</h3>
+      <h3>8. Tus derechos (ARCO)</h3>
+      <p>
+        Puedes ejercer tus derechos de información, rectificación, cancelación y oposición sobre tus datos
+        personales. El canal habilitado es la sección de incidencias del repositorio público del proyecto:
+        <a href="https://github.com/davidgrados/ojo-comas/issues" target="_blank" rel="noopener noreferrer">github.com/davidgrados/ojo-comas/issues</a>,
+        indicando el número de reporte. Al no haber cuentas de usuario, la identificación se hace por ese número y por
+        datos que solo tú conocerías.
+      </p>
+      <p>
+        Mientras el prototipo se use con datos ficticios no hay datos personales de vecinos que cancelar. <strong>Antes
+        de usarlo con datos reales</strong> habría que habilitar un canal formal de atención al titular y un plazo de
+        respuesta, porque el reglamento vigente exige que la oposición se resuelva en un máximo de 10 días.
+      </p>
+
+      <h3>9. Menores de edad</h3>
       <p>El prototipo no está dirigido a menores de edad y no recopila datos de menores de forma intencional.</p>
 
-      <h3>9. Atribución de datos geográficos</h3>
+      <h3>10. Atribución y licencias de los datos</h3>
       <p>
-        Límite distrital, barrios y mapa base: <strong>© OpenStreetMap contributors (ODbL)</strong>. Áreas y zonales:
-        <strong>Municipalidad Distrital de Comas (municomas.gob.pe)</strong>.
+        <strong>Límite distrital, barrios, hitos y mapa base:</strong> © OpenStreetMap contributors, bajo licencia
+        ODbL. Los archivos geográficos derivados de OpenStreetMap que publica este proyecto
+        (<code>comas_distrito.geojson</code> y <code>comas_zonas.geojson</code>) se distribuyen también bajo
+        <strong>ODbL</strong>, como exige esa licencia.
+      </p>
+      <p>
+        <strong>Hectáreas, ubicación cardinal, colindancias y equipamientos de las 14 zonales:</strong> datos
+        oficiales publicados por la Municipalidad Distrital de Comas en su sección de Geografía. Se citan como fuente
+        documental; los textos oficiales de carácter administrativo no son objeto de protección por derecho de autor
+        según el artículo 9 del Decreto Legislativo N.° 822.
+      </p>
+      <p>
+        <strong>Código fuente:</strong> licencia MIT. Ninguna de estas licencias implica respaldo ni relación alguna
+        con la Municipalidad Distrital de Comas ni con OpenStreetMap Foundation.
       </p>
 
-      <h3>10. Carácter ficticio</h3>
+      <h3>11. Carácter ficticio de la demostración</h3>
       <p>
-        Repetimos lo esencial: esta es una demostración. Las cifras, fotos y reportes son inventados y sirven solo
-        para mostrar cómo funcionaría una herramienta vecinal de este tipo.
+        Repetimos lo esencial porque es lo más importante: <strong>esta es una demostración</strong>. Las cifras,
+        reportes, estados y apoyos son inventados; las «fotos» son ilustraciones generadas con la marca de agua
+        «FOTO SIMULADA». Sirven solo para mostrar cómo funcionaría una herramienta vecinal de este tipo y
+        <strong>no describen problemas reales del distrito de Comas</strong>.
+      </p>
+      <p>
+        Por eso cada reporte aparece marcado como <strong>ficticio</strong> en el mapa y en el listado, y el mapa lleva
+        una marca de agua permanente. Si ves esta aplicación fuera de su repositorio, ten en cuenta que las imágenes
+        pueden circular sin este aviso: comprueba la fuente antes de dar por cierta cualquier cifra.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: AVISO LEGAL Y NORMAS DE USO ============ -->
+<div class="modal-fondo oculto" id="modalAvisoLegal" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloAvisoLegal">
+    <header class="modal__cabecera">
+      <h2 class="modal__titulo" id="tituloAvisoLegal">Aviso legal y normas de uso</h2>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar el aviso legal">✕</button>
+    </header>
+    <div class="modal__cuerpo texto-legal">
+      <p class="texto-legal__fecha">Versión del prototipo · setiembre de 2026</p>
+
+      <h3>1. Esto NO es la Municipalidad</h3>
+      <p>
+        Ojo Comas es un <strong>prototipo de demostración creado por un vecino</strong>, sin ninguna relación con la
+        Municipalidad Distrital de Comas ni con ninguna entidad del Estado peruano. No cuenta con su autorización,
+        auspicio ni respaldo, y <strong>no ejerce función pública alguna</strong>.
+      </p>
+
+      <h3>2. Los reportes NO tienen ningún efecto legal ni administrativo</h3>
+      <p>
+        Enviar un reporte aquí <strong>no equivale a presentar una denuncia, un reclamo ni una solicitud</strong> ante
+        la Municipalidad ni ante ninguna autoridad. En particular:
+      </p>
+      <ul>
+        <li><strong>No inicia un procedimiento administrativo</strong> ni genera un expediente.</li>
+        <li><strong>No produce efectos ante el silencio administrativo</strong> ni plazos de respuesta a tu favor.</li>
+        <li><strong>No obliga a ninguna entidad a actuar</strong> ni a responderte.</li>
+        <li><strong>No es un canal oficial de reclamos</strong> y no sustituye al Libro de Reclamaciones ni a la mesa de partes de la municipalidad.</li>
+      </ul>
+      <p>
+        Si necesitas que una autoridad atienda un problema real, acude a los canales oficiales: la mesa de partes de
+        la Municipalidad Distrital de Comas, su Libro de Reclamaciones o los servicios en línea del Estado.
+      </p>
+
+      <h3>3. Lo que ves aquí son datos inventados</h3>
+      <p>
+        Todos los reportes, fotografías, estados, contadores y apoyos son <strong>ficticios</strong> y fueron
+        generados para la demostración. <strong>No describen problemas reales</strong> de ninguna calle del distrito.
+        No los uses para afirmar que una vía, un servicio o una gestión están en determinado estado, ni para
+        atribuir responsabilidades.
+      </p>
+
+      <h3>4. Normas de uso si llegara a usarse con reportes reales</h3>
+      <p>Al reportar, te comprometes a:</p>
+      <ul>
+        <li><strong>No incluir datos personales de otras personas</strong> en la descripción ni en la fotografía: nada de rostros identificables, placas de vehículos, documentos, nombres ni domicilios de terceros.</li>
+        <li><strong>No hacer acusaciones ni imputaciones</strong> contra personas, funcionarios, empresas o comercios. Describe el problema, no a quien crees responsable.</li>
+        <li><strong>No subir contenido ofensivo</strong>, discriminatorio, violento, sexual o ilícito.</li>
+        <li><strong>Fotografiar solo el espacio público</strong> y el problema, no el interior de propiedades ni a personas.</li>
+        <li><strong>No reportar de forma masiva, automatizada o repetitiva</strong>: existe un límite de envíos por hora.</li>
+      </ul>
+      <p>
+        El promotor puede retirar cualquier contenido que incumpla estas normas. Los reportes son responsabilidad de
+        quien los envía; el prototipo no verifica su veracidad y no se hace responsable del uso que terceros hagan de
+        la información publicada.
+      </p>
+
+      <h3>5. Menores y contenido de terceros</h3>
+      <p>
+        Si eres menor de edad, no envíes reportes con fotografías. Si aparecen personas identificables en una imagen,
+        quien la envía asume la responsabilidad de contar con base legal para ello; por eso te pedimos que no las
+        incluyas.
+      </p>
+
+      <h3>6. Propiedad intelectual y marcas</h3>
+      <p>
+        No se usa el escudo, logotipo, nombre oficial ni ninguna marca de la Municipalidad Distrital de Comas. El
+        nombre «Ojo Comas» es el de este prototipo ciudadano. Los datos geográficos se atribuyen en la Política de
+        Privacidad, sección 10.
+      </p>
+
+      <h3>7. Contacto</h3>
+      <p>
+        Dudas, retiros de contenido o ejercicio de derechos:
+        <a href="https://github.com/davidgrados/ojo-comas/issues" target="_blank" rel="noopener noreferrer">github.com/davidgrados/ojo-comas/issues</a>.
       </p>
     </div>
   </div>

@@ -312,6 +312,76 @@ console.log('\n8. El boton de confirmar apoyo dispara la peticion');
   }
 }
 
+/*
+ * 9) Requisitos legales que NO pueden desaparecer sin que nadie se entere.
+ *
+ * Un prototipo que publica 28 reportes ficticios sobre calles reales de un distrito real
+ * necesita tres cosas visibles: que se vea que los datos son inventados, que se vea que no
+ * tiene caracter oficial y que quede claro que no sirve para presentar un reclamo. Si alguien
+ * refactoriza la interfaz y borra la marca de agua o el aviso, esta seccion falla.
+ */
+console.log('\n9. Requisitos legales visibles (marca de ficticio y aviso legal)');
+{
+  const marca = document.querySelector('.mapa-marca-ficticio');
+  comprobar(Boolean(marca), 'el mapa lleva la marca de agua de datos ficticios');
+  comprobar(
+    Boolean(marca) && /FICTICIO/i.test(marca.textContent || ''),
+    'la marca de agua dice "DATOS FICTICIOS"',
+    marca ? (marca.textContent || '').replace(/\s+/g, ' ').trim() : 'ausente',
+  );
+  comprobar(
+    Boolean(document.querySelectorAll('.mapa-envoltorio .mapa-marca-ficticio').length),
+    'la marca esta DENTRO del mapa, para que salga en cualquier captura de pantalla',
+  );
+
+  // Etiqueta de ficticio en los reportes que se pintan.
+  const etiquetasFicticio = document.querySelectorAll('.etiqueta-ficticio').length;
+  comprobar(etiquetasFicticio > 0,
+    'los reportes del listado se marcan como ficticios',
+    `${etiquetasFicticio} etiquetas`);
+
+  // El aviso legal debe existir, abrirse y contener la clausula de efectos.
+  const modalLegal = document.querySelector('#modalAvisoLegal');
+  comprobar(Boolean(modalLegal), 'existe el modal de aviso legal y normas de uso');
+
+  const disparadorLegal = [...document.querySelectorAll('a, button')].find((el) =>
+    /aviso legal/i.test(el.textContent || ''),
+  );
+  comprobar(Boolean(disparadorLegal), 'hay un enlace al aviso legal');
+  if (disparadorLegal) {
+    disparadorLegal.dispatchEvent(new window.MouseEvent('click', { bubbles: true, cancelable: true }));
+    await esperar(500);
+    const textoLegal = document.body.textContent || '';
+    comprobar(/no tienen ning[uú]n efecto legal/i.test(textoLegal) ||
+      /NO tienen ning[uú]n efecto legal/i.test(textoLegal),
+      'el aviso legal dice que los reportes no tienen efectos legales ni administrativos');
+    comprobar(/no es la municipalidad/i.test(textoLegal) ||
+      /NO es la Municipalidad/i.test(textoLegal),
+      'el aviso legal aclara que no es la Municipalidad');
+    comprobar(/datos personales de otras personas|datos personales de terceros/i.test(textoLegal),
+      'el aviso legal prohibe incluir datos personales de terceros');
+    comprobar(/no .*acusaciones|No hacer acusaciones/i.test(textoLegal),
+      'el aviso legal prohibe hacer acusaciones contra personas');
+  }
+
+  // La politica de privacidad debe citar el reglamento VIGENTE (el de 2013 esta derogado).
+  const disparadorPriv = [...document.querySelectorAll('a, button')].find((el) =>
+    /pol[ií]tica de privacidad/i.test(el.textContent || ''),
+  );
+  if (disparadorPriv) {
+    disparadorPriv.dispatchEvent(new window.MouseEvent('click', { bubbles: true, cancelable: true }));
+    await esperar(500);
+    const textoPriv = document.body.textContent || '';
+    comprobar(/016-2024-JUS/.test(textoPriv),
+      'la politica cita el reglamento VIGENTE (D.S. N. 016-2024-JUS)');
+    comprobar(!/003-2013-JUS/.test(textoPriv),
+      'la politica NO cita el reglamento derogado (D.S. 003-2013-JUS)');
+    comprobar(/fuera del territorio peruano|flujo transfronterizo/i.test(textoPriv),
+      'la politica informa del flujo transfronterizo de datos (Cloudflare)');
+    comprobar(/ODbL/i.test(textoPriv), 'la politica atribuye la licencia ODbL de los datos de OSM');
+  }
+}
+
 console.log(`\n${'='.repeat(62)}`);
 console.log(fallos === 0 ? 'RESULTADO: todas las comprobaciones correctas' : `RESULTADO: ${fallos} fallidas`);
 if (erroresJs.length) {

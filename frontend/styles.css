@@ -1220,3 +1220,71 @@ body.modal-abierto { overflow: hidden; }
   .banner-legal, .toasts, .modal-fondo, .btn-reportar-aqui, .mapa-envoltorio { display: none !important; }
   body { color: #000; }
 }
+
+/* =============================================================================
+ * MARCA DE AGUA DE DATOS FICTICIOS SOBRE EL MAPA
+ *
+ * Motivo legal: si alguien captura la pantalla y la difunde sin el banner superior,
+ * el mapa con 28 reportes en calles reales de Comas podría hacer creer que son
+ * problemas reales, con riesgo de difamación hacia el distrito o de publicidad
+ * engañosa. La marca queda DENTRO de la captura, así que el carácter ficticio no
+ * se puede separar de la imagen.
+ *
+ * `pointer-events: none` para que no interfiera con el mapa; `aria-hidden` en el
+ * HTML para que los lectores de pantalla no la lean dos veces.
+ * ============================================================================= */
+.mapa-marca-ficticio {
+  position: absolute;
+  inset: 0;
+  z-index: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  pointer-events: none;
+  user-select: none;
+  text-align: center;
+  padding: 12px;
+}
+
+.mapa-marca-ficticio__linea1 {
+  font-size: clamp(28px, 7vw, 56px);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: #C8102E;
+  opacity: 0.18;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.85), 0 1px 0 rgba(255, 255, 255, 0.9);
+  transform: rotate(-18deg);
+  line-height: 1.05;
+}
+
+.mapa-marca-ficticio__linea2 {
+  font-size: clamp(11px, 2.4vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #C8102E;
+  opacity: 0.22;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.9);
+  transform: rotate(-18deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .mapa-marca-ficticio { animation: aparecerMarca 600ms ease-out both; }
+  @keyframes aparecerMarca { from { opacity: 0; } to { opacity: 1; } }
+}
+
+/* Etiqueta "FICTICIO" que acompaña a cada reporte (mapa y listado). */
+.etiqueta-ficticio {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #FDE7EA;
+  color: #8A0B20;
+  border: 1px solid #F3B9C3;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

@@ -1051,6 +1051,12 @@
     var cat = CATEGORIAS[p.categoria] || CATEGORIAS.otro;
     var est = ESTADOS[p.estado] || ESTADOS.pendiente;
     var html = '<div class="popup-reporte" style="min-width:200px">';
+    /* Marca de "FICTICIO" en cada reporte.
+     * Motivo legal: el mapa situa 28 reportes sobre calles REALES del distrito de Comas. Si una
+     * captura de pantalla circula sin el banner superior, esos puntos podrian leerse como
+     * problemas reales y atribuirse a la municipalidad (riesgo de difamacion y de publicidad
+     * engañosa). La etiqueta viaja con cada reporte, tambien dentro de la captura. */
+    html += '<div style="margin-bottom:6px"><span class="etiqueta-ficticio">Reporte ficticio</span></div>';
     if (p.foto_url) {
       html += '<img src="' + esc(urlAbsoluta(p.foto_url)) + '" alt="Foto del reporte: ' + esc(cat.nombre) +
         '" style="width:100%;border-radius:12px;margin-bottom:8px" onerror="this.style.display=\'none\'">';
@@ -1364,6 +1370,8 @@
     html += '<div class="tarjeta-reporte__cabecera">';
     html += '<span class="etiqueta-categoria">' + cat.emoji + ' ' + esc(cat.nombre) + '</span>';
     html += '<span class="badge badge--' + esc(p.estado) + '">' + esc(est.nombre) + '</span>';
+    /* Marca de ficticio tambien en el listado: la tarjeta es lo que mas se comparte por captura. */
+    html += '<span class="etiqueta-ficticio">Ficticio</span>';
     html += '</div>';
     html += '<p class="tarjeta-reporte__desc">' + esc(texto(p.descripcion, 'Sin descripción')) + '</p>';
     html += '<p class="tarjeta-reporte__meta">' +
