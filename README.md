@@ -12,6 +12,10 @@ Es un **prototipo demostrativo sin fines oficiales**, pensado para mostrar a los
 tecnología puede mejorar la gestión municipal. **No es un canal oficial de reclamos** y no
 sustituye a la Municipalidad Distrital de Comas.
 
+- **Repositorio:** https://github.com/davidgrados/ojo-comas
+- **API en producción:** pendiente de desplegar (Cloudflare Workers)
+- **Frontend en producción:** pendiente de desplegar (Cloudflare Pages)
+
 ---
 
 ## Índice

@@ -48,10 +48,9 @@
     {
       "binding": "DB",
       "database_name": "ojo-comas-db",
-      // PLACEHOLDER: sustituir por el ID real que devuelve
-      //   npx wrangler d1 create ojo-comas-db
-      // `wrangler dev` y `--local` funcionan sin cambiarlo porque usan SQLite local.
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      // ID real de la base de datos creada con `npx wrangler d1 create ojo-comas-db`
+      // (region ENAM). Un ID de D1 no es un secreto: identifica la base, no da acceso.
+      "database_id": "4b487e3f-593d-4ffe-bce0-e5a0305cecff",
       "migrations_dir": "migrations"
     }
   ],
@@ -81,7 +80,7 @@
         {
           "binding": "DB",
           "database_name": "ojo-comas-db",
-          "database_id": "REEMPLAZAR-CON-EL-ID-DE-TU-D1",
+          "database_id": "4b487e3f-593d-4ffe-bce0-e5a0305cecff",
           "migrations_dir": "migrations"
         }
       ],
