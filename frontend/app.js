@@ -2413,6 +2413,17 @@
       });
     }
 
+    /* Boton "Confirmar apoyo" del modal de apoyo vecinal.
+     *
+     * Esta linea FALTABA: `confirmarApoyo()` estaba definida pero no se llamaba desde ningun
+     * sitio, asi que pulsar el boton no hacia absolutamente nada. El modal se abre desde el
+     * manejador delegado ([data-apoyar]), pero el clic en el boton de confirmacion no estaba
+     * cubierto ni por ese manejador ni por ningun listener.
+     * tools/verificar_frontend.mjs comprueba ahora que el clic dispara la peticion. */
+    if (N.btnConfirmarApoyo) {
+      N.btnConfirmarApoyo.addEventListener('click', confirmarApoyo);
+    }
+
     if (N.btnQuitarPunto) {
       N.btnQuitarPunto.addEventListener('click', function () {
         limpiarPuntoPendiente();

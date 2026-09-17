@@ -67,6 +67,8 @@ const fuentes = {
 const erroresJs = [];
 const registroChart = { creado: false, etiquetas: null, datasets: 0 };
 let turnstileRender = 0;
+/** Registro de todas las peticiones que hace la pagina, para comprobar los botones. */
+const peticiones = [];
 
 const quitar = (s, re, reemplazo = '') => s.replace(re, reemplazo);
 
@@ -126,12 +128,27 @@ const dom = new JSDOM(documento, {
     window.__chartRegistro = registroChart;
     // Turf REAL (el mismo paquete que usa la pagina), inyectado sin cargar su bundle.
     window.turf = { booleanPointInPolygon, point: turfPoint };
-    // fetch relativo -> API real. En la pagina apiBase es '', es decir mismo origen; aqui se
-    // redirige a la API que se este verificando.
+    // fetch relativo -> API real. En la pagina apiBase es '' (mismo origen); aqui se redirige a
+    // la API que se este verificando. Ademas se REGISTRAN las peticiones, para poder comprobar
+    // que los botones hacen de verdad lo que deben hacer.
     const fetchOriginal = globalThis.fetch;
     window.fetch = (recurso, opciones) => {
       const url = String(recurso);
       const destino = url.startsWith('http') ? url : `${API}${url.startsWith('/') ? url : `/${url}`}`;
+      const metodo = String((opciones && opciones.method) || 'GET').toUpperCase();
+      peticiones.push({ url: destino, metodo, cuerpo: (opciones && opciones.body) || null });
+
+      // El apoyo vecinal se SIMULA: esta prueba comprueba que el boton dispara la peticion, no
+      // que el servidor la registre (de eso ya se encarga la prueba de humo). Asi, verificar
+      // contra produccion no consume el cupo de la IP de quien ejecuta la verificacion.
+      if (/\/api\/reports\/[^/]+\/confirm$/.test(destino)) {
+        return Promise.resolve(
+          new Response(JSON.stringify({ ok: true, confirmaciones: 1 }), {
+            status: 200,
+            headers: { 'Content-Type': 'application/json' },
+          }),
+        );
+      }
       return fetchOriginal(destino, opciones);
     };
     window.requestAnimationFrame = (cb) => setTimeout(() => cb(Date.now()), 0);
@@ -248,6 +265,52 @@ if (disparadores.length) {
 console.log('\n7. Widget antibot');
 comprobar(turnstileRender > 0 || typeof window.turnstile.render === 'function',
   'el widget de Turnstile esta integrado');
+
+/*
+ * 8) Los botones hacen de verdad lo que prometen.
+ *
+ * Esta seccion existe por un fallo real: `confirmarApoyo()` estaba definida en app.js pero no se
+ * llamaba desde ningun sitio, asi que pulsar "Confirmar apoyo" no hacia absolutamente nada y el
+ * flujo de apoyo vecinal era inservible. Una comprobacion de que "el boton existe" no lo habria
+ * detectado; hay que PULSARLO y ver si dispara la peticion.
+ */
+console.log('\n8. El boton de confirmar apoyo dispara la peticion');
+{
+  const antes = peticiones.length;
+  const botonApoyar = document.querySelector('[data-apoyar]');
+  comprobar(Boolean(botonApoyar), 'hay al menos un boton "Apoyar" en la interfaz',
+    botonApoyar ? `data-apoyar="${botonApoyar.getAttribute('data-apoyar')}"` : 'ninguno encontrado');
+
+  if (botonApoyar) {
+    const idReporte = botonApoyar.getAttribute('data-apoyar');
+    botonApoyar.dispatchEvent(new window.MouseEvent('click', { bubbles: true, cancelable: true }));
+    await esperar(400);
+
+    const modalApoyo = document.querySelector('#modalApoyo');
+    const abierto = Boolean(modalApoyo && !modalApoyo.hidden && !modalApoyo.classList.contains('oculto'));
+    comprobar(abierto, 'al pulsar "Apoyar" se abre el modal de apoyo');
+
+    const btnConfirmar = document.querySelector('#btnConfirmarApoyo');
+    comprobar(Boolean(btnConfirmar), 'existe el boton "Confirmar apoyo"');
+
+    if (btnConfirmar) {
+      btnConfirmar.dispatchEvent(new window.MouseEvent('click', { bubbles: true, cancelable: true }));
+      await esperar(900);
+
+      const nuevas = peticiones.slice(antes);
+      const apoyoEnviado = nuevas.find(
+        (p) => p.metodo === 'POST' && /\/api\/reports\/[^/]+\/confirm$/.test(p.url),
+      );
+      comprobar(Boolean(apoyoEnviado),
+        'pulsar "Confirmar apoyo" envia el POST a /api/reports/:id/confirm',
+        apoyoEnviado ? apoyoEnviado.url : `peticiones vistas: ${nuevas.map((p) => p.metodo + ' ' + p.url).join(' | ') || 'ninguna'}`);
+      comprobar(!apoyoEnviado || String(apoyoEnviado.url).includes(`/reports/${idReporte}/confirm`),
+        'la peticion va al reporte correcto', `esperado id=${idReporte}`);
+      comprobar(!apoyoEnviado || /turnstileToken/.test(String(apoyoEnviado.cuerpo)),
+        'la peticion incluye el token de Turnstile');
+    }
+  }
+}
 
 console.log(`\n${'='.repeat(62)}`);
 console.log(fallos === 0 ? 'RESULTADO: todas las comprobaciones correctas' : `RESULTADO: ${fallos} fallidas`);
