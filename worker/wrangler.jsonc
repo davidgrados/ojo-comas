@@ -66,15 +66,32 @@
   "env": {
     "produccion": {
       "name": "ojo-comas-api",
+      // Se repiten aqui a proposito: los campos no-`vars` no se heredan de forma fiable desde el
+      // nivel superior, y es mejor que la configuracion de produccion sea explicita.
+      "workers_dev": true,
+      "observability": {
+        "enabled": true,
+        "head_sampling_rate": 1,
+        "traces": {
+          "enabled": true,
+          "head_sampling_rate": 0.1
+        }
+      },
       "vars": {
         "ENTORNO": "produccion",
-        "TURNSTILE_SITEKEY": "REEMPLAZAR-CON-TU-SITEKEY-REAL",
-        "TURNSTILE_HOSTNAMES": "REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES",
+        // De momento se usan las claves de PRUEBA de Turnstile, que no protegen nada: cualquiera
+        // puede obtener un token valido. Es aceptable para una demo publica porque el limitador de
+        // abuso (MAX_REPORTES_POR_HORA) sigue activo, pero hay que sustituirlas por un widget real
+        // antes de considerar esto algo mas que un prototipo. Ver README, seccion Despliegue.
+        "TURNSTILE_SITEKEY": "1x00000000000000000000AA",
+        // Con claves de prueba siteverify devuelve hostname "example.com", asi que "*" es
+        // obligatorio mientras se usen. Con un widget real: "ojo-comas.pages.dev".
+        "TURNSTILE_HOSTNAMES": "*",
         "TURNSTILE_ACTIONS": "reporte,apoyo",
         "MAX_FOTO_BYTES": "2097152",
         "MAX_REPORTES_POR_HORA": "8",
         "MAX_APOYOS_POR_HORA": "30",
-        "CORS_ORIGINS": "REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES"
+        "CORS_ORIGINS": "https://ojo-comas.pages.dev,http://localhost:8788,http://127.0.0.1:8788"
       },
       "d1_databases": [
         {
@@ -89,7 +106,12 @@
           "binding": "FOTOS",
           "bucket_name": "ojo-comas-fotos"
         }
-      ]
+      ],
+      // `secrets` NO se hereda del nivel superior (wrangler avisa si falta). Se declara tambien
+      // aqui para que `wrangler types` incluya los secretos al trabajar con este entorno.
+      "secrets": {
+        "required": ["TURNSTILE_SECRET", "ADMIN_TOKEN", "IP_SALT"]
+      }
     }
   }
 }

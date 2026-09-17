@@ -18,7 +18,7 @@ export const CABECERAS_FOTO: Record<string, string> = {
 };
 
 /** Codigos de estado que devuelve esta API en sus errores. */
-export type CodigoError = 400 | 401 | 403 | 404 | 409 | 413 | 429 | 500;
+export type CodigoError = 400 | 401 | 403 | 404 | 409 | 413 | 429 | 500 | 503;
 
 /** Respuesta JSON de error uniforme. */
 export function errorJson(c: Context, status: CodigoError, mensaje: string, detalle?: string) {

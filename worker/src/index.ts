@@ -535,6 +535,12 @@ app.get('/api/photos/*', async (c) => {
   const clave = c.req.path.replace(/^\/api\/photos\//, '');
   if (!clave || clave.includes('..')) return errorJson(c, 400, 'Clave de foto invalida.');
 
+  // Sin bucket enlazado (por ejemplo si R2 no esta activado en la cuenta) se responde 503 con un
+  // mensaje claro, en vez de reventar con un TypeError y devolver un 500 opaco.
+  if (!c.env.FOTOS || typeof c.env.FOTOS.get !== 'function') {
+    return errorJson(c, 503, 'El almacenamiento de fotos no esta configurado en este entorno.');
+  }
+
   const objeto = await c.env.FOTOS.get(clave);
   if (!objeto) return errorJson(c, 404, 'Foto no encontrada.');
 
