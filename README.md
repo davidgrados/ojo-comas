@@ -12,9 +12,14 @@ Es un **prototipo demostrativo sin fines oficiales**, pensado para mostrar a los
 tecnología puede mejorar la gestión municipal. **No es un canal oficial de reclamos** y no
 sustituye a la Municipalidad Distrital de Comas.
 
+- **Demo en vivo:** https://ojo-comas.pages.dev
+- **API:** https://ojo-comas-api.dunkeljhonz.workers.dev
 - **Repositorio:** https://github.com/davidgrados/ojo-comas
-- **API en producción:** pendiente de desplegar (Cloudflare Workers)
-- **Frontend en producción:** pendiente de desplegar (Cloudflare Pages)
+- **CI:** [![CI](https://github.com/davidgrados/ojo-comas/actions/workflows/ci.yml/badge.svg)](https://github.com/davidgrados/ojo-comas/actions/workflows/ci.yml)
+
+> **Pendiente antes de considerarlo algo más que una demo:** el widget de Turnstile todavía usa
+> las **claves de prueba** de Cloudflare, que no protegen nada. Ver
+> [Endurecer Turnstile](#endurecer-turnstile-antes-de-difundirlo).
 
 ---
 
@@ -341,6 +346,50 @@ Resultados de la última ejecución completa: ver [`docs/VERIFICACION.md`](docs/
 
 ## Despliegue
 
+### Estado actual del despliegue
+
+Este repositorio **ya está desplegado y funcionando**:
+
+| Componente | Recurso | URL |
+|---|---|---|
+| Frontend | Cloudflare Pages, proyecto `ojo-comas` | https://ojo-comas.pages.dev |
+| API | Cloudflare Worker `ojo-comas-api` (entorno `produccion`) | https://ojo-comas-api.dunkeljhonz.workers.dev |
+| Base de datos | D1 `ojo-comas-db` (id `4b487e3f-593d-4ffe-bce0-e5a0305cecff`, región ENAM) | — |
+| Fotos | R2 `ojo-comas-fotos` | — |
+| Repositorio | GitHub (público) | https://github.com/davidgrados/ojo-comas |
+
+Los secretos `TURNSTILE_SECRET`, `ADMIN_TOKEN` e `IP_SALT` están cargados en el Worker. El
+`ADMIN_TOKEN` de producción se guarda en `worker/.dev.vars.produccion`, que **está ignorado por
+git**; consúltalo ahí si necesitas cambiar el estado de un reporte.
+
+El **CI** (`.github/workflows/ci.yml`) corre en cada push y no necesita credenciales. El flujo
+**Desplegar** (`.github/workflows/deploy.yml`) se salta a sí mismo mientras no exista el secreto
+`CLOUDFLARE_API_TOKEN`, así que puede quedarse en verde sin obligarte a configurar nada.
+
+### Endurecer Turnstile antes de difundirlo
+
+**Esto es lo único que separa al prototipo de una demo con protección real.** Ahora mismo el
+widget usa las claves de prueba oficiales de Cloudflare, que aceptan cualquier token: el
+limitador de abuso (8 reportes por hora y por origen) sí funciona, pero cualquiera puede
+automatizar envíos dentro de ese cupo.
+
+1. En el panel de Cloudflare, crea un widget de Turnstile en modo *managed* y **registra el
+   dominio** `ojo-comas.pages.dev`.
+2. Copia la **sitekey** a `frontend/config.js` (`turnstileSitekey`) y al bloque
+   `env.produccion` de `worker/wrangler.jsonc` (`TURNSTILE_SITEKEY`).
+3. Copia el **secreto** al Worker:
+   ```bash
+   cd worker
+   npx wrangler secret put TURNSTILE_SECRET --env produccion
+   ```
+4. Cambia `TURNSTILE_HOSTNAMES` en `worker/wrangler.jsonc` de `"*"` a `"ojo-comas.pages.dev"`.
+   Con un widget real, `siteverify` devuelve el hostname verdadero y la comprobación se aplica.
+5. Vuelve a desplegar: `npx wrangler deploy --env produccion` y
+   `npx wrangler pages deploy frontend --project-name=ojo-comas`.
+
+Los pasos 2 a 4 son exactamente lo que hace el flujo **Desplegar** con las variables
+`TURNSTILE_SITEKEY` y `PAGES_DOMINIO` si prefieres automatizarlo.
+
 ### 1. Crear los recursos en Cloudflare
 
 ```bash
@@ -348,8 +397,11 @@ npx wrangler d1 create ojo-comas-db          # copia el database_id
 npx wrangler r2 bucket create ojo-comas-fotos
 ```
 
-Sustituye `database_id` en `worker/wrangler.jsonc` (bloque `env.produccion`) por el ID real y los
-marcadores `REEMPLAZAR-CON-*` por tus valores.
+Sustituye `database_id` en `worker/wrangler.jsonc` por el ID real.
+
+> ⚠️ Cambiar el `database_id` **también cambia la base local**: wrangler guarda los datos de
+> desarrollo en `.wrangler/state` indexados por ese ID. Si lo cambias, vuelve a ejecutar
+> `npm --prefix worker run db:migrate:local` y la siembra, o verás errores `no such table`.
 
 ### 2. Cargar los secretos del Worker
 
