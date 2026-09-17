@@ -70,6 +70,18 @@ jobs:
       - name: Instalar dependencias del Worker
         run: npm ci --prefix worker
 
+      # `worker/.dev.vars` esta ignorado por git (contiene los secretos de desarrollo), asi que
+      # en CI hay que crearlo. Los valores de aqui son de usar y tirar y no protegen nada: solo
+      # permiten que el Worker arranque y que la prueba de humo pueda leer el ADMIN_TOKEN.
+      - name: Crear secretos locales de prueba
+        working-directory: worker
+        run: |
+          cat > .dev.vars <<'EOF'
+          TURNSTILE_SECRET=1x0000000000000000000000000000000AA
+          ADMIN_TOKEN=token-de-prueba-en-ci-no-es-un-secreto
+          IP_SALT=sal-de-prueba-en-ci-no-es-un-secreto
+          EOF
+
       - name: Comprobar tipos del Worker
         run: npm --prefix worker run typecheck
 

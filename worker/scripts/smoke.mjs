@@ -40,6 +40,12 @@ const BASE = (arg('base', 'http://127.0.0.1:8787') || '').replace(/\/$/, '');
 const ADMIN_TOKEN = arg('admin-token', '');
 const MODO = arg('modo', 'completo');
 
+/**
+ * Contra produccion no se pueden simular IPs: Cloudflare bloquea en el borde la cabecera
+ * CF-Connecting-IP enviada por el cliente. Varias comprobaciones cambian de forma segun el caso.
+ */
+const ES_LOCAL = /^https?:\/\/(localhost|127\.0\.0\.1|\[::1\])(:|\/|$)/.test(BASE);
+
 let pasadas = 0;
 let falladas = 0;
 const fallos = [];
@@ -339,15 +345,27 @@ async function modoCompleto() {
 
   seccion('12. Apoyo vecinal (Ley N° 27972, Art. 53)');
   {
-    // IP sintetica propia de esta ejecucion: asi el primer apoyo siempre es nuevo y la prueba
-    // es repetible (si se reutilizara 127.0.0.1, el anti-duplicado daria 409 ya en el primer
-    // intento por los apoyos de ejecuciones anteriores).
+    // En local se usa una IP sintetica propia de cada ejecucion para que el primer apoyo sea
+    // siempre nuevo y la prueba sea repetible.
+    //
+    // CONTRA PRODUCCION NO SE PUEDE: Cloudflare bloquea en el borde cualquier cabecera
+    // CF-Connecting-IP enviada por el cliente (devuelve un 403 vacio con `server: cloudflare`
+    // antes de que la peticion llegue al Worker). Es precisamente la garantia en la que se apoya
+    // el limitador de abuso, asi que se acepta que la primera confirmacion pueda responder 409
+    // si esa IP real ya habia apoyado el reporte en una ejecucion anterior.
     const ipApoyo = `198.51.100.${Math.floor(Math.random() * 200) + 1}`;
-    const cab = { 'CF-Connecting-IP': ipApoyo };
+    const cab = ES_LOCAL ? { 'CF-Connecting-IP': ipApoyo } : {};
     const r1 = await pedir(`/api/reports/1/confirm`,
       json('POST', { turnstileToken: TOKEN_TURNSTILE }, cab));
-    comprobar(r1.status === 200 && r1.cuerpo?.ok === true, 'POST /api/reports/1/confirm registra el apoyo',
-      `status=${r1.status} confirmaciones=${r1.cuerpo?.confirmaciones}`);
+    if (ES_LOCAL) {
+      comprobar(r1.status === 200 && r1.cuerpo?.ok === true,
+        'POST /api/reports/1/confirm registra el apoyo',
+        `status=${r1.status} confirmaciones=${r1.cuerpo?.confirmaciones}`);
+    } else {
+      comprobar(r1.status === 200 || r1.status === 409,
+        'el apoyo se registra (200) o esa IP ya habia apoyado (409)',
+        `status=${r1.status} confirmaciones=${r1.cuerpo?.confirmaciones ?? 'n/d'}`);
+    }
     const r2 = await pedir(`/api/reports/1/confirm`,
       json('POST', { turnstileToken: TOKEN_TURNSTILE }, cab));
     comprobar(r2.status === 409, 'el mismo origen no puede apoyar dos veces (409)', `status=${r2.status}`);
@@ -417,8 +435,14 @@ async function modoLimite() {
   const punto = puntoDeDemostracion();
   seccion('Limitador de abuso (servidor arrancado con MAX_REPORTES_POR_HORA=1)');
   {
-    // Se usa una IP sintetica distinta en cada ejecucion para partir de un cupo limpio. En
-    // produccion Cloudflare sobrescribe CF-Connecting-IP y el cliente no puede falsificarla.
+    // Se usa una IP sintetica distinta en cada ejecucion para partir de un cupo limpio. Esto SOLO
+    // funciona en local: en produccion Cloudflare rechaza en el borde cualquier CF-Connecting-IP
+    // enviada por el cliente, asi que este modo no tiene sentido contra un Worker desplegado.
+    if (!ES_LOCAL) {
+      mal('el modo limite necesita un servidor local (Cloudflare bloquea la IP simulada)',
+        `base=${BASE}`);
+      return;
+    }
     const ip = `203.0.113.${Math.floor(Math.random() * 200) + 1}`;
     const cabeceras = { 'CF-Connecting-IP': ip };
     const estados = [];
