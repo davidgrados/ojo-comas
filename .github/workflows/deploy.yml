@@ -48,18 +48,47 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       puede: ${{ steps.check.outputs.puede }}
+      pages_ok: ${{ steps.check.outputs.pages_ok }}
     steps:
-      - name: Ver si hay token de Cloudflare
+      - name: Verificar el token y sus permisos
         id: check
         env:
           TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CUENTA: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: |
-          if [ -n "$TOKEN" ]; then
-            echo "puede=true" >> "$GITHUB_OUTPUT"
-            echo "Hay token: se despliega."
-          else
+          if [ -z "$TOKEN" ]; then
             echo "puede=false" >> "$GITHUB_OUTPUT"
-            echo "::notice title=Despliegue omitido::No hay secreto CLOUDFLARE_API_TOKEN. Crea uno en https://dash.cloudflare.com/profile/api-tokens (permisos Workers Scripts:Edit, D1:Edit, R2:Edit, Pages:Edit) y guardalo en Settings > Secrets and variables > Actions. Mientras tanto el sitio sigue publicado y puedes desplegar a mano con 'npx wrangler deploy --env produccion'."
+            echo "pages_ok=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Despliegue omitido::No hay secreto CLOUDFLARE_API_TOKEN. Crea uno en https://dash.cloudflare.com/profile/api-tokens y guardalo en Settings > Secrets and variables > Actions. Mientras tanto el sitio sigue publicado y puedes desplegar a mano."
+            exit 0
+          fi
+
+          echo "puede=true" >> "$GITHUB_OUTPUT"
+
+          echo "--- 1) el token es valido? ---"
+          curl -sS --max-time 30 -H "Authorization: Bearer $TOKEN" \
+            https://api.cloudflare.com/client/v4/user/tokens/verify | head -c 300
+          echo ""
+
+          echo "--- 2) permite desplegar Workers? ---"
+          curl -sS --max-time 30 -o /dev/null -w 'HTTP %{http_code}\n' \
+            -H "Authorization: Bearer $TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CUENTA/workers/scripts"
+
+          echo "--- 3) permite acceder a Pages? ---"
+          CODIGO=$(curl -sS --max-time 30 -o /tmp/pages.json -w '%{http_code}' \
+            -H "Authorization: Bearer $TOKEN" \
+            "https://api.cloudflare.com/client/v4/accounts/$CUENTA/pages/projects")
+          echo "HTTP $CODIGO"
+          head -c 300 /tmp/pages.json
+          echo ""
+
+          if [ "$CODIGO" = "200" ]; then
+            echo "pages_ok=true" >> "$GITHUB_OUTPUT"
+            echo "El token permite publicar en Pages."
+          else
+            echo "pages_ok=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=Falta el permiso de Pages::El token no puede listar los proyectos de Pages (HTTP $CODIGO). Anade al token 'Account - Cloudflare Pages - Edit' y tambien 'User - User Details - Read' y 'User - Memberships - Read', que wrangler necesita para Pages. El Worker SI se desplegara; solo se salta el frontend."
           fi
 
   api:
@@ -128,7 +157,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     needs: [preflight, api]
-    if: needs.preflight.outputs.puede == 'true'
+    if: needs.preflight.outputs.puede == 'true' && needs.preflight.outputs.pages_ok == 'true'
     environment: produccion
     steps:
       - uses: actions/checkout@v7
