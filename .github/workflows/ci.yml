@@ -1,4 +1,4 @@
-name: CI
+﻿name: CI
 
 # Integracion continua SIN credenciales de Cloudflare: todo corre contra el runtime local
 # (`wrangler dev` con D1 y R2 simulados en disco). El unico servicio externo que se toca es el
@@ -25,17 +25,17 @@ jobs:
 
     steps:
       - name: Descargar el repositorio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Instalar Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v7
         with:
           node-version: '22'
           cache: npm
           cache-dependency-path: worker/package-lock.json
 
       - name: Instalar Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.11'
 

@@ -1,15 +1,21 @@
 name: Desplegar
 
-# Despliegue a Cloudflare. Requiere configurar en el repositorio:
+# Despliegue a Cloudflare.
 #
-#   Secrets:
-#     CLOUDFLARE_API_TOKEN   token con permisos Workers Scripts:Edit, D1:Edit, R2:Edit, Pages:Edit
-#     CLOUDFLARE_ACCOUNT_ID  ID de la cuenta de Cloudflare
+# REQUISITO: el secreto CLOUDFLARE_API_TOKEN. Mientras no exista, este flujo NO falla:
+# se salta el despliegue y deja un aviso explicando como configurarlo. Asi el CI siempre
+# queda en verde y el despliegue manual (`npx wrangler deploy --env produccion`) sigue
+# funcionando en cualquier momento.
 #
-#   Variables (Settings > Variables):
-#     D1_DATABASE_ID     ID que devuelve `npx wrangler d1 create ojo-comas-db`
+#   Secrets (Settings > Secrets and variables > Actions):
+#     CLOUDFLARE_API_TOKEN   token con Workers Scripts:Edit, D1:Edit, R2:Edit, Pages:Edit
+#     CLOUDFLARE_ACCOUNT_ID  ID de la cuenta
+#
+#   Variables (opcionales; si no se definen se usan los valores ya versionados):
+#     D1_DATABASE_ID     ID de la base D1
 #     TURNSTILE_SITEKEY  sitekey REAL del widget de Turnstile
-#     PAGES_DOMINIO      dominio de Pages, p.ej. ojo-comas.pages.dev
+#     PAGES_DOMINIO      dominio de Pages (por defecto ojo-comas.pages.dev)
+#     WORKER_URL         URL del Worker (por defecto el workers.dev del repo)
 #
 # Los secretos del Worker (TURNSTILE_SECRET, ADMIN_TOKEN, IP_SALT) NO se gestionan aqui:
 # se cargan una sola vez con `npx wrangler secret put <NOMBRE> --env produccion`.
@@ -35,15 +41,38 @@ env:
   WRANGLER_SEND_METRICS: 'false'
 
 jobs:
+  # Comprobacion previa: sin token no se intenta desplegar. El `if` a nivel de job no puede leer
+  # `secrets`, asi que el token se evalua en un paso y se expone como salida del job.
+  preflight:
+    name: Comprobar credenciales
+    runs-on: ubuntu-latest
+    outputs:
+      puede: ${{ steps.check.outputs.puede }}
+    steps:
+      - name: Ver si hay token de Cloudflare
+        id: check
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -n "$TOKEN" ]; then
+            echo "puede=true" >> "$GITHUB_OUTPUT"
+            echo "Hay token: se despliega."
+          else
+            echo "puede=false" >> "$GITHUB_OUTPUT"
+            echo "::notice title=Despliegue omitido::No hay secreto CLOUDFLARE_API_TOKEN. Crea uno en https://dash.cloudflare.com/profile/api-tokens (permisos Workers Scripts:Edit, D1:Edit, R2:Edit, Pages:Edit) y guardalo en Settings > Secrets and variables > Actions. Mientras tanto el sitio sigue publicado y puedes desplegar a mano con 'npx wrangler deploy --env produccion'."
+          fi
+
   api:
     name: Worker ojo-comas-api
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    needs: preflight
+    if: needs.preflight.outputs.puede == 'true'
     environment: produccion
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
           cache: npm
@@ -51,26 +80,27 @@ jobs:
 
       - run: npm ci --prefix worker
 
-      - name: Sustituir los marcadores de posicion por los valores reales
+      - name: Aplicar sobrescrituras de configuracion (solo si hay variables definidas)
         working-directory: worker
         run: |
-          test -n "${{ vars.D1_DATABASE_ID }}" || { echo "Falta la variable D1_DATABASE_ID"; exit 1; }
-          test -n "${{ vars.TURNSTILE_SITEKEY }}" || { echo "Falta la variable TURNSTILE_SITEKEY"; exit 1; }
-          test -n "${{ vars.PAGES_DOMINIO }}" || { echo "Falta la variable PAGES_DOMINIO"; exit 1; }
-          sed -i "s|00000000-0000-0000-0000-000000000000|${{ vars.D1_DATABASE_ID }}|" wrangler.jsonc
-          sed -i "s|REEMPLAZAR-CON-EL-ID-DE-TU-D1|${{ vars.D1_DATABASE_ID }}|" wrangler.jsonc
-          sed -i "s|REEMPLAZAR-CON-TU-SITEKEY-REAL|${{ vars.TURNSTILE_SITEKEY }}|" wrangler.jsonc
-          sed -i "s|REEMPLAZAR-CON-TU-DOMINIO-DE-PAGES|${{ vars.PAGES_DOMINIO }}|g" wrangler.jsonc
-          echo "--- marcadores restantes (deberia estar vacio) ---"
-          grep -n 'REEMPLAZAR\|00000000-0000-0000' wrangler.jsonc || echo "ninguno"
-
-      - name: Regenerar los tipos de bindings
-        working-directory: worker
-        run: npx wrangler types
+          if [ -n "${{ vars.D1_DATABASE_ID }}" ]; then
+            sed -i "s|4b487e3f-593d-4ffe-bce0-e5a0305cecff|${{ vars.D1_DATABASE_ID }}|g" wrangler.jsonc
+            echo "D1 sobrescrito con vars.D1_DATABASE_ID"
+          fi
+          if [ -n "${{ vars.TURNSTILE_SITEKEY }}" ]; then
+            sed -i "s|1x00000000000000000000AA|${{ vars.TURNSTILE_SITEKEY }}|g" wrangler.jsonc
+            echo "sitekey de Turnstile sobrescrita con vars.TURNSTILE_SITEKEY"
+          fi
+          if [ -n "${{ vars.PAGES_DOMINIO }}" ]; then
+            sed -i "s|https://ojo-comas.pages.dev|https://${{ vars.PAGES_DOMINIO }}|g" wrangler.jsonc
+            echo "dominio de Pages sobrescrito"
+          fi
 
       - name: Comprobar tipos
         working-directory: worker
-        run: npx tsc --noEmit
+        run: |
+          npx wrangler types
+          npx tsc --noEmit
 
       - name: Aplicar migraciones en D1 remoto
         working-directory: worker
@@ -86,21 +116,38 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
         run: npx wrangler deploy --env produccion
 
+      - name: Comprobar que la API responde
+        run: |
+          sleep 5
+          curl -fsS --max-time 30 "${{ vars.WORKER_URL || 'https://ojo-comas-api.dunkeljhonz.workers.dev' }}/api/health"
+          echo ""
+          echo "La API responde correctamente."
+
   paginas:
     name: Cloudflare Pages (frontend)
     runs-on: ubuntu-latest
     timeout-minutes: 15
+    needs: [preflight, api]
+    if: needs.preflight.outputs.puede == 'true'
     environment: produccion
-    needs: api
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '22'
 
       - name: Comprobar la sintaxis del frontend antes de publicar
-        run: node --check frontend/app.js
+        run: node --check frontend/app.js && node --check frontend/config.js
+
+      - name: Apuntar el frontend al Worker que se acaba de desplegar
+        run: |
+          if [ -n "${{ vars.WORKER_URL }}" ]; then
+            sed -i "s|https://ojo-comas-api.dunkeljhonz.workers.dev|${{ vars.WORKER_URL }}|g" frontend/config.js
+            echo "config.js apunta a ${{ vars.WORKER_URL }}"
+          else
+            echo "config.js ya apunta al Worker por defecto"
+          fi
 
       - name: Publicar en Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
@@ -109,7 +156,8 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy frontend --project-name=ojo-comas --branch=main
 
-      - name: Recordatorio del paso manual
+      - name: Recordatorio
         run: |
-          echo "Recuerda que el widget de Turnstile debe tener registrado el dominio ${{ vars.PAGES_DOMINIO }}"
-          echo "y que el Worker de produccion necesita los secretos TURNSTILE_SECRET, ADMIN_TOKEN e IP_SALT."
+          echo "El widget de Turnstile debe tener registrado el dominio de Pages."
+          echo "Recuerda que los secretos TURNSTILE_SECRET, ADMIN_TOKEN e IP_SALT se cargan con"
+          echo "'npx wrangler secret put <NOMBRE> --env produccion', no desde este flujo."
