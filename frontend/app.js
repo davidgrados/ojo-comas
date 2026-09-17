@@ -1709,6 +1709,19 @@
     if (!f) { return; }
     var id = String(f.properties.id);
     var token = obtenerTokenTurnstile(ESTADO.turnstileWidgetApoyo);
+
+    /* Misma guarda que el formulario de reporte: si Turnstile esta cargado y el widget existe
+     * pero todavia no ha entregado token (o ha caducado), se reinicia y se pide un segundo
+     * intento en vez de enviar sin verificacion. Sin esto el envio salia con token vacio y el
+     * servidor respondia 403, que el vecino veia como un error incomprensible.
+     * Si Turnstile no esta cargado en absoluto (CDN bloqueada) se deja pasar y decide el
+     * servidor: es la degradacion acordada, no un descuido. */
+    if (ESTADO.turnstileListo && ESTADO.turnstileWidgetApoyo !== null && !token) {
+      reiniciarTurnstile(ESTADO.turnstileWidgetApoyo);
+      mostrarErrorApoyo('La verificación anti-bots aún no está lista. Espera un momento y vuelve a pulsar «Confirmar apoyo».');
+      return;
+    }
+
     var btn = N.btnConfirmarApoyo;
     if (btn) { btn.disabled = true; btn.textContent = 'Enviando…'; }
     if (N.errorApoyo) { N.errorApoyo.classList.add('oculto'); N.errorApoyo.hidden = true; }

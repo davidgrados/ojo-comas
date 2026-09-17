@@ -1,4 +1,4 @@
-﻿name: CI
+name: CI
 
 # Integracion continua SIN credenciales de Cloudflare: todo corre contra el runtime local
 # (`wrangler dev` con D1 y R2 simulados en disco). El unico servicio externo que se toca es el
@@ -85,7 +85,7 @@ jobs:
       - name: Comprobar tipos del Worker
         run: npm --prefix worker run typecheck
 
-      - name: Comprobar la sintaxis del frontend
+      - name: Auditar que la interfaz este enganchada (botones con evento)
         run: node --check frontend/app.js
 
       - name: Aplicar migraciones D1 (local)
