@@ -26,6 +26,8 @@ sustituye a la Municipalidad Distrital de Comas.
 autoridades peruanas (ANPD, Municipalidad de Comas, INDECOPI), qué está ya mitigado y la lista de
 acciones obligatorias previas — la primera, inscribir el banco de datos ante la ANPD.
 Las licencias de código y datos están en [`LICENCIAS.md`](LICENCIAS.md).
+🔒 **Auditoría de seguridad:** resultados y hallazgos pendientes en
+[`docs/SEGURIDAD.md`](docs/SEGURIDAD.md).
 
 ---
 
@@ -51,7 +53,9 @@ Las licencias de código y datos están en [`LICENCIAS.md`](LICENCIAS.md).
 1. **Reportar** un problema en tres pasos: categoría (bache, basura, alumbrado, otro) → zona y
    descripción con foto → envío. Al tocar el mapa aparece un botón flotante «➕ Reportar aquí».
 2. **Ubicar** el punto con `navigator.geolocation` (con el clic en el mapa como respaldo),
-   geocodificación inversa con Nominatim y **detección automática de la zona** con Turf.js.
+   la referencia de dirección que escribe el propio vecino y **detección automática de la zona**
+   con Turf.js. **No se hace geocodificación inversa**, así que las coordenadas no se envían a
+   ningún servicio de mapas.
 3. **Seguimiento** del estado de cada reporte: `pendiente` → `en_proceso` → `resuelto`, con
    historial de cambios trazable.
 4. **Filtrar** por las 14 zonas del distrito y por estado, con el mapa centrándose en la zona
@@ -156,7 +160,6 @@ Navegador (móvil primero)
               ├── D1   (SQLite)  reportes, historial de estados, apoyos
               └── R2             fotos de evidencia
               │
-              └── Nominatim (OpenStreetMap)  dirección aproximada
 ```
 
 | Capa | Tecnología |
@@ -166,7 +169,7 @@ Navegador (móvil primero)
 | Base de datos | Cloudflare D1 (SQLite) con migraciones versionadas |
 | Almacenamiento | Cloudflare R2 |
 | Antibots | Cloudflare Turnstile (siteverify en el servidor) |
-| Geocodificación | Nominatim (OpenStreetMap) |
+| Dirección del lugar | La escribe el vecino. **No hay geocodificación inversa** |
 | CI/CD | GitHub Actions (CI sin credenciales + despliegue) |
 
 ---
@@ -546,8 +549,10 @@ ojo-comas/
 3. **La Zona 14 no tiene barrios asignados** porque, según la propia municipalidad, es la zona
    agrícola y ganadera del valle del Chillón; en OpenStreetMap no hay `place=neighbourhood` allí.
 4. **Datos ficticios**: ningún reporte, foto ni contador refleja la realidad del distrito.
-5. **La geocodificación inversa usa Nominatim**, que tiene límites de uso y no debe recibir tráfico
-   alto; para producción conviene un proveedor con SLA o cachear en D1.
+5. **No hay geocodificación inversa a propósito**: la dirección es texto libre del vecino, de modo
+   que las coordenadas no se envían a ningún servicio de mapas externo. Si algún día se añadiera,
+   habría que respetar los límites de uso del proveedor, cachear las respuestas y declararlo en la
+   política de privacidad.
 6. **No hay autenticación de vecinos**: el apoyo vecinal se limita por origen, no por identidad.
    Es una decisión de privacidad deliberada (Ley N° 29733), no un descuido.
 7. **No hay panel administrativo real**: el cambio de estado se hace por API con un token
@@ -563,7 +568,6 @@ ojo-comas/
 - **Hectáreas, posición cardinal, colindancias y equipamientos de las 14 zonales**:
   Municipalidad Distrital de Comas, sección
   [Geografía](https://www.municomas.gob.pe/distrito/geografia).
-- **Geocodificación inversa**: [Nominatim](https://nominatim.org/), OpenStreetMap Foundation.
 - **Mapas base**: teselas de OpenStreetMap.
 - **Antibot**: Cloudflare Turnstile.
 - **Librerías del frontend**: Leaflet, Turf.js, Chart.js, canvas-confetti, Tailwind CSS (CDN).

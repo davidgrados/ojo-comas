@@ -46,7 +46,6 @@ su diseño.
 
 - **Teselas del mapa:** © OpenStreetMap contributors, servidas por la infraestructura de
   OpenStreetmap. Sujeto a la política de uso de la OSM Foundation.
-- **Nominatim** (geocodificación inversa): OpenStreetMap Foundation, con su propia política de uso.
 - **Cloudflare** (Workers, D1, R2, Pages, Turnstile): servicios sujetos a los términos de
   Cloudflare.
 - **Librerías del frontend** (Leaflet, Turf.js, Chart.js, canvas-confetti, Tailwind CSS):

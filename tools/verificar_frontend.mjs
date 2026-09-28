@@ -46,9 +46,12 @@ const comprobar = (cond, texto, detalle = '') => {
 // --- 1) Traer el HTML tal cual lo sirve Pages ---------------------------------------------
 console.log(`Montando el frontend servido en ${HTML_SERVIDO} contra la API ${API}\n`);
 let html;
+/** Cabeceras HTTP reales del sitio, para comprobar la seguridad del despliegue. */
+let cabecerasSitio = null;
 try {
   const r = await fetch(`${HTML_SERVIDO}/`);
   if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  cabecerasSitio = r.headers;
   html = await r.text();
 } catch (error) {
   console.error(`No se pudo descargar el HTML de ${HTML_SERVIDO}: ${error.message}`);
@@ -379,6 +382,78 @@ console.log('\n9. Requisitos legales visibles (marca de ficticio y aviso legal)'
     comprobar(/fuera del territorio peruano|flujo transfronterizo/i.test(textoPriv),
       'la politica informa del flujo transfronterizo de datos (Cloudflare)');
     comprobar(/ODbL/i.test(textoPriv), 'la politica atribuye la licencia ODbL de los datos de OSM');
+  }
+}
+
+/*
+ * 10) Seguridad del despliegue: cabeceras HTTP reales y el parametro ?api=.
+ *
+ * Dos hallazgos de la auditoria de vulnerabilidades quedan aqui cubiertos para que no vuelvan:
+ *
+ *   a) Faltaba Content-Security-Policy. Ya esta puesta, y se comprueba ademas que NO contiene
+ *      'unsafe-eval': mientras existio el CDN de Tailwind (que no se usaba) era imposible
+ *      quitarlo. Si alguien vuelve a meter una dependencia que necesite 'unsafe-eval', esta
+ *      comprobacion lo delata.
+ *   b) El parametro ?api= permitia redirigir TODA la aplicacion a un servidor del atacante, con
+ *      lo que un vecino habria enviado su foto y su contacto a un tercero. Ahora hay lista blanca
+ *      y se comprueba que un origen malicioso se ignora.
+ */
+console.log('\n10. Seguridad del despliegue (cabeceras y lista blanca de la API)');
+{
+  const csp = cabecerasSitio ? cabecerasSitio.get('content-security-policy') : null;
+  comprobar(Boolean(csp), 'el sitio envía Content-Security-Policy');
+  if (csp) {
+    comprobar(/default-src 'self'/.test(csp), "la CSP restringe por defecto a 'self'");
+    comprobar(/object-src 'none'/.test(csp), "la CSP bloquea object-src");
+    comprobar(/frame-ancestors 'none'/.test(csp), 'la CSP impide incrustar la pagina en un iframe');
+    comprobar(/base-uri 'self'/.test(csp), 'la CSP fija base-uri');
+    comprobar(
+      !/unsafe-eval/.test(csp),
+      "la CSP NO permite 'unsafe-eval' (por eso se elimino el CDN de Tailwind, que no se usaba)",
+    );
+    comprobar(
+      /script-src[^;]*challenges\.cloudflare\.com/.test(csp),
+      'la CSP permite el script de Turnstile',
+    );
+  }
+  comprobar(
+    String(cabecerasSitio?.get('x-content-type-options') || '').includes('nosniff'),
+    'envía X-Content-Type-Options: nosniff',
+  );
+  comprobar(
+    String(cabecerasSitio?.get('x-frame-options') || '').toUpperCase().includes('DENY'),
+    'envía X-Frame-Options: DENY',
+  );
+  comprobar(Boolean(cabecerasSitio?.get('strict-transport-security')),
+    'envía Strict-Transport-Security (fuerza HTTPS)');
+  comprobar(Boolean(cabecerasSitio?.get('cross-origin-opener-policy')),
+    'envía Cross-Origin-Opener-Policy');
+
+  // El parametro ?api= no puede apuntar a un tercero.
+  const { JSDOM } = await import('jsdom');
+  const pruebas = [
+    ['https://sitio-malicioso.example', true],
+    ['https://ojo-comas-api.dunkeljhonz.workers.dev.evil.example', true],
+    ['//sitio-malicioso.example', true],
+    ['javascript:alert(1)', true],
+  ];
+  const baseSitio = HTML_SERVIDO;
+  for (const [valor, debeBloquearse] of pruebas) {
+    const dom = new JSDOM('<!doctype html><html><body></body></html>', {
+      url: `${baseSitio}/?api=${valor}`,
+      runScripts: 'dangerously',
+    });
+    const s = dom.window.document.createElement('script');
+    s.textContent = fuentes.config;
+    dom.window.document.body.appendChild(s);
+    const base = String(dom.window.OJO_COMAS_CONFIG.apiBase || '');
+    const redirigido = /malicioso|evil|javascript:/.test(base);
+    comprobar(
+      debeBloquearse ? !redirigido : true,
+      `?api=${valor.slice(0, 46)} no redirige la aplicacion`,
+      redirigido ? `FUGA: apiBase=${base}` : `apiBase=${base}`,
+    );
+    dom.window.close();
   }
 }
 

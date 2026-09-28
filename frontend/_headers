@@ -1,5 +1,28 @@
 /*
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com https://cdn.jsdelivr.net https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline' https://unpkg.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https://tile.openstreetmap.org https://*.tile.openstreetmap.org https://ojo-comas-api.dunkeljhonz.workers.dev; connect-src 'self' https://ojo-comas-api.dunkeljhonz.workers.dev https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com; child-src https://challenges.cloudflare.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(self), camera=(self)
+  Strict-Transport-Security: max-age=31536000
+  Cross-Origin-Opener-Policy: same-origin
+  X-Permitted-Cross-Domain-Policies: none
+
+/*
+  Notas sobre la politica de seguridad (CSP). Cada directiva esta puesta a proposito:
+
+  · script-src NO incluye 'unsafe-inline' ni 'unsafe-eval'. Se puede permitir porque la pagina no
+    tiene ningun <script> en linea, ningun atributo on* y ninguna dependencia que evalua cadenas.
+    El CDN de Tailwind (cdn.tailwindcss.com) SI exigia 'unsafe-eval' y se ha ELIMINADO: no se
+    usaba ni una sola de sus clases, asi que era una dependencia de terceros con acceso total a
+    la pagina a cambio de nada.
+  · style-src SI necesita 'unsafe-inline': Leaflet y el propio app.js escriben atributos style=""
+    en el HTML generado. Es una concesion consciente; sin ella el mapa se rompe.
+  · connect-src se limita a la propia API y a Turnstile. No hace falta Nominatim porque la
+    aplicacion NO hace geocodificacion inversa: el campo de direccion es lo que escribe el vecino.
+  · frame-src / child-src: Turnstile renderiza su desafio en un iframe de challenges.cloudflare.com.
+  · frame-ancestors 'none' y X-Frame-Options: DENY evitan el clickjacking (que alguien incruste
+    la pagina en un iframe y superponga botones falsos).
+  · object-src 'none' y base-uri 'self' cierran vectores clasicos de inyeccion.
+  · upgrade-insecure-requests evita contenido mixto si alguna vez se sirviera por http.
+*/

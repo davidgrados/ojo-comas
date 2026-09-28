@@ -157,7 +157,7 @@ Ya está **declarado en la política de privacidad** (sección 5) para que el ti
 | **Flujo transfronterizo** declarado, con la mención a Cloudflare y a la posible ubicación fuera del Perú | Sección 5 (nueva) |
 | **Plazo de conservación** concreto (antes era «lo necesario») | Sección 7 |
 | **Canal ARCO real** (antes remitía a «escribir al repositorio de GitHub», que no es un canal) | Sección 8 |
-| Mención a la **geocodificación por Nominatim**, que envía coordenadas a un tercero (antes no se decía) | Sección 6 |
+| Se **corrige** la política, que daba a entender que se usaba Nominatim: la dirección la escribe el vecino y **no hay geocodificación inversa** | Sección 6 |
 
 ---
 

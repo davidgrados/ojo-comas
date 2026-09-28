@@ -19,8 +19,9 @@
 <link rel="preconnect" href="https://unpkg.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 
-<!-- Tailwind Play CDN (apoyo opcional: TODO el layout crítico vive en styles.css) -->
-<script src="https://cdn.tailwindcss.com"></script>
+<!-- Aquí se cargaba el Tailwind Play CDN y se ha ELIMINADO: el HTML no usa ninguna de sus
+     clases y su versión Play exige 'unsafe-eval', lo que impedía aplicar una Content-Security-
+     Policy estricta. Todo el diseño vive en styles.css. -->
 
 <!-- Hoja de estilos propia (obligatoria) -->
 <link rel="stylesheet" href="./styles.css">
@@ -520,9 +521,10 @@
         ceden a terceros, y no se usan para elaborar perfiles ni para tomar decisiones automatizadas sobre personas.
       </p>
       <p>
-        La referencia de la calle se aproxima con <strong>Nominatim</strong>, el servicio de geocodificación inversa
-        de OpenStreetMap, lo que implica enviar las coordenadas a ese servicio de terceros para poder mostrar una
-        dirección legible.
+        La <strong>dirección o referencia</strong> del lugar es un texto <strong>que escribes tú</strong> en el
+        formulario. La aplicación <strong>no realiza geocodificación inversa</strong>: no envía tus coordenadas a
+        Nominatim ni a ningún otro servicio de mapas para deducir la dirección, así que ese dato no sale del
+        sistema salvo como parte del propio reporte.
       </p>
 
       <h3>7. Conservación y seguridad</h3>
@@ -675,7 +677,12 @@
   </p>
 </noscript>
 
-<!-- CDN: Leaflet, Turf.js, canvas-confetti, Chart.js, Turnstile -->
+<!-- CDN: Leaflet, Turf.js, canvas-confetti, Chart.js, Turnstile.
+
+     NO se carga Tailwind. Se comprobó que el HTML no usa ni una sola de sus clases: las 132
+     clases declaradas son propias y están definidas en styles.css. Mantenerlo habría sido una
+     dependencia de terceros con acceso total a la página a cambio de nada, y además su versión
+     Play exige 'unsafe-eval', lo que impedía aplicar una Content-Security-Policy estricta. -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://unpkg.com/@turf/turf@7/turf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
