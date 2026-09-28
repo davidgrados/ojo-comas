@@ -28,6 +28,8 @@ acciones obligatorias previas — la primera, inscribir el banco de datos ante l
 Las licencias de código y datos están en [`LICENCIAS.md`](LICENCIAS.md).
 🔒 **Auditoría de seguridad:** resultados y hallazgos pendientes en
 [`docs/SEGURIDAD.md`](docs/SEGURIDAD.md).
+🎬 **Si vas a difundir esto en redes:** guion y lista de comprobación previa en
+[`docs/GUION-TIKTOK.md`](docs/GUION-TIKTOK.md).
 
 ---
 
