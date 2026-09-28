@@ -21,8 +21,9 @@ El guion usa cuatro palancas de retención:
    **no se puede quitar**: es la diferencia entre un experimento cívico y un problema legal.
 6. **CTA** (48–60 s): pregunta, no solicitud. Las preguntas generan comentarios; los pedidos, no.
 
-**154 palabras de voz.** A ritmo de TikTok (unas 2,6 palabras por segundo) entra en 60 segundos
-exactos. Si te sobra tiempo, alarga el paso 4; si te falta, recorta el paso 2.
+**157 palabras de voz.** Medido: a ritmo de TikTok (unas 2,6 palabras por segundo) son **60,4
+segundos**, así que entra justo. A ritmo rápido (3 palabras por segundo) son 52 s y te queda aire
+para respirar. Si te sobra tiempo, alarga el paso 4; si te falta, recorta el paso 2.
 
 ---
 
