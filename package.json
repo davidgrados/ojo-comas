@@ -11,6 +11,8 @@
     "hitos:verificar": "python tools/check_hitos_oficiales.py",
     "zona:verificar": "node tools/verificar_deteccion_zona.mjs",
     "ui:verificar": "node tools/verificar_ui_enganchada.mjs",
+    "pdf:guion": "node tools/exportar_pdf.mjs",
+    "pdf:todos": "node tools/exportar_pdf.mjs --todos",
     "datos:ficticios": "python tools/build_seed.py",
     "osm:descargar": "python tools/fetch_osm_extra.py && python tools/fetch_vecinos.py",
     "construir": "npm run cartografia && npm run hitos:verificar && npm run datos:ficticios",
@@ -33,6 +35,7 @@
     "acorn": "^8.18.0",
     "acorn-walk": "^8.3.5",
     "jsdom": "^30.0.1",
-    "leaflet": "^1.9.4"
+    "leaflet": "^1.9.4",
+    "marked": "^18.0.14"
   }
 }

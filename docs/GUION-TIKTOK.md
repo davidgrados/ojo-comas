@@ -129,6 +129,13 @@ distintos marcadores, para dar sensación de volumen.
 - El **gráfico de barras crece** de abajo hacia arriba, barra por barra, en cascada
 - **Ranking de zonas** con medallas 🥇🥈🥉
 - Texto grande **«ESO ES PRESIÓN, NO QUEJA»** con **glitch** de 4 frames
+- **La frase fuerte del video**, entra justo en el drop y se queda 2 s:
+  **«SE ACABÓ QUE LOS PROBLEMAS DE MI CALLE SEAN INVISIBLES»**
+  - Animación: aparece palabra por palabra (kinetic type), 0,08 s cada una, la última con
+    **impacto de pantalla** (shake 6 px) y **destello rojo**
+  - SFX en la última palabra: `sub-boom` + `reverse cymbal`
+  - Esta es la frase que la gente va a citar en los comentarios: cuídala, no la tapés con
+    ningún sticker ni con la interfaz de TikTok
 - Sub-texto animado: `no estás solo, está tu zona entera`
 
 ---
@@ -189,6 +196,8 @@ Deja el final limpio para que el **loop** enganche otra vez con el gancho.
   `«Zona 05 🙋»` · `«Collique 🙌»` · `«Zona 12 porfa»`
 - Contador final: `14/14 ZONAS 👁️`
 - Sello final: **«HECHO EN COMAS, LIMA NORTE 🇵🇪»**
+- Y antes, medio segundo con esta línea, que desarma cualquier lectura de ataque:
+  **«NO VENGO A ATACAR A NADIE. VENGO A MOSTRAR LO QUE FALTA.»**
 
 ---
 
@@ -287,6 +296,28 @@ leerse (0,3 s por palabra + 0,4 s).
       minutos (README, «Endurecer Turnstile»).
 - [ ] Abrir el sitio y probar los tres toques tú mismo, en el celular, antes de grabar.
 - [ ] Grabar la demo con **el celular real**, no con emulador. Se nota.
+
+### ✍️ Nota sobre las frases fuertes (léela antes de cambiar el guion)
+
+La frase de cierre emocional del video es **«se acabó que los problemas de mi calle sean
+invisibles»**. Hubo una versión anterior más agresiva, del tipo «se acabó una municipalidad que
+le da la espalda a su gente», y **se descartó a propósito**. Motivos:
+
+1. **Imputa un hecho a una institución identificable**, no expresa una opinión sobre un servicio.
+   El Código Penal peruano tipifica la difamación en su artículo 132.
+2. **Se apoyaría en datos ficticios.** Los reportes del prototipo son inventados. Afirmar un hecho
+   falso sobre una entidad, basándose en datos que uno mismo fabricó, es indefendible: si te
+   preguntan «¿cómo lo sabes?», la respuesta es «me lo inventé para la demo».
+3. **Hay precedente real.** Una municipalidad peruana envió carta notarial por declaraciones
+   difamatorias en redes sociales. No es un riesgo teórico.
+4. **Le quita credibilidad al proyecto.** Un prototipo que se presenta honesto (dice que los datos
+   son ficticios y manda a los canales oficiales) no puede a la vez atacar a la municipalidad: se
+   contradice y pierde el apoyo de quien podría ayudarle.
+
+La versión que sí está en el guion conserva lo que hace que funcione —el arranque «se acabó» y la
+rabia— pero **señala al problema, no a una entidad**. Y la frase del cierre («no vengo a atacar a
+nadie, vengo a mostrar lo que falta») convierte la crítica en propuesta, que además es lo que
+hace que la gente comparta en vez de pelear en los comentarios.
 
 ### Legal — para no tener problemas con una autoridad
 - [ ] El bloque del aviso (segundo 38) **va sí o sí**.

@@ -20,3 +20,6 @@ desktop.ini
 # Salidas reproducibles del pipeline (se regeneran con tools/*.py)
 data/preview_zonas.png
 data/comas_zonas.pretty.geojson
+
+# Temporales del exportador a PDF
+.tmp-export/
