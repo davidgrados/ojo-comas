@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Ojo Comas · Tu voz construye el distrito</title>
+<title>Ojo Comas · Tu voz construye el distrito | Comas, Lima Norte</title>
 <meta name="description" content="Prototipo ciudadano para reportar baches, basura y problemas de alumbrado en el distrito de Comas (Lima, Perú). Datos ficticios, demostración no oficial.">
 <meta name="theme-color" content="#C8102E">
 <meta name="color-scheme" content="light">
@@ -32,7 +32,7 @@
 
 <!-- 1) BANNER LEGAL FIJO Y NO INTRUSIVO -->
 <div class="banner-legal" id="bannerLegal" role="note">
-  <p class="banner-legal__texto">⚠️ PROTOTIPO DE DEMOSTRACIÓN - Datos 100% ficticios. No representa oficialmente a la Municipalidad Distrital de Comas y no tramita reclamos oficiales: los reportes NO tienen efectos legales ni administrativos. Cumple con la Ley N° 29733 de Protección de Datos Personales. <button type="button" class="enlace-inline" data-abrir-modal="modalAvisoLegal">Aviso legal</button> · <button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></p>
+  <p class="banner-legal__texto">⚠️ PROTOTIPO DE DEMOSTRACIÓN - Datos 100% ficticios. No representa oficialmente a la Municipalidad Distrital de Comas y no tramita reclamos oficiales: los reportes NO tienen efectos legales ni administrativos. Cumple con la Ley N° 29733 de Protección de Datos Personales. <button type="button" class="enlace-inline" data-abrir-modal="modalAvisoLegal">Aviso legal</button> · <button type="button" class="enlace-inline" data-abrir-modal="modalCanales">¿Dónde reclamo de verdad?</button> · <button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></p>
 </div>
 
 <!-- 2) HERO -->
@@ -40,7 +40,8 @@
   <div class="contenedor">
     <p class="hero__sello">Prototipo vecinal · Comas, Lima</p>
     <h1 class="hero__titulo">Ojo Comas: Tu voz construye el distrito</h1>
-    <p class="hero__subtitulo">Reporta problemas en tu calle con una foto. Sin registros. Sin filas.</p>
+    <p class="hero__subtitulo">Reporta la pista rota, la basura o el poste sin luz de tu calle con una foto.
+        Sin registros. Sin filas. Sin ir hasta la municipalidad.</p>
     <div class="hero__acciones">
       <button type="button" class="btn btn--primario btn--grande" id="btnHeroReportar">➕ Reportar un problema</button>
       <a class="btn btn--fantasma btn--grande" href="#seccionMapa">🗺️ Ver el mapa de reportes</a>
@@ -226,6 +227,7 @@
     <ul class="footer__enlaces">
       <li><a href="https://github.com/davidgrados/ojo-comas" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a></li>
       <li><button type="button" class="enlace-inline" data-abrir-modal="modalAvisoLegal">Aviso legal y normas de uso</button></li>
+      <li><button type="button" class="enlace-inline" data-abrir-modal="modalCanales">Canales oficiales de Comas</button></li>
       <li><button type="button" class="enlace-inline" data-abrir-modal="modalPrivacidad">Política de Privacidad</button></li>
       <li><a href="#seccionTransparencia">Panel de transparencia</a></li>
     </ul>
@@ -310,7 +312,7 @@
         <div class="campo">
           <label class="campo__etiqueta" for="descripcion">Descripción breve</label>
           <textarea class="textarea" id="descripcion" name="descripcion" maxlength="140" rows="3"
-            placeholder="Ejemplo: hueco grande frente al mercado, los mototaxis tienen que esquivarlo."
+            placeholder="Ejemplo: hueco grande frente al mercado, los mototaxis tienen que esquivarlo para pasar."
             aria-describedby="contadorDescripcion"></textarea>
           <p class="contador" id="contadorDescripcion"><span id="contadorNumero">0</span>/140</p>
         </div>
@@ -318,7 +320,7 @@
         <div class="campo">
           <label class="campo__etiqueta" for="referencia">Referencia o dirección (opcional)</label>
           <input type="text" class="input" id="referencia" name="referencia" maxlength="120"
-            placeholder="Ejemplo: Av. Tupac Amaru cdra. 12, frente al mercado" autocomplete="off">
+            placeholder="Ejemplo: Av. Túpac Amaru cdra. 12, frente al Mercado de Comas" autocomplete="off">
           <p class="campo__ayuda">Ayuda a ubicar el punto sin necesidad de dar tu dirección exacta.</p>
         </div>
 
@@ -624,6 +626,9 @@
         Si necesitas que una autoridad atienda un problema real, acude a los canales oficiales: la mesa de partes de
         la Municipalidad Distrital de Comas, su Libro de Reclamaciones o los servicios en línea del Estado.
       </p>
+      <p>
+        <button type="button" class="btn btn--rojo btn--bloque" data-abrir-modal="modalCanales">📞 Ver los canales oficiales de Comas</button>
+      </p>
 
       <h3>3. Lo que ves aquí son datos inventados</h3>
       <p>
@@ -666,6 +671,70 @@
       <p>
         Dudas, retiros de contenido o ejercicio de derechos:
         <a href="https://github.com/davidgrados/ojo-comas/issues" target="_blank" rel="noopener noreferrer">github.com/davidgrados/ojo-comas/issues</a>.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODAL: CANALES OFICIALES DE COMAS ============ -->
+<div class="modal-fondo oculto" id="modalCanales" hidden>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="tituloCanales">
+    <header class="modal__cabecera">
+      <h2 class="modal__titulo" id="tituloCanales">¿Dónde reclamo de verdad?</h2>
+      <button type="button" class="btn-cerrar" data-cerrar-modal aria-label="Cerrar los canales oficiales">✕</button>
+    </header>
+    <div class="modal__cuerpo texto-legal">
+      <p class="texto-legal__fecha">Directorio del distrito de Comas · fuente: CODISEC Comas</p>
+
+      <p>
+        <strong>Ojo Comas es un prototipo y no tramita reclamos.</strong> Si tu problema es real, estos
+        son los canales oficiales. Anótalos: son los que sí tienen efectos.
+      </p>
+
+      <h3>🚨 Si es una emergencia, llama ya</h3>
+      <ul>
+        <li><strong>105</strong> — Policía Nacional del Perú (24 horas).</li>
+        <li><strong>106</strong> — SAMU, emergencias médicas.</li>
+        <li><strong>01 537 4079</strong> — Compañía de Bomberos Comas N.° 124 (Manuel Arangurí 699, Urb. Santa Luzmila).</li>
+      </ul>
+
+      <h3>🏛️ Municipalidad Distrital de Comas</h3>
+      <ul>
+        <li><strong>Sede principal:</strong> Av. 22 de Agosto cdra. 8, Urb. Santa Luzmila, Comas.</li>
+        <li><strong>Anexo Municipal N.° 01:</strong> Av. El Parral s/n, Urb. Huaquillay, Comas.</li>
+        <li><strong>Web oficial:</strong> <a href="https://www.municomas.gob.pe" target="_blank" rel="noopener noreferrer">municomas.gob.pe</a></li>
+      </ul>
+      <p>
+        Ahí puedes usar la <strong>mesa de partes</strong> (pedidos y solicitudes) y el
+        <strong>Libro de Reclamaciones</strong> (quejas formales sobre el servicio municipal: es tu
+        derecho y deja constancia con número). En la web están además los <strong>servicios en línea</strong>,
+        el <strong>TUPA</strong> con los trámites y la oficina de <strong>Participación Vecinal</strong>.
+      </p>
+
+      <h3>👮 Comisarías del distrito</h3>
+      <ul>
+        <li><strong>Túpac Amaru:</strong> Av. Túpac Amaru N.° 1121, Urb. Huaquillay, km 11.</li>
+        <li><strong>La Pascana:</strong> Jr. P. Paulet con Jr. J. C. Mariátegui, Urb. La Pascana.</li>
+        <li><strong>Santa Luzmila:</strong> Av. Gerardo Unger 6500.</li>
+        <li><strong>Collique:</strong> Av. Revolución N.° 2591, 4.ª zona de Collique.</li>
+        <li><strong>Universitaria:</strong> Av. Universitaria cdra. 64, Urb. Santa Luzmila 2.ª etapa.</li>
+        <li><strong>Comisaría de la Familia Collique:</strong> Av. Francisco de Zela, cruce con calle Los Andes.</li>
+      </ul>
+
+      <h3>🤝 Otros servicios que te pueden ayudar</h3>
+      <ul>
+        <li><strong>Centro Emergencia Mujer Comas:</strong> Psj. Neptuno s/n, km 14.5, Año Nuevo.</li>
+        <li><strong>UGEL N.° 04 (educación):</strong> Av. Carabayllo 561, Comas.</li>
+        <li><strong>Línea 100:</strong> violencia familiar y sexual.</li>
+      </ul>
+
+      <h3>⚠️ Sobre estos datos</h3>
+      <p>
+        Provienen del <strong>directorio del CODISEC Comas</strong> (Comité Distrital de Seguridad
+        Ciudadana), un documento público. Los teléfonos y direcciones pueden cambiar:
+        <strong>verifícalos en <a href="https://www.municomas.gob.pe" target="_blank" rel="noopener noreferrer">municomas.gob.pe</a></strong>
+        antes de acudir. Aquí se publican solo direcciones y teléfonos institucionales, nunca datos de
+        contacto personales de funcionarios.
       </p>
     </div>
   </div>

@@ -98,17 +98,25 @@
   /* ==========================================================================
    * 3. CATÁLOGOS
    * ======================================================================= */
+  /* Etiquetas visibles, en español del Perú y con los términos que usa la gente de Lima Norte.
+   *
+   * IMPORTANTE: las CLAVES (bache, basura, alumbrado, otro) NO se tocan: son el contrato con la
+   * API y están fijadas por una restricción CHECK en D1. Solo cambia cómo se llaman en pantalla.
+   * "Luminaria" es un tecnicismo; acá la gente dice "el poste" o "la luz del poste". "Bache" ya
+   * es la palabra peruana (en otros países sería hueco, hoyo o bacheo). */
   var CATEGORIAS = {
-    bache: { emoji: '🕳️', nombre: 'Bache' },
-    basura: { emoji: '🗑️', nombre: 'Basura' },
-    alumbrado: { emoji: '💡', nombre: 'Alumbrado' },
-    otro: { emoji: '📌', nombre: 'Otro' }
+    bache: { emoji: '🕳️', nombre: 'Pista rota / bache', corto: 'Bache', ayuda: 'Huecos y pistas en mal estado' },
+    basura: { emoji: '🗑️', nombre: 'Basura acumulada', corto: 'Basura', ayuda: 'Puntos críticos y contenedores llenos' },
+    alumbrado: { emoji: '💡', nombre: 'Poste sin luz', corto: 'Alumbrado', ayuda: 'Postes y luminarias apagados' },
+    otro: { emoji: '📌', nombre: 'Otro problema', corto: 'Otro', ayuda: 'Veredas, parques, desagües' }
   };
 
+  /* Los estados se muestran como los diría un vecino, no como los diría un expediente.
+   * Las claves siguen siendo las del contrato de la API. */
   var ESTADOS = {
-    pendiente: { nombre: 'Pendiente', color: '#C8102E' },
-    en_proceso: { nombre: 'En proceso', color: '#E8A33D' },
-    resuelto: { nombre: 'Resuelto', color: '#1F9D55' }
+    pendiente: { nombre: 'Sin atender', descripcion: 'Todavía nadie lo ha tomado', color: '#C8102E' },
+    en_proceso: { nombre: 'En camino', descripcion: 'Ya lo están viendo', color: '#E8A33D' },
+    resuelto: { nombre: 'Resuelto', descripcion: 'Ya se solucionó', color: '#1F9D55' }
   };
 
   var ETIQUETA_DEMO = 'Mostrando datos de demostración locales (la API no responde)';

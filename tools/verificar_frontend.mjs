@@ -383,6 +383,34 @@ console.log('\n9. Requisitos legales visibles (marca de ficticio y aviso legal)'
       'la politica informa del flujo transfronterizo de datos (Cloudflare)');
     comprobar(/ODbL/i.test(textoPriv), 'la politica atribuye la licencia ODbL de los datos de OSM');
   }
+
+  /*
+   * Directorio de canales OFICIALES de Comas.
+   *
+   * Es la pieza mas util para el vecino y ademas protege legalmente al proyecto: deja claro que
+   * esta app no tramita nada y lo manda a quien si puede. Si alguien borra este panel, el
+   * prototipo se queda sin la contrapartida que compensa el riesgo de confusion, asi que la
+   * comprobacion lo protege. Los numeros de emergencia se verificaron contra fuentes oficiales
+   * (105 y 106 de gob.pe; la linea de bomberos, del directorio CODISEC de Comas).
+   */
+  const disparadorCanales = [...document.querySelectorAll('a, button')].find((el) =>
+    /d[oó]nde reclamo|canales oficiales/i.test(el.textContent || ''),
+  );
+  comprobar(Boolean(disparadorCanales), 'hay un enlace a los canales oficiales de Comas');
+  if (disparadorCanales) {
+    disparadorCanales.dispatchEvent(new window.MouseEvent('click', { bubbles: true, cancelable: true }));
+    await esperar(500);
+    const textoCanales = document.body.textContent || '';
+    comprobar(/\b105\b/.test(textoCanales), 'figura el 105 (Policia Nacional)');
+    comprobar(/\b106\b/.test(textoCanales), 'figura el 106 (SAMU)');
+    comprobar(/537\s?4079/.test(textoCanales), 'figura la linea de la Compania de Bomberos de Comas');
+    comprobar(/22 de Agosto/i.test(textoCanales), 'figura la direccion de la sede municipal');
+    comprobar(/Libro de Reclamaciones/i.test(textoCanales), 'se menciona el Libro de Reclamaciones');
+    comprobar(/mesa de partes/i.test(textoCanales), 'se menciona la mesa de partes');
+    comprobar(/no tramita reclamos/i.test(textoCanales),
+      'el directorio aclara que este prototipo no tramita reclamos');
+    comprobar(/CODISEC/i.test(textoCanales), 'se cita la fuente del directorio (CODISEC)');
+  }
 }
 
 /*
